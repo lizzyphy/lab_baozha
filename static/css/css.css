@@ -8,19 +8,18 @@ a {
 
 #box {
 	margin: 0 auto;
-	width: 1050px;
+	width: 1000px;
 	padding-top:20px;
 	padding-bottom:20px;
 }
 .left1 {
 	float:left;
 	background: #fff;
-	width: 490px;
+	width: 480px;
 }
 .right {
 	float:right;
-	width: 550px;
-	padding-right:30px;
+	width: 530px;
 }
 .title {
 	border-color: #006;
@@ -30,7 +29,7 @@ a {
     padding-left:5px;
     display: block;
     height: 35px;
-    width: 550px;
+    width: 520px;
     word-wrap: break-word;
 }
 .right li a{
@@ -38,14 +37,14 @@ a {
 	background: url(../img/tb.jpg) no-repeat 5px center;
 	padding-left: 25px;
 	padding-right:5px;
-	width:470px;
+	width:460px;
 }
 .right ul {
 	padding-top:10px;
 	padding-bottom:15px;
 }
 .right li{
-	width:550px; 
+	width:530px; 
 	line-height:30px; 
 	font-size:12px;
 
@@ -61,12 +60,12 @@ a {
 	padding-bottom:15px;
 }
 .left1 li{
-	width:490px; 
+	width:480px; 
 	line-height:30px; 
 	font-size:12px;
 }
 .left1 .title{
-	width: 490px;
+	width: 470px;
 }
 #right1{
 	padding-left:40px;

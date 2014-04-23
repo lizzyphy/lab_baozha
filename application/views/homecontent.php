@@ -67,7 +67,7 @@
 			<span class="time">2014-3-10</span>
 			</li>
 			<li><span><a href="www.baidu.com" title="2013 International Workshop on Intensive Loading and Its Effects & Innovation Research Group Symposium on Dynamic Mechanical Behavior of Complex Media/ Structure">
-			2013 International Workshop on Intensive Loading and Its Effects & Innovation...</a></span>
+			2013 International Workshop on Intensive Loading and Its Effects &...</a></span>
 			<span class="time">2014-3-10</span>
 			</li>
 		</ul>
