@@ -19,7 +19,7 @@ a {
 }
 .right {
 	float:right;
-	width: 480px;
+	width: 550px;
 	padding-right:30px;
 }
 .title {
@@ -30,7 +30,7 @@ a {
     padding-left:5px;
     display: block;
     height: 35px;
-    width: 470px;
+    width: 550px;
     word-wrap: break-word;
 }
 .right li a{
@@ -38,14 +38,14 @@ a {
 	background: url(../img/tb.jpg) no-repeat 5px center;
 	padding-left: 25px;
 	padding-right:5px;
-	width:390px;
+	width:470px;
 }
 .right ul {
 	padding-top:10px;
 	padding-bottom:15px;
 }
 .right li{
-	width:480px; 
+	width:550px; 
 	line-height:30px; 
 	font-size:12px;
 
@@ -61,12 +61,15 @@ a {
 	padding-bottom:15px;
 }
 .left1 li{
-	width:480px; 
+	width:490px; 
 	line-height:30px; 
 	font-size:12px;
 }
+.left1 .title{
+	width: 490px;
+}
 #right1{
-	padding-left:50px;
+	padding-left:40px;
 }
 .time{ 
 	width:70px; 
@@ -76,43 +79,48 @@ a {
 	color:#666;
 }
 .focus{
-	margin-top:30px;
-	margin-bottom:22px;
-	width:480px;
-	height:380px;
+	margin-top:25px;
+	margin-bottom:52px;
+	width:420px;
+	height:350px;
 	float:left;
 	border:3px solid #d9d9d9;
 	position:relative;
 }
 .focus #pic{
-	width:480px;
-	height:380px;
+	width:420px;
+	height:350px;
 	overflow:hidden;
 }
 .focus #pic ul{
-	width:4216px;
-	height:380px;
+	width:4000px;
+	height:350px;
 	float:left;
 }
 .focus #pic li{
-	width:480px;
-	height:380px;
+	width:420px;
+	height:350px;
 	float:left;
 }
 .focus #pic li img{
-	width:480px;
-	height:380px;
+	width:420px;
+	height:350px;
+	float:left;
+}
+.focus #pic li p{
+	width:420px;
+	height:35px;
 	float:left;
 }
 .focus .tip-bg{
-	width:480px;
+	width:420px;
 	height:21px;
 	background:#000;
 	filter:alpha(opacity=80);
 	opacity:0.80;
 	position:absolute;
 	left:0;
-	bottom:0;
+	margin-top:-21px;
 	z-index:12;
 }
 .focus #tip{
@@ -135,34 +143,16 @@ a {
 .focus #tip ul li.current{
 	background:url(../img/focus_tip_current.png) no-repeat;
 }
-.focus .btn{
-	width:42px;
-	height:9px;
-	position:absolute;
-	right:0;
-	bottom:5px;
-	z-index:14;
-	overflow:hidden;
-}
-.focus .btn ul{
-	width:100%;
-	float:left;
-}
-.focus .btn li{
-	width: 7px;
-	height: 9px;
-	float: left;
-	display: inline;
-	margin: 0 7px;
-	cursor: pointer;
-	overflow: hidden;
-}
-.focus .btn li.btn-left{
-	background:url(../img/focus_btn_left.png) no-repeat left top;
-}
-.focus .btn li.btn-right{
-	background:url(../img/focus_btn_right.png) no-repeat left top;
-}
 .focus .show{
 	display:block!important;
+}
+.pic_title{ 
+	width:420px; 
+	height:50px; 
+	font-size:12px; 
+	line-height:50px; 
+	text-align:center;
+	margin-top:350px;
+	position:absolute;
+	color:#666;
 }

@@ -6,7 +6,7 @@ var scrollmove = "";
 var masktime = 10;
 var focus_cur = 1;	
 
-var h = document.getElementById("tip").getElementsByTagName("li");
+/*var h = document.getElementById("tip").getElementsByTagName("li");*/
 function change(id){
 	
 	clearTimeout(isround);
