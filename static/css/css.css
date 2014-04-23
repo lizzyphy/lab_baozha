@@ -40,7 +40,7 @@ a:hover {
 	width:460px;
 }
 .right li a:hover {
-	color:#000;
+	color:#930;
 }
 .right ul {
 	padding-top:10px;
@@ -57,6 +57,9 @@ a:hover {
 	background: url(../img/tb.jpg) no-repeat 5px center;
 	padding-left: 25px;
 	width:390px;
+}
+.left1 li a:hover {
+	color:#930;
 }
 .left1 ul {
 	padding-top:10px;
