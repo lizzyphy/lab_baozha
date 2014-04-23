@@ -27,7 +27,6 @@ body{
 #head{
 	width:1000px;
 	margin-top:10px;
-	
 }
 
 #head_l{
@@ -52,7 +51,7 @@ body{
 	cellspacing: 0;
 	color:#000;	
 	float:right;
-	padding-top:15px;
+	margin-top:15px;
 }
 
 #navi{
@@ -68,19 +67,19 @@ body{
 }
 
 #navi li{
-	list-style-type: none;
 	color:#FFF;
 	width:10%;
 	height:50px;
 	line-height:50px;
-    text-align: center;
 	padding:0;
+	float:left;
 }
 
-#navi a{
+#navi a {
 	color:#FFF;
 	text-decoration: none;
 	display:block;
+    text-align: center;
 }
 
 /*#navi ul li ul{
@@ -142,12 +141,13 @@ position: absolute;
 }
 
 .naviout a {
+	_width:145px;
 	display: block;
 	color: #666;
 	font-size: 12px;
 	line-height: 30px;
 	text-decoration: none;
-	text-align: left;
+	text-align: left !important;
 	padding:0 20px;
 }
 
