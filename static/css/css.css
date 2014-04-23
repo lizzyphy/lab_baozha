@@ -87,15 +87,16 @@ a:hover {
 	color:#666;
 }
 .focus{
-	margin-top:25px;
-	width:420px;
+	margin-top:10px;
+	margin-bottom:25px;
+	width:430px;
 	height:350px;
 	float:left;
 	border:3px solid #d9d9d9;
 	position:relative;
 }
 .focus #pic{
-	width:420px;
+	width:430px;
 	height:350px;
 	overflow:hidden;
 }
@@ -105,21 +106,21 @@ a:hover {
 	float:left;
 }
 .focus #pic li{
-	width:420px;
+	width:430px;
 	height:350px;
 	float:left;
 }
 .focus #pic li img{
-	width:420px;
+	width:430px;
 	height:350px;
 	float:left;
 }
 .focus #pic li p{
-	width:420px;
+	width:430px;
 	height:35px;
 }
 .focus .tip-bg{
-	width:420px;
+	width:430px;
 	height:21px;
 	background:#000;
 	filter:alpha(opacity=80);
@@ -171,4 +172,28 @@ a:hover {
 }
 .left2{
 	float:left;
+}
+.input_1 {
+	height: 22px;
+	border: 1px solid #CCC;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	border-right: none;
+	width: 280px;
+	_margin-bottom:2px;
+}
+
+.input_sub {
+	box-shadow: none;
+	width: 22px;
+	height: 24px;
+	background-image: url("../img/ss.gif");
+	background-repeat: no-repeat;
+	background-position: left;
+	float: left;
+	display: block;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	border-left:none;
+	border: 0px;
 }
