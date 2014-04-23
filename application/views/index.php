@@ -1,21 +1,18 @@
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel=stylesheet type="text/css" href="<?php echo base_url('static/css/css.css'); ?>" />
+<script type="text/javascript" src="<?php echo base_url('static/js/pic.js'); ?>"></script>
+</head>
+<body>
 <div id="box">
 	<div class="focus">
 		<div id="pic">
 			<ul>
-				<li>
-				<a href=""><img width="420" height="350" src="<?php echo base_url('static/img/1.jpg'); ?>" /></a>
-				<p class="pic_title" ><a href="" style="color: #666;">爆炸科学与技术国家重点实验室2014工作会议</a></p>
-				</li>	
-				<li>
-				<a href=""><img width="420" height="350" src="<?php echo base_url('static/img/2.jpg'); ?>" /></a>
-				</li>
-				<li>
-				<a href=""><img width="420" height="350" src="<?php echo base_url('static/img/3.jpg'); ?>" /></a>
-				</li>
-				<li>
-				<a href=""><img width="420" height="350" src="<?php echo base_url('static/img/4.jpg'); ?>" /></a>
-				</li>
+				<li><a href=""><img width="410" height="410" src="<?php echo base_url('static/img/1.jpg'); ?>" /></a></li>
+				<li><a href=""><img width="410" height="410" src="<?php echo base_url('static/img/2.jpg'); ?>" /></a></li>
+				<li><a href=""><img width="410" height="410" src="<?php echo base_url('static/img/3.jpg'); ?>" /></a></li>
+				<li><a href=""><img width="410" height="410" src="<?php echo base_url('static/img/4.jpg'); ?>" /></a></li>
 			</ul>
 		</div>
 		<div class="tip-bg"></div>
@@ -27,7 +24,12 @@
 				<li id="smallimg_4" onclick="change(4)"></li>
 			</ul>
 		</div>
-		<div class="clear"></div>
+		<div class="btn">
+			<ul>
+				<li class="btn-left" id="focus_btn_left" onclick="focus_prev();"></li>
+				<li class="btn-right" id="focus_btn_right" onclick="focus_next();"></li>
+			</ul>
+		</div>
 	</div>
 	<div class="right">
 		<div class="title">
@@ -46,7 +48,7 @@
 			<li><span><a href="www.baidu.com" title="青少年科技后备人才早期培养计划（第13期）师生见面会">青少年科技后备人才早期培养计划（第13期）师生见面会</a></span>
 			<span class="time">2014-3-10</span>
 			</li>
-			<li><span><a href="www.baidu.com" title="“爆炸科学与技术国家重点实验室山东研究基地”第一届理事会第三次会议召开">爆炸科学与技术国家重点实验室山东研究基地”第一届理事会第三次会议召开</a></span>
+			<li><span><a href="www.baidu.com" title="“爆炸科学与技术国家重点实验室山东研究基地”第一届理事会第三次会议召开">“爆炸科学与技术国家重点实验室山东研究基地”第一届理事会第三次会议召开</a></span>
 			<span class="time">2014-3-10</span>
 			</li>
 		</ul>
@@ -67,11 +69,10 @@
 			<span class="time">2014-3-10</span>
 			</li>
 			<li><span><a href="www.baidu.com" title="2013 International Workshop on Intensive Loading and Its Effects & Innovation Research Group Symposium on Dynamic Mechanical Behavior of Complex Media/ Structure">
-			2013 International Workshop on Intensive Loading and Its Effects & Innovation...</a></span>
+			2013 International Workshop on Intensive Loading and Its Effects...</a></span>
 			<span class="time">2014-3-10</span>
 			</li>
 		</ul>
-		<div class="clear"></div>
 	</div>
 	<!--	<img width="1000" height="210" src="<?php echo base_url('static/img/11.jpg'); ?>" />-->
 	<div class="left1">
@@ -96,7 +97,6 @@
 			<span class="time">2014-3-10</span>
 			</li>
 		</ul>
-		<div class="clear"></div>
 	</div>
 
 	<div class="left1" id="right1">
@@ -122,5 +122,6 @@
 			</li>
 		</ul>
 	</div>
-	<div class="clear"></div>
 </div>
+</body>
+</html>
