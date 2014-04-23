@@ -17,12 +17,12 @@
         <div id="head_r">
         	<table class="head_tab">
             	<tr>
-                	<td class="head_td"> <a href="index.php">OA系统</a></td>
-                    <td class="head_td"> <a href="index.php">开放基金</a></td>
-                    <td class="head_td"> <a href="index.php">学术交流</a></td>
-                    <td class="head_td"> <a href="index.php">资源共享</a></td>
-                    <td class="head_td"> <a href="index.php">管理制度</a></td>
-                    <td class="head_td2"> <a href="index.php">ENGLISH</a></td>
+                	<td><a href="index.php">OA系统</a>&nbsp;&nbsp;&nbsp;|</td>
+                    <td><a href="index.php">开放基金</a>&nbsp;&nbsp;&nbsp;|</td>
+                    <td><a href="index.php">学术交流</a>&nbsp;&nbsp;&nbsp;|</td>
+                    <td><a href="index.php">资源共享</a>&nbsp;&nbsp;&nbsp;|</td>
+                    <td><a href="index.php">管理制度</a>&nbsp;&nbsp;&nbsp;|</td>
+                    <td><a href="index.php">ENGLISH</a></td> 
                  </tr>
              </table>
         </div>
