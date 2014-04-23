@@ -17,12 +17,12 @@
         <div id="head_r">
         	<table class="head_tab">
             	<tr>
-                	<td class="head_td"> <a href="index.php">OA系统</a></td>
-                    <td class="head_td"> <a href="index.php">开放基金</a></td>
-                    <td class="head_td"> <a href="index.php">学术交流</a></td>
-                    <td class="head_td"> <a href="index.php">资源共享</a></td>
-                    <td class="head_td"> <a href="index.php">管理制度</a></td>
-                    <td class="head_td2"> <a href="index.php">ENGLISH</a></td>
+                	<td><a href="index.php">OA系统</a>&nbsp;&nbsp;&nbsp;|</td>
+                    <td><a href="index.php">开放基金</a>&nbsp;&nbsp;&nbsp;|</td>
+                    <td><a href="index.php">学术交流</a>&nbsp;&nbsp;&nbsp;|</td>
+                    <td><a href="index.php">资源共享</a>&nbsp;&nbsp;&nbsp;|</td>
+                    <td><a href="index.php">管理制度</a>&nbsp;&nbsp;&nbsp;|</td>
+                    <td><a href="index.php">ENGLISH</a></td> 
                  </tr>
              </table>
         </div>
@@ -30,7 +30,7 @@
     </div>
 	<div class="middle" id="navi">
     	<ul class="middle">
-        	<li class="f_left"><a href="index.php">实验室概况</a>
+        	<li><a href="index.php">实验室概况</a>
             	<div class="naviout" style="display:none;">
                     <a href="index.php">实验室简介</a>
                     <a href="index.php">发展历程</a>
@@ -40,7 +40,7 @@
                     <a href="index.php">图片展示</a>
                 </div>
             </li>
-            <li class="f_left"><a href="index.php">机构设置</a>
+            <li><a href="index.php">机构设置</a>
                 <div class="naviout" style="display:none;">
                         <a href="index.php">办公室</a>
                         <a href="index.php">实验仿真中心</a>
@@ -50,7 +50,7 @@
                         <a href="index.php">学术委员会</a>
                 </div>
             </li>
-            <li class="f_left"><a href="index.php">研究方向</a>
+            <li><a href="index.php">研究方向</a>
             	<div class="naviout" style="display:none;">
                 	<a href="index.php">含能材料理论与应用技术</a>
                     <a href="index.php">爆轰学与爆炸技术</a>
@@ -59,7 +59,7 @@
                     <a href="index.php">爆炸安全理论与评估技术</a>
                 </div>
             </li>
-            <li class="f_left"><a href="index.php">学术队伍</a>
+            <li><a href="index.php">学术队伍</a>
             	<div class="naviout" style="display:none;">
                 	<a href="index.php">院士</a>
                     <a href="index.php">突贡专家</a>
@@ -73,7 +73,7 @@
                     <a href="index.php">流动人员</a>
                 </div>
             </li>
-            <li class="f_left"><a href="index.php">科研成果</a>
+            <li><a href="index.php">科研成果</a>
             	<div class="naviout" style="display:none;">
                 	<a href="index.php">科研项目</a>
                     <a href="index.php">获奖</a>
@@ -81,14 +81,14 @@
                     <a href="index.php">发表学术论文</a>
                 </div>
             </li>
-            <li class="f_left"><a href="index.php">学科建设</a>
+            <li><a href="index.php">学科建设</a>
             	<div class="naviout" style="display:none;">
                 	<a href="index.php">博士后流动站</a>
                     <a href="index.php">博士点</a>
                     <a href="index.php">硕士点</a>
                 </div>
             </li>
-            <li class="f_left"><a href="index.php">挂靠机构</a>
+            <li><a href="index.php">挂靠机构</a>
             	<div class="naviout" style="display:none;">
                 	<a href="index.php">期刊编辑部</a>
                     <a href="index.php">安全培训中心</a>
@@ -97,7 +97,7 @@
                     <a href="index.php">火工分析中心</a>
                 </div>
             </li>
-            <li class="f_left"><a href="index.php">办公联系</a>
+            <li><a href="index.php">办公联系</a>
             	<div class="naviout" style="display:none;">
                 	<a href="index.php">重点实验室主任</a>
                     <a href="index.php">重点实验室办公室</a>
@@ -109,7 +109,7 @@
                     <a href="index.php">毁伤理论及应用部</a>
                 </div>
             </li>
-            <li class="f_left"><a href="index.php">相关下载</a>
+            <li><a href="index.php">相关下载</a>
             	<div class="naviout" style="display:none;">
                 	<a href="index.php">管理表格</a>
                     <a href="index.php">年报相关表格</a>

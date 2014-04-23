@@ -5,7 +5,12 @@ a {
 	color:#000000;
 	text-decoration: none;
 }
-
+img {
+	border:none;
+}
+a:hover {
+	color:#F00;
+}
 #box {
 	margin: 0 auto;
 	width: 1000px;
@@ -22,9 +27,7 @@ a {
 	width: 530px;
 }
 .title {
-	border-color: #006;
-    border-style: solid;
-    border-width: 0 0 1px;
+	border-bottom: solid 1px #666;
     padding-top: 8px;
     padding-left:5px;
     display: block;
@@ -38,6 +41,9 @@ a {
 	padding-left: 25px;
 	padding-right:5px;
 	width:450px;
+}
+.right li a:hover {
+	color:#930;
 }
 .right ul {
 	padding-top:10px;
@@ -54,6 +60,9 @@ a {
 	background: url(../img/tb.jpg) no-repeat 5px center;
 	padding-left: 25px;
 	width:390px;
+}
+.left1 li a:hover {
+	color:#930;
 }
 .left1 ul {
 	padding-top:10px;
