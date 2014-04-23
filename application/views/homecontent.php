@@ -3,10 +3,10 @@
 	<div class="focus">
 		<div id="pic">
 			<ul>
-				<li><a href=""><img width="410" height="410" src="<?php echo base_url('static/img/1.jpg'); ?>" /></a></li>
-				<li><a href=""><img width="410" height="410" src="<?php echo base_url('static/img/2.jpg'); ?>" /></a></li>
-				<li><a href=""><img width="410" height="410" src="<?php echo base_url('static/img/3.jpg'); ?>" /></a></li>
-				<li><a href=""><img width="410" height="410" src="<?php echo base_url('static/img/4.jpg'); ?>" /></a></li>
+				<li><a href=""><img width="480" height="380" src="<?php echo base_url('static/img/1.jpg'); ?>" /></a></li>
+				<li><a href=""><img width="480" height="380" src="<?php echo base_url('static/img/2.jpg'); ?>" /></a></li>
+				<li><a href=""><img width="480" height="380" src="<?php echo base_url('static/img/3.jpg'); ?>" /></a></li>
+				<li><a href=""><img width="480" height="380" src="<?php echo base_url('static/img/4.jpg'); ?>" /></a></li>
 			</ul>
 		</div>
 		<div class="tip-bg"></div>
@@ -43,7 +43,7 @@
 			<li><span><a href="www.baidu.com" title="青少年科技后备人才早期培养计划（第13期）师生见面会">青少年科技后备人才早期培养计划（第13期）师生见面会</a></span>
 			<span class="time">2014-3-10</span>
 			</li>
-			<li><span><a href="www.baidu.com" title="“爆炸科学与技术国家重点实验室山东研究基地”第一届理事会第三次会议召开">“爆炸科学与技术国家重点实验室山东研究基地”第一届理事会第三次会议召开</a></span>
+			<li><span><a href="www.baidu.com" title="“爆炸科学与技术国家重点实验室山东研究基地”第一届理事会第三次会议召开">爆炸科学与技术国家重点实验室山东研究基地”第一届理事会第三...</a></span>
 			<span class="time">2014-3-10</span>
 			</li>
 		</ul>
@@ -51,7 +51,7 @@
 			<span style="font-family: Microsoft YaHei; font-size: 16px;">最新通知</span>
 		</div>
 		<ul>
-			<li><span><a href="www.baidu.com" title="第六届全国强动载效应及防护学术会议暨2014复杂介质/结构的动态力学行为创新研究群体学术研讨会第一轮通知">第六届全国强动载效应及防护学术会议暨2014复杂介质/结构的动态力学行为...</a></span>
+			<li><span><a href="www.baidu.com" title="第六届全国强动载效应及防护学术会议暨2014复杂介质/结构的动态力学行为创新研究群体学术研讨会第一轮通知">第六届全国强动载效应及防护学术会议暨2014复杂介质/结构...</a></span>
 			<span class="time">2014-3-10</span>
 			</li>
 			<li><span><a href="www.baidu.com" title="2014年度开放基金项目资助通知－新">2014年度开放基金项目资助通知－新</a></span>
@@ -64,7 +64,7 @@
 			<span class="time">2014-3-10</span>
 			</li>
 			<li><span><a href="www.baidu.com" title="2013 International Workshop on Intensive Loading and Its Effects & Innovation Research Group Symposium on Dynamic Mechanical Behavior of Complex Media/ Structure">
-			2013 International Workshop on Intensive Loading and Its Effects...</a></span>
+			2013 International Workshop on Intensive Loading and...</a></span>
 			<span class="time">2014-3-10</span>
 			</li>
 		</ul>
