@@ -1,9 +1,9 @@
  <div class="middle" id="foot">
      	<div class="middle foot1">
-        	<p>State Key Laboratory of Explosion Science and Technology Copyright 2009-2011. All rights reserved</p>
+        	<p>地址：北京市海淀区中关村南大街5号院 邮编：100081</p>
         </div>
         <div class="middle foot1">
-        	<p>技术支持:北理云帆工作室</p>
+        	<p>Copyright © 2009-2014&nbsp;&nbsp;&nbsp;&nbsp;est.bit.edu.cn. &nbsp;&nbsp;&nbsp;&nbsp;All Rights Reserved&nbsp;&nbsp;&nbsp;&nbsp;版权所有: 北京理工大学爆炸科学与技术国家重点实验室</p>
         </div>
 </div>
             
