@@ -5,16 +5,16 @@
 			<div id="pic">
 				<ul>
 					<li>
-					<a href=""><img width="430" height="350" src="<?php echo base_url('static/img/1.jpg'); ?>" /></a>
+					<a href=""><img width="994" height="300" src="<?php echo base_url('static/img/1.jpg'); ?>" /></a>
 					</li>	
 					<li>
-					<a href=""><img width="430" height="350" src="<?php echo base_url('static/img/2.jpg'); ?>" /></a>
+					<a href=""><img width="994" height="300" src="<?php echo base_url('static/img/2.jpg'); ?>" /></a>
 					</li>
 					<li>
-					<a href=""><img width="430" height="350" src="<?php echo base_url('static/img/3.jpg'); ?>" /></a>
+					<a href=""><img width="994" height="300" src="<?php echo base_url('static/img/3.jpg'); ?>" /></a>
 					</li>
 					<li>
-					<a href=""><img width="430" height="350" src="<?php echo base_url('static/img/4.jpg'); ?>" /></a>
+					<a href=""><img width="994" height="300" src="<?php echo base_url('static/img/4.jpg'); ?>" /></a>
 					</li>
 				</ul>
 			</div>

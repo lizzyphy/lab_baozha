@@ -23,7 +23,7 @@
                     <td><a href="index.php">资源共享</a>&nbsp;&nbsp;&nbsp;|</td>
                     <td><a href="index.php">管理制度</a>&nbsp;&nbsp;&nbsp;|</td>
                     <td><a href="index.php">ENGLISH</a></td> 
-                 </tr>
+                </tr>
              </table>
         </div>
         <div class="clear"></div>

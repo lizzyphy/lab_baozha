@@ -89,34 +89,34 @@ a:hover {
 .focus{
 	margin-top:10px;
 	margin-bottom:25px;
-	width:430px;
-	height:350px;
+	width:9940px;
+	height:300px;
 	float:left;
 	border:3px solid #d9d9d9;
 	position:relative;
 }
 .focus #pic{
-	width:430px;
-	height:350px;
+	width:994px;
+	height:300px;
 	overflow:hidden;
 }
 .focus #pic ul{
 	width:4000px;
-	height:350px;
+	height:300px;
 	float:left;
 }
 .focus #pic li{
-	width:430px;
-	height:350px;
+	width:994px;
+	height:300px;
 	float:left;
 }
 .focus #pic li img{
-	width:430px;
-	height:350px;
+	width:994px;
+	height:300px;
 	float:left;
 }
 .focus #pic li p{
-	width:430px;
+	width:994px;
 	height:35px;
 }
 .focus .tip-bg{
