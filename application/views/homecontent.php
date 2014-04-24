@@ -1,24 +1,25 @@
 
 <div id="box">
-	<div style="width: 420px; float:left;">
-		<div class="focus">
+	<div class="focus">
 			<div id="pic">
 				<ul>
 					<li>
-					<a href=""><img width="430" height="350" src="<?php echo base_url('static/img/1.jpg'); ?>" /></a>
+					<a href=""><img width="994" height="300" src="<?php echo base_url('static/img/1.jpg'); ?>" /></a>
 					</li>	
 					<li>
-					<a href=""><img width="430" height="350" src="<?php echo base_url('static/img/2.jpg'); ?>" /></a>
+					<a href=""><img width="994" height="300" src="<?php echo base_url('static/img/2.jpg'); ?>" /></a>
 					</li>
 					<li>
-					<a href=""><img width="430" height="350" src="<?php echo base_url('static/img/3.jpg'); ?>" /></a>
+					<a href=""><img width="994" height="300" src="<?php echo base_url('static/img/3.jpg'); ?>" /></a>
 					</li>
 					<li>
-					<a href=""><img width="430" height="350" src="<?php echo base_url('static/img/4.jpg'); ?>" /></a>
+					<a href=""><img width="994" height="300" src="<?php echo base_url('static/img/4.jpg'); ?>" /></a>
 					</li>
 				</ul>
 			</div>
-			<div class="tip-bg"></div>
+		</div>
+		<div class="clear"></div>
+		<div class="tip-bg">
 			<div id="tip">
 				<ul>
 					<li id="smallimg_1" onclick="change(1)" class="current"></li>
@@ -27,16 +28,28 @@
 					<li id="smallimg_4" onclick="change(4)"></li>
 				</ul>
 			</div>
+		</div>
+	<div style="width: 420px; float:left;">
+		<form action="" method="post" >
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                   <tr valign="middle">
+                       <td>
+                        <span class="f_left"><input class="input_ser" type="text" name="username" value="&nbsp;请输入关键字"  
+                        onmouseover=this.focus();this.select();  
+                        onclick="if(value==defaultValue){value='';this.style.color='#000'}"   
+                        onBlur="if(!value){value=defaultValue;this.style.color='#999'}"style="color:#999" /></span>
+                        <input class="input_sub" type="submit" name="submit" id="submit" value="搜索" />  
+                        <div class="clear"></div>
+                        </td>
+                      </tr>
+                    </table>     
+              </form> 
+		<div>
+			<embed src="<?php echo base_url('static/img/爱如潮水.swf'); ?>" width="420" height="350"></embed>
 			<div class="clear"></div>
 		</div>
-		<div style="padding-left:5px;"><span style="width: 350px; float:left; font-family: Arial; font-size: 14px;">站内搜索&nbsp;&nbsp; <input class="input_1" type="text" value="&nbsp;请输入关键字"
-	size=30 onmouseover=this.focus();this.select();
-	onclick="if(value==defaultValue){value='';this.style.color='#000'}"
-	onBlur="if(!value){value=defaultValue;this.style.color='#999'}"
-	style="color: #999" /></span>
-<span style="width: 40px; float:left;"><input class="input_sub" type="submit" name="submit" id="submit"
-	value=" " /></span></div>
 	</div>
+	
 	<div class="right">
 		<div class="title">
 			<span style="font-family: Microsoft YaHei; font-size: 16px;">新闻快讯</span>
