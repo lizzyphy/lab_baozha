@@ -166,8 +166,8 @@ a:hover {
 	box-shadow: none;
 	width: 350px;
 	height: 29px;
-	border: 1px solid #999;
-	border-right-color: #FFF;
+	border: 1px solid #C5C5C5;
+	border-right: none;
 	padding-left: 8px;
 	_line-height: 29px;
 }
