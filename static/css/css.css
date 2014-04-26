@@ -164,11 +164,11 @@ a:hover {
 }
 .input_ser{
 	box-shadow: none;
-	width: 355px;
+	width: 350px;
 	height: 29px;
-	border: 1px solid #666;
+	border: 1px solid #999;
 	border-right-color: #FFF;
-	padding-left: 3px;
+	padding-left: 8px;
 	_line-height: 29px;
 }
 
@@ -178,10 +178,10 @@ a:hover {
 	height: 31px;
 	float: left;
 	display: block;
-	border-left:none;
+	border-left: none;
 	border: 0px;
 	font-family: Microsoft YaHei;
-	background-color: #666;
+	background-color: #004080;
 	color: #FFF;
 }
 table {
