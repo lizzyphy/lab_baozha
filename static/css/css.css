@@ -47,11 +47,11 @@ a:hover {
 	color:#009;
 }
 .right ul {
-	margin-bottom:10px;
+	margin-bottom:15px;
 	border: 1px solid #E2E2E2;
 	border-top: none;
 	border-bottom: none;
-	padding-top:10px;
+	padding-top:5px;
 }
 .right li{
 	padding-left: 5px;
