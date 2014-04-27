@@ -29,9 +29,19 @@
 				</ul>
 			</div>
 		</div>
-	<div style="width: 440px; float:left;">
-		<div>
-			<embed src="<?php echo base_url('static/img/爱如潮水.swf'); ?>" width="440" height="350"></embed>
+	<div style="_padding-top:5px; width: 440px; float:left;">
+		<div>	
+			<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
+			codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" 
+			WIDTH="440" HEIGHT="350"> 
+		<PARAM NAME=movie VALUE="<?php echo base_url('static/img/爱如潮水.swf'); ?>"> 
+		<PARAM NAME=quality VALUE=high> 
+		<PARAM NAME=bgcolor VALUE=#FFFFFF> 
+		<EMBED src="<?php echo base_url('static/img/爱如潮水.swf'); ?>" quality=high bgcolor=#FFFFFF WIDTH="440" HEIGHT="350" 
+		NAME="myMovieName" ALIGN="" TYPE="application/x-shockwave-flash" 
+		PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"> 
+		</EMBED> 
+		</OBJECT>
 			<div class="clear"></div>
 		</div>
 		<form action="" method="post" >
