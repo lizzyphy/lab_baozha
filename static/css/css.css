@@ -156,6 +156,7 @@ a:hover {
 	margin-top:350px;
 }
 .right_span{
+	overflow:hidden;
 	display:block;
 	text-overflow:ellipsis;
 	float:left;
