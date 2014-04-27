@@ -96,7 +96,7 @@
 	<!--	<img width="1000" height="210" src="<?php echo base_url('static/img/11.jpg'); ?>" />-->
 	<div class="left1">
 		<div class="title">
-			<span style="font-family: Microsoft YaHei; font-size: 16px;">专家讲坛信息</span>
+			<span>专家讲坛信息</span>
 		</div>
 		<ul>
 			<li><span  class="left_span"><a href="www.baidu.com" title="国际著名爆轰专家到我校国家重点实验室进行学术交流 ">国际著名爆轰专家到我校国家重点实验室进行学术交流 </a></span>
@@ -122,7 +122,7 @@
 
 	<div class="left1" id="right1">
 		<div class="title">
-			<span class="right1" style="font-family: Microsoft YaHei; font-size: 16px;">学术会议信息</span>
+			<span class="right1">学术会议信息</span>
 		</div>
 		<ul>
 			<li><span class="left_span"><a href="www.baidu.com" title="国际著名爆轰专家到我校国家重点实验室进行学术交流 ">国际著名爆轰专家到我校国家重点实验室进行学术交流 </a></span>
