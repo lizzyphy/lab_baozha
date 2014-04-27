@@ -14,7 +14,7 @@ a:hover {
 #box {
 	margin: 0 auto;
 	width: 1000px;
-	padding-top:20px;
+	margin-top:5px;
 	padding-bottom:20px;
 }
 .left1 {
@@ -90,7 +90,6 @@ a:hover {
 	width:994px;
 	height:300px;
 	float:left;
-	border:3px solid #d9d9d9;
 	position:relative;
 }
 .focus #pic{
