@@ -27,37 +27,41 @@ a:hover {
 	width: 530px;
 }
 .title {
-	border-bottom: solid 1px #006;
-    padding-top: 8px;
-    padding-left:5px;
+    padding-left:15px;
     display: block;
-    height: 35px;
-    width: 520px;
+    height: 37px;
+    line-height: 37px;
     word-wrap: break-word;
-    color: #006;
+    color: #FFF;
+	background:rgb(0, 92, 170);
+	font-weight:bold;
+	font-size:14px;
 }
 .right li a{
 	color:#666;
-	background: url(../img/tb.jpg) no-repeat 5px center;
-	padding-left: 25px;
+	background: url(../img/list_bg.gif) no-repeat 5px center;
+	padding-left: 20px;
 	padding-right:5px;
-	width:450px;
 }
 .right li a:hover {
 	color:#009;
 }
 .right ul {
+	margin-bottom:10px;
+	border: 1px solid #E2E2E2;
+	border-top: none;
+	border-bottom: none;
 	padding-top:10px;
-	padding-bottom:15px;
 }
 .right li{
-	width:530px; 
+	padding-left: 5px;
+	border-bottom: 1px dashed #DDD;
 	line-height:30px; 
 	font-size:12px;
 }
 .left1 li a{
 	color:#555;
-	background: url(../img/tb.jpg) no-repeat 5px center;
+	background: url(../img/list_bg.gif) no-repeat 5px center;
 	padding-left: 25px;
 	width:390px;
 }
@@ -152,7 +156,7 @@ a:hover {
 }
 .right_span{
 	float:left;
-	width: 450px;
+	width: 440px;
 }
 .left_span{
 	float:left;
@@ -163,7 +167,7 @@ a:hover {
 }
 .input_ser{
 	box-shadow: none;
-	width: 350px;
+	width: 370px;
 	height: 29px;
 	border: 1px solid #C5C5C5;
 	border-right: none;

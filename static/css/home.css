@@ -55,12 +55,11 @@ body{
 	margin-top:15px;
 }
 
-#navi{
+#navi {
 	/*height:50px;*/
 	background-image:url(../img/dbj.jpg);
 	background-repeat:repeat-x;
 	font-size:14px;
-	font-weight:nomal;
 }
 
 #navi ul{
@@ -82,43 +81,6 @@ body{
 	display:block;
     text-align: center;
 }
-
-/*#navi ul li ul{
-	display:none;
-	z-index:1000;
-}
-
-#navi ul li ul li{
-	height:30px;
-}
-
-
-
-#navi ul li:hover ul { 
-display: block; 
-position: absolute; 
-}
-
-#navi ul li:hover ul li a{
-	display: block;
-	background-color: #333;
-	color: #FFF !important;
-	font-weight: normal;
-	font-size: 12px !important;
-	line-height: 30px !important;
-	text-decoration: none;
-	overflow: hidden;
-	padding-left: 10px;
-	padding-right: 10px;
-	text-align: center;
-	white-space: nowrap;
-	width: 98px;
-}
-
-#navi ul li:hover ul li a:hover {
-	background-color: #CCCCCC !important;
-	color: #000000 !important;
-}*/
 
 #foot{
 	background-image:url(../img/foot_bg.jpg);
@@ -142,6 +104,7 @@ position: absolute;
 }
 
 .naviout a {
+	font-weight:normal;
 	_width:145px;
 	display: block;
 	color: #666;
