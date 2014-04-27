@@ -49,9 +49,11 @@
         </form> 
 	</div>
 	
-	<div class="right">
+	<div class="right">	
 		<div class="title">
-			<span>新闻快讯</span>
+			<img width="530" height="5" src="<?php echo base_url('static/img/title.jpg'); ?>" />
+			<div class="float_l">&nbsp;&nbsp;&nbsp;&nbsp;新闻快讯</div>
+			<div class="more"><a href="www.baidu.com" title="更多">更多 &gt;</a></div>
 		</div>
 		<ul>
 			<li><span class="right_span"><a href="www.baidu.com" title="爆炸科学与技术国家重点实验室2014工作会议">爆炸科学与技术国家重点实验室2014工作会议</a></span>
@@ -71,10 +73,12 @@
 			</li>
 		</ul>
 		<div class="title">
-			<span>最新通知</span>
+			<img width="530" height="5" src="<?php echo base_url('static/img/title.jpg'); ?>" />
+			<div class="float_l">&nbsp;&nbsp;&nbsp;&nbsp;最新通知</div>
+			<div class="more"><a href="www.baidu.com" title="更多">更多 &gt;</a></div>
 		</div>
 		<ul>
-			<li><span class="right_span"><a href="www.baidu.com" title="第六届全国强动载效应及防护学术会议暨2014复杂介质/结构的动态力学行为创新研究群体学术研讨会第一轮通知">第六届全国强动载效应及防护学术会议暨2014复杂介质/结构的动态力学行为测试看看效果</a></span>
+			<li><span class="right_span"><a href="www.baidu.com" title="第六届全国强动载效应及防护学术会议暨2014复杂介质/结构的动态力学行为创新研究群体学术研讨会第一轮通知">第六届全国强动载效应及防护学术会议暨2014复杂介质/结构的动态力学行...</a></span>
 			<span class="time">2014-03-10</span><div class="clear"></div>
 			</li>
 			<li><span class="right_span"><a href="www.baidu.com" title="2014年度开放基金项目资助通知－新">2014年度开放基金项目资助通知－新</a></span>
@@ -93,27 +97,29 @@
 		</ul>
 		<div class="clear"></div>
 	</div>
-	<!--	<img width="1000" height="210" src="<?php echo base_url('static/img/11.jpg'); ?>" />-->
 	<div class="left1">
-		<div class="title">
-			<span>专家讲坛信息</span>
+		<div class="title1">
+			<div class="float_l"><img width="5" height="14" src="<?php echo base_url('static/img/shu.png'); ?>" />
+			&nbsp;&nbsp;专家讲坛信息</div>
+			<div class="more"><a href="www.baidu.com" title="更多">更多 &gt;</a></div>
 		</div>
+		<div class="img_1"><img width="323" height="200" src="<?php echo base_url('static/img/zj.jpg'); ?>" /></div>
 		<ul>
-			<li><span  class="left_span"><a href="www.baidu.com" title="国际著名爆轰专家到我校国家重点实验室进行学术交流 ">国际著名爆轰专家到我校国家重点实验室进行学术交流 </a></span>
-			<span class="time">2014-03-10</span>
+			<li><span  class="left_span"><a href="www.baidu.com" title="国际著名爆轰专家到我校国家重点实验室进行学术交流 ">国际著名爆轰专家到我校国家重点实 </a></span>
+			<span class="time1">03-10</span>
 			</li>
-			<li><span class="left_span"><a href="www.baidu.com" title="爆炸科学与技术国家重点实验室邀请英国、俄罗斯、波兰、以色列国际著名学者交流访问">爆炸科学与技术国家重点实验室邀请英国、俄罗斯、波兰、以色...</a></span>
-			<span class="time">2014-03-10</span>
+			<li><span class="left_span"><a href="www.baidu.com" title="爆炸科学与技术国家重点实验室邀请英国、俄罗斯、波兰、以色列国际著名学者交流访问">爆炸科学与技术国家重点实验室邀请英国...</a></span>
+			<span class="time1">03-10</span>
 			</li>
-			<li><span class="left_span"><a href="www.baidu.com" title="国家重点实验室邀请郭林教授为师生做学术报告">国家重点实验室邀请郭林教授为师生做学术报告</a></span>
-			<span class="time">2014-03-10</span>
+			<li><span class="left_span"><a href="www.baidu.com" title="国家重点实验室邀请郭林教授为师生做学术报告">国家重点实验室邀请郭林教授为</a></span>
+			<span class="time1">03-10</span>
 			</li>
-			<li><span class="left_span"><a href="www.baidu.com" title="青少年科技后备人才早期培养计划（第13期）师生见面会">青少年科技后备人才早期培养计划（第13期）师生见面会</a></span>
-			<span class="time">2014-03-10</span>
+			<li><span class="left_span"><a href="www.baidu.com" title="青少年科技后备人才早期培养计划（第13期）师生见面会">青少年科技后备人才早期培养计划（第13期）</a></span>
+			<span class="time1">03-10</span>
 			</li>
 			<li><span class="left_span"><a href="www.baidu.com" title="2013 International Workshop on Intensive Loading and Its Effects & Innovation Research Group Symposium on Dynamic Mechanical Behavior of Complex Media/ Structure">
-			2013 International Workshop on Intensive Loading and Its...</a></span>
-			<span class="time">2014-03-10</span>
+			2013 International Workshop on Intensive...</a></span>
+			<span class="time1">03-10</span>
 			</li>
 			<div class="clear"></div>
 		</ul>
@@ -121,25 +127,49 @@
 	</div>
 
 	<div class="left1" id="right1">
-		<div class="title">
-			<span class="right1">学术会议信息</span>
+		<div class="title1">
+			<div class="float_l"><img width="5" height="14" src="<?php echo base_url('static/img/shu.png'); ?>" />
+			&nbsp;&nbsp;学术会议信息</div>
+			<div class="more"><a href="www.baidu.com" title="更多">更多 &gt;</a></div>
 		</div>
+		<div class="img_1"><img width="323" height="200" src="<?php echo base_url('static/img/hy.jpg'); ?>" /></div>
 		<ul>
-			<li><span class="left_span"><a href="www.baidu.com" title="国际著名爆轰专家到我校国家重点实验室进行学术交流 ">国际著名爆轰专家到我校国家重点实验室进行学术交流 </a></span>
-			<span class="time">2014-03-10</span>
+			<li><span class="left_span"><a href="www.baidu.com" title="国际著名爆轰专家到我校国家重点实验室进行学术交流 ">国际著名爆轰专家到我校国家重点实验室 </a></span>
+			<span class="time1">03-10</span>
 			</li>
-			<li><span class="left_span"><a href="www.baidu.com" title="爆炸科学与技术国家重点实验室邀请英国、俄罗斯、波兰、以色列国际著名学者交流访问">爆炸科学与技术国家重点实验室邀请英国、俄罗斯、波兰、以色...</a></span>
-			<span class="time">2014-03-10</span>
+			<li><span class="left_span"><a href="www.baidu.com" title="爆炸科学与技术国家重点实验室邀请英国、俄罗斯、波兰、以色列国际著名学者交流访问">爆炸科学与技术国家重点实验室邀请英国...</a></span>
+			<span class="time1">03-10</span>
 			</li>
-			<li><span class="left_span"><a href="www.baidu.com" title="国家重点实验室邀请郭林教授为师生做学术报告">国家重点实验室邀请郭林教授为师生做学术报告</a></span>
-			<span class="time">2014-03-10</span>
+			<li><span class="left_span"><a href="www.baidu.com" title="国家重点实验室邀请郭林教授为师生做学术报告">国家重点实验室邀请郭林教授为师</a></span>
+			<span class="time1">03-10</span>
 			</li>
-			<li><span class="left_span"><a href="www.baidu.com" title="青少年科技后备人才早期培养计划（第13期）师生见面会">青少年科技后备人才早期培养计划（第13期）师生见面会</a></span>
-			<span class="time">2014-03-10</span>
+			<li><span class="left_span"><a href="www.baidu.com" title="青少年科技后备人才早期培养计划（第13期）师生见面会">青少年科技后备人才早期培养计划（第13期）</a></span>
+			<span class="time1">03-10</span>
 			</li>
 			<li><span class="left_span"><a href="www.baidu.com" title="2013 International Workshop on Intensive Loading and Its Effects & Innovation Research Group Symposium on Dynamic Mechanical Behavior of Complex Media/ Structure">
-			2013 International Workshop on Intensive Loading and Its...</a></span>
-			<span class="time">2014-03-10</span>
+			2013 International Workshop on...</a></span>
+			<span class="time1">03-10</span>
+			</li>
+			<div class="clear"></div>
+		</ul>
+	</div>
+	
+		<div class="left" id="right1">
+		<div class="title1" style="width:218px;">
+			<img width="5" height="14" src="<?php echo base_url('static/img/shu.png'); ?>" />
+			<span>&nbsp;&nbsp;友情链接</span>
+		</div>
+		<div class="img_1"><img width="212" height="200" src="<?php echo base_url('static/img/lj.jpg'); ?>" /></div>
+		<ul>
+			<li><span><a href="www.baidu.com" title="中华人民共和国科学技术部">中华人民共和国科学技术部 </a></span>
+			</li>
+			<li><span><a href="www.baidu.com" title="北京理工大学机电学院">北京理工大学机电学院</a></span>
+			</li>
+			<li><span><a href="www.baidu.com" title="中华人民共和国教育部">中华人民共和国教育部</a></span>
+			</li>
+			<li><span><a href="www.baidu.com" title="中华人民共和国工业和信息化部">中华人民共和国工业和信息化部</a></span>
+			</li>
+			<li><span><a href="www.baidu.com" title="南京航空航天大学">南京航空航天大学</a></span>
 			</li>
 			<div class="clear"></div>
 		</ul>
