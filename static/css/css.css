@@ -29,13 +29,13 @@ a:hover {
 .title {
     padding-left:15px;
     display: block;
-    height: 37px;
-    line-height: 37px;
+    height: 33px;
+    line-height: 33px;
     word-wrap: break-word;
     color: #FFF;
 	background:rgb(0, 92, 170);
 	font-weight:bold;
-	font-size:14px;
+	font-size:12px;
 }
 .right li a{
 	color:#666;
@@ -44,7 +44,8 @@ a:hover {
 	padding-right:5px;
 }
 .right li a:hover {
-	color:#009;
+	color: #BB0022;
+	font-weight:bold;
 }
 .right ul {
 	margin-bottom:15px;
@@ -84,7 +85,7 @@ a:hover {
 	padding-left:40px;
 }
 .time{ 
-	width:70px; 
+	width:75px; 
 	float:right; 
 	display:block; 
 	height:30px;
@@ -97,7 +98,7 @@ a:hover {
 	position:relative;
 }
 .focus #pic{
-	width:994px;
+	width:1000px;
 	height:300px;
 	overflow:hidden;
 }
@@ -107,21 +108,21 @@ a:hover {
 	float:left;
 }
 .focus #pic li{
-	width:994px;
+	width:1000px;
 	height:300px;
 	float:left;
 }
 .focus #pic li img{
-	width:994px;
+	width:1000px;
 	height:300px;
 	float:left;
 }
 .focus #pic li p{
-	width:994px;
+	width:1000px;
 	height:35px;
 }
 .tip-bg{
-	width:994px;
+	width:1000px;
 	height:21px;
 	left:0;
 	margin-top: 10px;
@@ -155,8 +156,13 @@ a:hover {
 	margin-top:350px;
 }
 .right_span{
+	display:block;
+	text-overflow:ellipsis;
 	float:left;
 	width: 440px;
+}
+.right_span a{
+	white-space:nowrap;
 }
 .left_span{
 	float:left;
