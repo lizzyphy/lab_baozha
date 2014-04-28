@@ -11,11 +11,13 @@ img {
 a:hover {
 	color:#F00;
 }
+
 #box {
 	margin: 0 auto;
 	width: 1000px;
 	margin-top:5px;
 	padding-bottom:20px;
+	background-color:#fff;
 }
 .left1 {
 	float:left;

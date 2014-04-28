@@ -24,16 +24,21 @@ body{
 	float:left;
 }
 
+#top{
+	width:100%;
+	background-color:#FFF;
+}
+
 #head{
 	width:1000px;
-	margin-top:5px;
+	margin-top:5px;	
 }
 
 #head_l{
 	width:102px;
 	height:105px;
-	background-repeat:no-repeat;
-	background-image:url(../img/top_a01.jpg);
+	/*background-repeat:no-repeat;
+	background-image:url(../img/top_a01.jpg);*/
 	float:left;
 }
 
@@ -83,8 +88,7 @@ body{
 }
 
 #foot{
-	background-image:url(../img/foot_bg.jpg);
-	background-repeat:repeat-x;
+	background-color:#006baa;
 	width:100%;
 	height:81px;
 }

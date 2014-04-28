@@ -5,28 +5,32 @@
 <title>爆炸实验室主页</title>
 <link rel="stylesheet" href="<?php echo base_url('static/css/home.css'); ?>"/>
 <link rel=stylesheet type="text/css" href="<?php echo base_url('static/css/css.css'); ?>" />
+<link rel=stylesheet type="text/css" href="<?php echo base_url('static/css/content2.css'); ?>" />
 <script type="text/javascript" src="<?php echo base_url('static/js/pic.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('static/js/jquery-1.8.0.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('static/js/navi.js'); ?>"></script>
 </head>
 
 <body>
-	<div class="middle" id="head">
-        <div id="head_l">
+	<div id="top">
+        <div class="middle" id="head">
+            <div id="head_l">
+                <a href="index.php"><img src="<?php echo base_url('static/img/top_a01.jpg'); ?>" /></a>
+            </div>
+            <div id="head_r">
+                <table class="head_tab">
+                    <tr>
+                        <td><a href="index.php">OA系统</a>&nbsp;&nbsp;&nbsp;|</td>
+                        <td><a href="index.php">开放基金</a>&nbsp;&nbsp;&nbsp;|</td>
+                        <td><a href="index.php">学术交流</a>&nbsp;&nbsp;&nbsp;|</td>
+                        <td><a href="index.php">资源共享</a>&nbsp;&nbsp;&nbsp;|</td>
+                        <td><a href="index.php">管理制度</a>&nbsp;&nbsp;&nbsp;|</td>
+                        <td><a href="index.php">ENGLISH</a></td> 
+                    </tr>
+                 </table>
+            </div>
+            <div class="clear"></div>
         </div>
-        <div id="head_r">
-        	<table class="head_tab">
-            	<tr>
-                	<td><a href="index.php">OA系统</a>&nbsp;&nbsp;&nbsp;|</td>
-                    <td><a href="index.php">开放基金</a>&nbsp;&nbsp;&nbsp;|</td>
-                    <td><a href="index.php">学术交流</a>&nbsp;&nbsp;&nbsp;|</td>
-                    <td><a href="index.php">资源共享</a>&nbsp;&nbsp;&nbsp;|</td>
-                    <td><a href="index.php">管理制度</a>&nbsp;&nbsp;&nbsp;|</td>
-                    <td><a href="index.php">ENGLISH</a></td> 
-                </tr>
-             </table>
-        </div>
-        <div class="clear"></div>
     </div>
 	<div class="middle" id="navi">
     	<ul class="middle">
@@ -97,18 +101,6 @@
                     <a href="index.php">火工分析中心</a>
                 </div>
             </li>
-            <li><a href="index.php">办公联系</a>
-            	<div class="naviout" style="display:none;">
-                	<a href="index.php">重点实验室主任</a>
-                    <a href="index.php">重点实验室办公室</a>
-                    <a href="index.php">实验中心</a>
-                    <a href="index.php">爆炸力学与工程部</a>
-                    <a href="index.php">含能材料理论与应用部</a>
-                    <a href="index.php">爆炸安全理论与评估技术部</a>
-                    <a href="index.php">防护理论与工程部</a>
-                    <a href="index.php">毁伤理论及应用部</a>
-                </div>
-            </li>
             <li><a href="index.php">相关下载</a>
             	<div class="naviout" style="display:none;">
                 	<a href="index.php">管理表格</a>
@@ -118,7 +110,8 @@
                     <a href="index.php">学科建设表格</a>
                 </div>
             </li>
-            <li class="f_left"><a href="index.php">科技服务</a></li>
+            <li><a href="index.php">联系我们</a></li>
+            <li><a href="index.php">运行管理</a></li>
          </ul>
          <div class="clear"></div>
      </div>
