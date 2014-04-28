@@ -9,6 +9,13 @@ class Index extends  CI_Controller {
 	function index()
 	{
 		$this->load->view('homeheader');
+		$this->load->view('homecontent');
+		$this->load->view('homefoot');
+	}
+	
+	public function second()
+	{
+		$this->load->view('homeheader');
 		$this->load->view('content2_left');
 		$this->load->view('homefoot');
 	}
