@@ -118,17 +118,17 @@
 			<li><span  class="left_span"><a href="www.baidu.com" title="国际著名爆轰专家到我校国家重点实验室进行学术交流 ">国际著名爆轰专家到我校国家重点实 </a></span>
 			<span class="time1">03-10</span>
 			</li>
-			<li><span class="left_span"><a href="www.baidu.com" title="爆炸科学与技术国家重点实验室邀请英国、俄罗斯、波兰、以色列国际著名学者交流访问">爆炸科学与技术国家重点实验室邀请英国...</a></span>
+			<li><span class="left_span"><a href="www.baidu.com" title="爆炸科学与技术国家重点实验室邀请英国、俄罗斯、波兰、以色列国际著名学者交流访问">爆炸科学与技术国家重点实验室邀请...</a></span>
 			<span class="time1">03-10</span>
 			</li>
 			<li><span class="left_span"><a href="www.baidu.com" title="国家重点实验室邀请郭林教授为师生做学术报告">国家重点实验室邀请郭林教授为</a></span>
 			<span class="time1">03-10</span>
 			</li>
-			<li><span class="left_span"><a href="www.baidu.com" title="青少年科技后备人才早期培养计划（第13期）师生见面会">青少年科技后备人才早期培养计划（第13期）</a></span>
+			<li><span class="left_span"><a href="www.baidu.com" title="青少年科技后备人才早期培养计划（第13期）师生见面会">青少年科技后备人才早期培养计划...</a></span>
 			<span class="time1">03-10</span>
 			</li>
 			<li><span class="left_span"><a href="www.baidu.com" title="2013 International Workshop on Intensive Loading and Its Effects & Innovation Research Group Symposium on Dynamic Mechanical Behavior of Complex Media/ Structure">
-			2013 International Workshop on Intensive...</a></span>
+			2013 International Workshop on...</a></span>
 			<span class="time1">03-10</span>
 			</li>
 			<div class="clear"></div>
@@ -147,13 +147,13 @@
 			<li><span class="left_span"><a href="www.baidu.com" title="国际著名爆轰专家到我校国家重点实验室进行学术交流 ">国际著名爆轰专家到我校国家重点实验室 </a></span>
 			<span class="time1">03-10</span>
 			</li>
-			<li><span class="left_span"><a href="www.baidu.com" title="爆炸科学与技术国家重点实验室邀请英国、俄罗斯、波兰、以色列国际著名学者交流访问">爆炸科学与技术国家重点实验室邀请英国...</a></span>
+			<li><span class="left_span"><a href="www.baidu.com" title="爆炸科学与技术国家重点实验室邀请英国、俄罗斯、波兰、以色列国际著名学者交流访问">爆炸科学与技术国家重点实验室邀请...</a></span>
 			<span class="time1">03-10</span>
 			</li>
 			<li><span class="left_span"><a href="www.baidu.com" title="国家重点实验室邀请郭林教授为师生做学术报告">国家重点实验室邀请郭林教授为师</a></span>
 			<span class="time1">03-10</span>
 			</li>
-			<li><span class="left_span"><a href="www.baidu.com" title="青少年科技后备人才早期培养计划（第13期）师生见面会">青少年科技后备人才早期培养计划（第13期）</a></span>
+			<li><span class="left_span"><a href="www.baidu.com" title="青少年科技后备人才早期培养计划（第13期）师生见面会">青少年科技后备人才早期培养计划...</a></span>
 			<span class="time1">03-10</span>
 			</li>
 			<li><span class="left_span"><a href="www.baidu.com" title="2013 International Workshop on Intensive Loading and Its Effects & Innovation Research Group Symposium on Dynamic Mechanical Behavior of Complex Media/ Structure">
@@ -165,7 +165,7 @@
 	</div>
 	
 		<div class="left" id="right1">
-		<div class="title1" style="width:218px;">
+		<div class="title1" style="width:213px;">
 			<img width="5" height="14" src="<?php echo base_url('static/img/shu.png'); ?>" />
 			<span>&nbsp;&nbsp;友情链接</span>
 		</div>

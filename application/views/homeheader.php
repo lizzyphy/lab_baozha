@@ -50,8 +50,12 @@
                         <a href="index.php">实验仿真中心</a>
                         <a href="index.php">实验室分部</a>
                         <a href="index.php">室务委员会</a>
-                        <a href="index.php">实验室大事记</a>
                         <a href="index.php">学术委员会</a>
+                        <a href="index.php">期刊编辑部</a>
+                        <a href="index.php">安全培训中心</a>
+                        <a href="index.php">烟花质量监督检验站</a>
+                        <a href="index.php">北阳爆破</a>
+                        <a href="index.php">火工分析中心</a>
                 </div>
             </li>
             <li><a href="index.php">研究方向</a>
@@ -92,13 +96,10 @@
                     <a href="index.php">硕士点</a>
                 </div>
             </li>
-            <li><a href="index.php">挂靠机构</a>
+            <li><a href="index.php">合作交流</a>
             	<div class="naviout" style="display:none;">
-                	<a href="index.php">期刊编辑部</a>
-                    <a href="index.php">安全培训中心</a>
-                    <a href="index.php">烟花质量监督检验站</a>
-                    <a href="index.php">北阳爆破</a>
-                    <a href="index.php">火工分析中心</a>
+                	<a href="index.php">国内合作交流</a>
+                    <a href="index.php">国外合作交流</a>
                 </div>
             </li>
             <li><a href="index.php">相关下载</a>
@@ -110,7 +111,16 @@
                     <a href="index.php">学科建设表格</a>
                 </div>
             </li>
-            <li><a href="index.php">联系我们</a></li>
+            <li><a href="index.php">联系我们</a>
+            	<div class="naviout" style="display:none;">
+                	<a href="index.php">重点实验室主任</a>
+                    <a href="index.php">重点实验室办公室</a>
+                    <a href="index.php">实验中心</a>
+                    <a href="index.php">爆炸力学与工程部</a>
+                    <a href="index.php">含能材料理论与应用部</a>
+                    <a href="index.php">爆炸安全理论与评估技术部</a>
+                </div>
+            </li>
             <li><a href="index.php">运行管理</a></li>
          </ul>
          <div class="clear"></div>

@@ -40,7 +40,7 @@ a:hover {
 	background-color: #f7f8fa;
 	font-family: "microsoft yahei";
 	font-weight:bold;
-	font-size:15px;
+	font-size:16px;
 	color: #064481;
 	border: 1px solid rgb(221, 221, 221);
 	border-radius: 7px;
@@ -63,13 +63,12 @@ a:hover {
 .right li{
 	padding-left: 5px;
 	line-height:30px; 
-	font-size:12px;
+	font-size:14px;
 }
 .left {
 	float:left;
 	background: #fff;
 	width: 230px;
-	_width:200px;
 	border: 1px solid rgb(221, 221, 221);
 	padding: 10px 10px 10px 10px;
 	border-radius: 7px;
@@ -80,6 +79,7 @@ a:hover {
 	color:#555;
 	background: url(../img/list_bg.gif) no-repeat 5px center;
 	padding-left: 25px;
+	_padding-left: 15px;
 	width:200px;
 }
 .left li a:hover {
@@ -91,9 +91,8 @@ a:hover {
 }
 .left li{
 	width:230px;
-	_width:200px;
 	line-height:30px; 
-	font-size:12px;
+	font-size:14px;
 }
 .left1 {
 	float:left;
@@ -120,7 +119,7 @@ a:hover {
 .left1 li{
 	width:340px; 
 	line-height:30px; 
-	font-size:12px;
+	font-size:14px;
 }
 #right1{
 	margin-left:10px;
@@ -243,7 +242,7 @@ a:hover {
 	color: #FFF;
 }
 table {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	margin-top: 15px;
 	_margin-bottom: 25px;
 	_margin-top: 33px;
@@ -254,7 +253,7 @@ table {
 }
 .more a{
 	font-family: Arial,"宋体",Helvetica,sans-serif,Verdana;
-	font-size: 12px;
+	font-size: 14px;
 	float:right;
 	width:50px;
 	color:#0055a5;
