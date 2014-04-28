@@ -169,7 +169,7 @@
 			<img width="5" height="14" src="<?php echo base_url('static/img/shu.png'); ?>" />
 			<span>&nbsp;&nbsp;友情链接</span>
 		</div>
-		<div class="img_1"><img width="220" height="200" src="<?php echo base_url('static/img/lj.jpg'); ?>" /></div>
+		<div class="img_1"><img width="218" height="200" src="<?php echo base_url('static/img/lj.jpg'); ?>" /></div>
 		<ul>
 			<li><span><a href="www.baidu.com" title="中华人民共和国科学技术部">中华人民共和国科学技术部 </a></span>
 			</li>
