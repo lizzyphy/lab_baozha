@@ -113,7 +113,7 @@
 			&nbsp;&nbsp;专家讲坛信息</div>
 			<div class="more"><a href="www.baidu.com" title="更多">更多 &gt;</a></div>
 		</div>
-		<div class="img_1"><img width="323" height="200" src="<?php echo base_url('static/img/zj.jpg'); ?>" /></div>
+		<div class="img_1"><img width="330" height="200" src="<?php echo base_url('static/img/zj.jpg'); ?>" /></div>
 		<ul>
 			<li><span  class="left_span"><a href="www.baidu.com" title="国际著名爆轰专家到我校国家重点实验室进行学术交流 ">国际著名爆轰专家到我校国家重点实 </a></span>
 			<span class="time1">03-10</span>
@@ -142,7 +142,7 @@
 			&nbsp;&nbsp;学术会议信息</div>
 			<div class="more"><a href="www.baidu.com" title="更多">更多 &gt;</a></div>
 		</div>
-		<div class="img_1"><img width="323" height="200" src="<?php echo base_url('static/img/hy.jpg'); ?>" /></div>
+		<div class="img_1"><img width="330" height="200" src="<?php echo base_url('static/img/hy.jpg'); ?>" /></div>
 		<ul>
 			<li><span class="left_span"><a href="www.baidu.com" title="国际著名爆轰专家到我校国家重点实验室进行学术交流 ">国际著名爆轰专家到我校国家重点实验室 </a></span>
 			<span class="time1">03-10</span>
@@ -169,7 +169,7 @@
 			<img width="5" height="14" src="<?php echo base_url('static/img/shu.png'); ?>" />
 			<span>&nbsp;&nbsp;友情链接</span>
 		</div>
-		<div class="img_1"><img width="212" height="200" src="<?php echo base_url('static/img/lj.jpg'); ?>" /></div>
+		<div class="img_1"><img width="220" height="200" src="<?php echo base_url('static/img/lj.jpg'); ?>" /></div>
 		<ul>
 			<li><span><a href="www.baidu.com" title="中华人民共和国科学技术部">中华人民共和国科学技术部 </a></span>
 			</li>
