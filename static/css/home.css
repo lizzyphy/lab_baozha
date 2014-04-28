@@ -86,6 +86,7 @@ body{
 	text-decoration: none;
 	display:block;
     text-align: center;
+/*	font-family:"microsoft yahei";*/
 }
 
 #foot{
@@ -104,24 +105,27 @@ body{
 .naviout {
 	position:absolute;
     z-index:1000;
-	background:#F0F0F0;
+	background:#FFF;
     display:none;
+	border: 1px solid #E5E5E5;
+	border-bottom: none;
 }
 
 .naviout a {
-	font-weight:normal;
+/*	font-weight:normal;*/
 	_width:145px;
 	display: block;
-	color: #666;
+	color: #064481;
 	font-size: 12px;
 	line-height: 30px;
 	text-decoration: none;
 	text-align: left !important;
 	padding:0 20px;
+	border-bottom:1px solid #E5E5E5;
 }
 
 .naviout a:hover{
-	background: #CCC;
+	background: #B8D3F1;
 }
 
 .navi_hover {
@@ -129,6 +133,6 @@ body{
 	background-repeat:repeat-x;
 }
 .navi_hover a {
-	color: #555!important;
+	color: #064481!important;
 }
 	

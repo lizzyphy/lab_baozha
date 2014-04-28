@@ -51,11 +51,7 @@
                         <a href="index.php">实验室分部</a>
                         <a href="index.php">室务委员会</a>
                         <a href="index.php">学术委员会</a>
-                        <a href="index.php">期刊编辑部</a>
-                        <a href="index.php">安全培训中心</a>
-                        <a href="index.php">烟花质量监督检验站</a>
-                        <a href="index.php">北阳爆破</a>
-                        <a href="index.php">火工分析中心</a>
+                        <a href="index.php">挂靠机构</a>
                 </div>
             </li>
             <li><a href="index.php">研究方向</a>
