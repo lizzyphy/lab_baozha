@@ -34,17 +34,18 @@
     </div>
 	<div class="middle" id="navi">
     	<ul class="middle">
+        	<li><a href="index.php">首页</a></li>
         	<li><a href="index.php">实验室概况</a>
             	<div class="naviout" style="display:none;">
                     <a href="index.php">实验室简介</a>
                     <a href="index.php">发展历程</a>
-                    <a href="index.php">实验室概况</a>
-                    <a href="index.php">现任领导</a>
+                    <a href="index.php">领导班子</a>
+                    <a href="index.php">组织机构</a>
                     <a href="index.php">实验室大事记</a>
                     <a href="index.php">图片展示</a>
                 </div>
             </li>
-            <li><a href="index.php">机构设置</a>
+            <!--<li><a href="index.php">机构设置</a>
                 <div class="naviout" style="display:none;">
                         <a href="index.php">办公室</a>
                         <a href="index.php">实验仿真中心</a>
@@ -53,7 +54,7 @@
                         <a href="index.php">学术委员会</a>
                         <a href="index.php">挂靠机构</a>
                 </div>
-            </li>
+            </li>-->
             <li><a href="index.php">研究方向</a>
             	<div class="naviout" style="display:none;">
                 	<a href="index.php">含能材料理论与应用技术</a>
@@ -80,16 +81,16 @@
             <li><a href="index.php">科研成果</a>
             	<div class="naviout" style="display:none;">
                 	<a href="index.php">科研项目</a>
-                    <a href="index.php">获奖</a>
+                    <a href="index.php">获奖情况</a>
                     <a href="index.php">申请发明专利</a>
                     <a href="index.php">发表学术论文</a>
                 </div>
             </li>
             <li><a href="index.php">学科建设</a>
             	<div class="naviout" style="display:none;">
-                	<a href="index.php">博士后流动站</a>
-                    <a href="index.php">博士点</a>
                     <a href="index.php">硕士点</a>
+                    <a href="index.php">博士点</a>
+                	<a href="index.php">博士后流动站</a>
                 </div>
             </li>
             <li><a href="index.php">合作交流</a>
@@ -98,11 +99,11 @@
                     <a href="index.php">国外合作交流</a>
                 </div>
             </li>
+            <li><a href="index.php">运行管理</a></li>
             <li><a href="index.php">相关下载</a>
             	<div class="naviout" style="display:none;">
                 	<a href="index.php">管理表格</a>
                     <a href="index.php">年报相关表格</a>
-                    <a href="index.php">自主课题表格</a>
                     <a href="index.php">自主课题指南</a>
                     <a href="index.php">学科建设表格</a>
                 </div>
@@ -117,7 +118,6 @@
                     <a href="index.php">爆炸安全理论与评估技术部</a>
                 </div>
             </li>
-            <li><a href="index.php">运行管理</a></li>
          </ul>
          <div class="clear"></div>
      </div>
