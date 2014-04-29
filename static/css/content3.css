@@ -6,17 +6,16 @@
 	color:#215bbb;
 	font-weight:bold;
     text-align: center;
-    border-bottom:1px dashed #CCCCCC;
-	margin:0px 10px 0px 10px;
 	padding-top: 20px;
 	height:65px;
 }
 .right_content {
-	padding: 10px 30px 30px 30px;
+	padding: 10px 40px 30px 40px;
 	font-size: 12px;
 }
-.time {
-	width: 150px;
+.content3_time {
+	width: 195px;
+	color: #666;
 	font-size: 12px;
 	float: right;
 	padding-top: 10px;

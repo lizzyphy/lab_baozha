@@ -17,6 +17,7 @@
     <div class="list_right">
     	<div id="right_head">
         	<p><a href="index.php">首页</a>&nbsp;>&nbsp;<a href="index.php">实验室概况</a>&nbsp;>&nbsp;<a href="index.php">实验室简介</a></p>
+        	<img width="700" height="5" src="<?php echo base_url('static/img/title_23.jpg'); ?>" />
         </div>
         <div id="right_title">
         	<p>实验室简介</p>

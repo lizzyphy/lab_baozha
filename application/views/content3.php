@@ -1,5 +1,8 @@
 
 <div class="middle" id="content2_left">
+	<div id="content2_head">
+    	<img width="1000" height="200" src="<?php echo base_url('static/img/2ji_head.jpg'); ?>" />
+    </div>
 	<div class="list_left">
         <div id="left_content">
             <ul>
@@ -19,7 +22,7 @@
         </div>
         <div class="right_title">
         	<p>国际著名爆轰专家到我校国家重点实验室进行学术交流</p>
-        <div class="time">2014-4-5 10:00:00</div>  </div>
+        <div class="content3_time">2014-4-5 10:00:00</div>  </div>
         <div class="clear"></div>
         <div class="right_content">
 2014年4月3日-4日，应安全与防护协同创新中心和爆炸科学与技术国家重点实验室的邀请，
