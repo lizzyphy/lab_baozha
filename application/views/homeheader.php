@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="<?php echo base_url('static/css/home.css'); ?>"/>
 <link rel=stylesheet type="text/css" href="<?php echo base_url('static/css/css.css'); ?>" />
 <link rel=stylesheet type="text/css" href="<?php echo base_url('static/css/content2.css'); ?>" />
+<link rel=stylesheet type="text/css" href="<?php echo base_url('static/css/content3.css'); ?>" />
 <script type="text/javascript" src="<?php echo base_url('static/js/pic.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('static/js/jquery-1.8.0.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('static/js/navi.js'); ?>"></script>
