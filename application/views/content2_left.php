@@ -1,4 +1,7 @@
 <div class="middle" id="content2_left">
+	<div id="content2_head">
+    	<img width="1000" height="200" src="<?php echo base_url('static/img/2ji_head.jpg'); ?>" />
+    </div>
 	<div class="list_left">
         <div id="left_content">
             <ul>
@@ -25,6 +28,14 @@
                 <li><a href="index.php">实验室3</a></li>
                 <li><a href="index.php">实验室4</a></li>
                 <li><a href="index.php">实验室5</a></li>
+                <li><a href="index.php">实验室6</a></li>
+                <li><a href="index.php">实验室7</a></li>
+                <li><a href="index.php">实验室8</a></li>
+                <li><a href="index.php">实验室9</a></li>
+                 <li><a href="index.php">实验室6</a></li>
+                <li><a href="index.php">实验室7</a></li>
+                <li><a href="index.php">实验室8</a></li>
+                <li><a href="index.php">实验室9</a></li>
                 <li><a href="index.php">实验室6</a></li>
                 <li><a href="index.php">实验室7</a></li>
                 <li><a href="index.php">实验室8</a></li>
