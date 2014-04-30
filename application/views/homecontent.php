@@ -172,7 +172,6 @@
                 <img width="5" height="14" src="<?php echo base_url('static/img/shu.png'); ?>" />
                 <span>&nbsp;&nbsp;友情链接</span>
             </div>
-            <div class="img_1"><img width="218" height="200" src="<?php echo base_url('static/img/lj.jpg'); ?>" /></div>
             <ul>
                 <li><span><a href="www.baidu.com" title="中华人民共和国科学技术部">中华人民共和国科学技术部 </a></span>
                 </li>
@@ -181,6 +180,20 @@
                 <li><span><a href="www.baidu.com" title="中华人民共和国教育部">中华人民共和国教育部</a></span>
                 </li>
                 <li><span><a href="www.baidu.com" title="中华人民共和国工业和信息化部">中华人民共和国工业和信息化部</a></span>
+                </li>
+                <li><span><a href="www.baidu.com" title="南京航空航天大学">南京航空航天大学</a></span>
+                </li>
+                <li><span><a href="www.baidu.com" title="中华人民共和国科学技术部">中华人民共和国科学技术部 </a></span>
+                </li>
+                <li><span><a href="www.baidu.com" title="北京理工大学机电学院">北京理工大学机电学院</a></span>
+                </li>
+                <li><span><a href="www.baidu.com" title="中华人民共和国教育部">中华人民共和国教育部</a></span>
+                </li>
+                <li><span><a href="www.baidu.com" title="中华人民共和国工业和信息化部">中华人民共和国工业和信息化部</a></span>
+                </li>
+                <li><span><a href="www.baidu.com" title="南京航空航天大学">南京航空航天大学</a></span>
+                </li>
+                <li><span><a href="www.baidu.com" title="南京航空航天大学">南京航空航天大学</a></span>
                 </li>
                 <li><span><a href="www.baidu.com" title="南京航空航天大学">南京航空航天大学</a></span>
                 </li>

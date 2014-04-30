@@ -3,13 +3,11 @@
 	margin:0;
 	padding:0;
 }
-
 body{
 	background: none repeat scroll 0 0 #FFFFFF;
-    color: #5A5A5A;
+    color: #555;
     font: 12px/140% Arial,"宋体",Helvetica,sans-serif,Verdana;
 }
-
 .middle{
 	margin:0 auto;
 }
@@ -19,21 +17,17 @@ body{
 	height:0px;
 	overflow:hidden;
 }
-
 .f_left{
 	float:left;
 }
-
 #top{
 	width:100%;
 	background-color:#FFF;
 }
-
 #head{
 	width:1000px;
 	margin-top:5px;	
 }
-
 #head_l{
 	width:102px;
 	height:105px;
@@ -41,7 +35,6 @@ body{
 	background-image:url(../img/top_a01.jpg);*/
 	float:left;
 }
-
 #head_r{
 	width:898px;
 	height:105px;
@@ -50,7 +43,6 @@ body{
 	background-position:5px -7px;
 	float:left;
 }
-
 .head_tab{
 	width: 420px;
 	cellpadding: 0;
@@ -59,7 +51,6 @@ body{
 	float:right;
 	margin-top:15px;
 }
-
 #navi {
 	/*height:50px;*/
 	background-image:url(../img/dbj.jpg);
@@ -67,11 +58,9 @@ body{
 	font-size:14px;
 	font-weight:bold;
 }
-
 #navi ul{
 	width:1000px;
 }
-
 #navi li{
 	color:#FFF;
 	width:10%;
@@ -80,7 +69,6 @@ body{
 	padding:0;
 	float:left;
 }
-
 #navi a {
 	color:#FFF;
 	text-decoration: none;
@@ -88,20 +76,17 @@ body{
     text-align: center;
 /*	font-family:"microsoft yahei";*/
 }
-
 #foot{
 	background-color:#006baa;
 	width:100%;
 	height:81px;
 }
-
 .foot1{
 	padding-top:15px;
 	text-align:center;
 	color:#FFF;
 	font-size:12px;
 }
-
 .naviout {
 	position:absolute;
     z-index:1000;
@@ -110,7 +95,6 @@ body{
 	border: 1px solid #E5E5E5;
 	border-bottom: none;
 }
-
 .naviout a {
 /*	font-weight:normal;*/
 	_width:145px;
@@ -123,11 +107,9 @@ body{
 	padding:0 20px;
 	border-bottom:1px solid #E5E5E5;
 }
-
 .naviout a:hover{
 	background: #B8D3F1;
 }
-
 .navi_hover {
 	background-image:url(../img/dhover.jpg);
 	background-repeat:repeat-x;

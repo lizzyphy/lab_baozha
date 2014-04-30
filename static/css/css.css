@@ -2,7 +2,7 @@
 ul,li{  list-style:none;}
 
 a {  
-	color:#000000;
+	color:#555;
 	text-decoration: none;
 }
 img {
@@ -47,7 +47,6 @@ a:hover {
 	padding:10px 0 10px 10px;
 }
 .right li a{
-	color:#666;
 	background: url(../img/list_bg.gif) no-repeat 5px center;
 	padding-left: 20px;
 	padding-right:5px;
@@ -63,7 +62,7 @@ a:hover {
 .right li{
 	padding-left: 5px;
 	line-height:30px; 
-	font-size:12px;
+	font-size:14px;
 }
 .left {
 	float:left;
@@ -76,7 +75,6 @@ a:hover {
 	_padding-bottom: 18px;
 }
 .left li a{
-	color:#555;
 	background: url(../img/list_bg.gif) no-repeat 5px center;
 	padding-left: 25px;
 	_padding-left: 15px;
@@ -92,7 +90,7 @@ a:hover {
 .left li{
 	width:230px;
 	line-height:30px; 
-	font-size:12px;
+	font-size:14px;
 }
 .left1 {
 	float:left;
@@ -104,7 +102,6 @@ a:hover {
 	margin-top:5px;
 }
 .left1 li a{
-	color:#555;
 	background: url(../img/list_bg.gif) no-repeat 5px center;
 	padding-left: 25px;
 	width:300px;
@@ -119,7 +116,7 @@ a:hover {
 .left1 li{
 	width:340px; 
 	line-height:30px; 
-	font-size:12px;
+	font-size:14px;
 }
 #right1{
 	margin-left:10px;
@@ -248,7 +245,7 @@ table {
 	_margin-top: 33px;
 }
 .img_1{
-	margin:10px 0 5px 0;
+	margin:10px 0 1px 0;
 	text-align:center;
 }
 .more a{
