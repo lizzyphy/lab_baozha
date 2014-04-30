@@ -1,0 +1,23 @@
+/* CSS Document */
+
+
+.right_title {
+	font-size:20px;
+	color:#215bbb;
+	font-weight:bold;
+    text-align: center;
+	padding-top: 20px;
+	height:65px;
+}
+.right_content {
+	padding: 10px 40px 30px 40px;
+	font-size: 12px;
+}
+.content3_time {
+	width: 195px;
+	color: #666;
+	font-size: 12px;
+	float: right;
+	padding-top: 10px;
+	font-weight: normal;
+}

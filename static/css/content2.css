@@ -1,10 +1,9 @@
 /* CSS Document */
 #content2_left{
 	width:1000px;
-	height:500px;
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
-	margin-top:5px;
+	font-size:14px;
+	margin-top:3px;
 	margin-bottom:20px;
 	background-color:#ebebeb;
 	/*background-image: url(../img/contentback.gif);
@@ -12,9 +11,15 @@
     background-repeat: no-repeat;*/
 }
 
+#content2_head{
+	width:1000px;
+	padding-bottom:5px;
+	background-color:#FFF;
+}
+
 .list_left{
-	width:200px;
-	height:500px;
+	width:220px;
+	/*height:600px;*/
 	line-height:30px;
 	padding:10px 0px 10px 0px;
 	/*border:1px solid #CCC;
@@ -25,21 +30,11 @@
 	float:left;
 }
 
-#left_head{
-	width:163px;
-	height:38px;
-	padding:20px 2px 2px 20px;
-	font-size:14px;
-	color:#000;
-	font-weight:bold;
-	margin-left:10px;
-	border-bottom:1px solid #c0c0c0;
-}
+
 
 #left_content ul li{
-	width:158px;
-	height:35px;
-	padding-left:20px;
+	height:50px;
+	line-height:50px;
 	margin:2px 10px 0px 10px;
 	border-bottom:1px solid #c0c0c0;
 	text-align:left;
@@ -47,53 +42,66 @@
 }
 
 #left_content a{
+	font-weight:bold;
 	color:#215bbb;
 	display:block;
 }
 
 #left_content a:hover{
-	font-weight:bold;
-	color:#009;
-	
+	background-color:#edf5fc;	
 }
 
 
 .list_right{
-	/*border:1px solid #CCC;
-	border-radius:5px;
-	border-top-left-radius:0px;
-	border-bottom-left-radius:0px;
-	border-left:none;*/
 	background-color:#FFF;
 	width:755px;
-	height:480px;
 	line-height:30px;
 	float:left;
 	-webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.2);
   	box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.2);
-	margin:10px 0px 10px 0px;
+	margin:15px 0px 20px 5px;
+	position:relative
 }
 
 #right_head{
+	line-height:50px;
+	padding-top:10px;
 	margin:10px 10px 0px 10px;
-	border-bottom:1px solid #CCCCCC;
 	padding-left:15px;
-	
+	font-family: "microsoft yahei";
+}
+
+#right_head a{
+	color: #666;
+}
+
+#right_head a:hover{
+	color: #F00;
 }
 
 #right_title{
 	font-size:20px;
 	color:#215bbb;
 	font-weight:bold;
-	padding:15px 0px 5px 25px;
-	border-bottom:1px dashed #CCCCCC;
+	padding:15px 0px 5px 60px;
+	/*border-bottom:1px dashed #CCCCCC;*/
 	margin:0px 10px 0px 10px;
+}
+#right_content{
+	margin:10px 70px 50px 70px;
+	width:595px;
+	border:1px solid #ccc;
+	background-color:rgb(247, 247, 247);
+
 }
 
 #right_content ul li{
 	width:258px;
 	height:30px;
-	padding-left:80px;
+	padding-left:15px;
+	background-image:url(../img/2ji_list.jpg);
+	background-position:left;
+	background-repeat:no-repeat;
 	margin:2px 10px 0px 10px;
 	text-align:left;	
 }
