@@ -1,127 +1,201 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<link rel=stylesheet type="text/css" href="<?php echo base_url('static/css/css.css'); ?>" />
-<script type="text/javascript" src="<?php echo base_url('static/js/pic.js'); ?>"></script>
-</head>
-<body>
-<div id="box">
-	<div class="focus">
-		<div id="pic">
-			<ul>
-				<li><a href=""><img width="410" height="410" src="<?php echo base_url('static/img/1.jpg'); ?>" /></a></li>
-				<li><a href=""><img width="410" height="410" src="<?php echo base_url('static/img/2.jpg'); ?>" /></a></li>
-				<li><a href=""><img width="410" height="410" src="<?php echo base_url('static/img/3.jpg'); ?>" /></a></li>
-				<li><a href=""><img width="410" height="410" src="<?php echo base_url('static/img/4.jpg'); ?>" /></a></li>
-			</ul>
-		</div>
-		<div class="tip-bg"></div>
-		<div id="tip">
-			<ul>
-				<li id="smallimg_1" onclick="change(1)" class="current"></li>
-				<li id="smallimg_2" onclick="change(2)"></li>
-				<li id="smallimg_3" onclick="change(3)"></li>
-				<li id="smallimg_4" onclick="change(4)"></li>
-			</ul>
-		</div>
-		<div class="btn">
-			<ul>
-				<li class="btn-left" id="focus_btn_left" onclick="focus_prev();"></li>
-				<li class="btn-right" id="focus_btn_right" onclick="focus_next();"></li>
-			</ul>
-		</div>
-	</div>
-	<div class="right">
-		<div class="title">
-			<span style="font-family: Microsoft YaHei; font-size: 16px;">新闻快讯</span>
-		</div>
-		<ul>
-			<li><span><a href="www.baidu.com" title="爆炸科学与技术国家重点实验室2014工作会议">爆炸科学与技术国家重点实验室2014工作会议</a></span>
-			<span class="time">2014-3-10</span>
-			</li>
-			<li><span><a href="www.baidu.com" title="科技后备人才早期培养计划师生见面会">科技后备人才早期培养计划师生见面会</a></span>
-			<span class="time">2014-3-10</span>
-			</li>
-			<li><span><a href="www.baidu.com" title="爆炸科学与技术国家重点实验室召开第五届学术委员会第2次会议">爆炸科学与技术国家重点实验室召开第五届学术委员会第2次会议</a></span>
-			<span class="time">2014-3-10</span>
-			</li>
-			<li><span><a href="www.baidu.com" title="青少年科技后备人才早期培养计划（第13期）师生见面会">青少年科技后备人才早期培养计划（第13期）师生见面会</a></span>
-			<span class="time">2014-3-10</span>
-			</li>
-			<li><span><a href="www.baidu.com" title="“爆炸科学与技术国家重点实验室山东研究基地”第一届理事会第三次会议召开">“爆炸科学与技术国家重点实验室山东研究基地”第一届理事会第三次会议召开</a></span>
-			<span class="time">2014-3-10</span>
-			</li>
-		</ul>
-		<div class="title">
-			<span style="font-family: Microsoft YaHei; font-size: 16px;">最新通知</span>
-		</div>
-		<ul>
-			<li><span><a href="www.baidu.com" title="第六届全国强动载效应及防护学术会议暨2014复杂介质/结构的动态力学行为创新研究群体学术研讨会第一轮通知">第六届全国强动载效应及防护学术会议暨2014复杂介质/结构的动态力学行为...</a></span>
-			<span class="time">2014-3-10</span>
-			</li>
-			<li><span><a href="www.baidu.com" title="2014年度开放基金项目资助通知－新">2014年度开放基金项目资助通知－新</a></span>
-			<span class="time">2014-3-10</span>
-			</li>
-			<li><span><a href="www.baidu.com" title="第五届学术委员会第3次会议">第五届学术委员会第3次会议</a></span>
-			<span class="time">2014-3-10</span>
-			</li>
-			<li><span><a href="www.baidu.com" title="青少年科技后备人才早期培养计划（第13期）师生见面会">青少年科技后备人才早期培养计划（第13期）师生见面会</a></span>
-			<span class="time">2014-3-10</span>
-			</li>
-			<li><span><a href="www.baidu.com" title="2013 International Workshop on Intensive Loading and Its Effects & Innovation Research Group Symposium on Dynamic Mechanical Behavior of Complex Media/ Structure">
-			2013 International Workshop on Intensive Loading and Its Effects...</a></span>
-			<span class="time">2014-3-10</span>
-			</li>
-		</ul>
-	</div>
-	<!--	<img width="1000" height="210" src="<?php echo base_url('static/img/11.jpg'); ?>" />-->
-	<div class="left1">
-		<div class="title">
-			<span style="font-family: Microsoft YaHei; font-size: 16px;">专家讲坛信息</span>
-		</div>
-		<ul>
-			<li><span><a href="www.baidu.com" title="国际著名爆轰专家到我校国家重点实验室进行学术交流 ">国际著名爆轰专家到我校国家重点实验室进行学术交流 </a></span>
-			<span class="time">2014-3-10</span>
-			</li>
-			<li><span><a href="www.baidu.com" title="爆炸科学与技术国家重点实验室邀请英国、俄罗斯、波兰、以色列国际著名学者交流访问">爆炸科学与技术国家重点实验室邀请英国、俄罗斯、波兰、以色...</a></span>
-			<span class="time">2014-3-10</span>
-			</li>
-			<li><span><a href="www.baidu.com" title="国家重点实验室邀请郭林教授为师生做学术报告">国家重点实验室邀请郭林教授为师生做学术报告</a></span>
-			<span class="time">2014-3-10</span>
-			</li>
-			<li><span><a href="www.baidu.com" title="青少年科技后备人才早期培养计划（第13期）师生见面会">青少年科技后备人才早期培养计划（第13期）师生见面会</a></span>
-			<span class="time">2014-3-10</span>
-			</li>
-			<li><span><a href="www.baidu.com" title="2013 International Workshop on Intensive Loading and Its Effects & Innovation Research Group Symposium on Dynamic Mechanical Behavior of Complex Media/ Structure">
-			2013 International Workshop on Intensive Loading and Its...</a></span>
-			<span class="time">2014-3-10</span>
-			</li>
-		</ul>
-	</div>
-
-	<div class="left1" id="right1">
-		<div class="title">
-			<span class="right1" style="font-family: Microsoft YaHei; font-size: 16px;">学术会议信息</span>
-		</div>
-		<ul>
-			<li><span><a href="www.baidu.com" title="国际著名爆轰专家到我校国家重点实验室进行学术交流 ">国际著名爆轰专家到我校国家重点实验室进行学术交流 </a></span>
-			<span class="time">2014-3-10</span>
-			</li>
-			<li><span><a href="www.baidu.com" title="爆炸科学与技术国家重点实验室邀请英国、俄罗斯、波兰、以色列国际著名学者交流访问">爆炸科学与技术国家重点实验室邀请英国、俄罗斯、波兰、以色...</a></span>
-			<span class="time">2014-3-10</span>
-			</li>
-			<li><span><a href="www.baidu.com" title="国家重点实验室邀请郭林教授为师生做学术报告">国家重点实验室邀请郭林教授为师生做学术报告</a></span>
-			<span class="time">2014-3-10</span>
-			</li>
-			<li><span><a href="www.baidu.com" title="青少年科技后备人才早期培养计划（第13期）师生见面会">青少年科技后备人才早期培养计划（第13期）师生见面会</a></span>
-			<span class="time">2014-3-10</span>
-			</li>
-			<li><span><a href="www.baidu.com" title="2013 International Workshop on Intensive Loading and Its Effects & Innovation Research Group Symposium on Dynamic Mechanical Behavior of Complex Media/ Structure">
-			2013 International Workshop on Intensive Loading and Its...</a></span>
-			<span class="time">2014-3-10</span>
-			</li>
-		</ul>
-	</div>
+<div id="mainpic_index" class="box">
+    <div id="ad_change">
+        <div id="ad_img"> 
+        	<?php foreach ($ad_img as $row): ?><a href="<?php echo $row['url']; ?>"><img src="<?php echo $row['path']; ?>" width="960" height="190" /></a><?php endforeach; ?>
+        </div>
+        <div class="img_num">
+            <div style="float:right">
+                <p class="img_numcheck">1</p>
+                <?php for($i = 2; $i <= $ad_img_num; ++$i):?>
+                <p><?php echo $i;?></p>
+                
+                <?php endfor; ?>
+            </div>
+        </div>
+    </div>
 </div>
-</body>
-</html>
+<div class="box">
+    <div id="content1">
+        <div id="news">
+            <div class="title_1_index">
+                <p class="f_l">新闻中心</p>
+                <span class="f_r"><a href="<?php echo base_url('article/type?type=2'); ?>" class="more">更多...</a></span>
+                <div class="clear"></div>
+            </div>
+            <div>
+                <table border="0" align="right" cellpadding="0" cellspacing="0">
+                	<?php foreach ($news as $row):?>
+                    <tr>
+                        <td width="300"><p><a href="<?php echo base_url('article/?aid=' . $row['aid']); ?>" title="<?php echo $row['title']; ?>"><?php echo $row['title']; ?></a></p></td>
+                        <td width="45"><?php echo substr($row['add_date'], 5);?></td>
+                    </tr>
+                    <?php endforeach; ?>
+                </table>
+            </div>
+        </div>
+        <div id="lesson_index">
+            <div class="title_1_index">
+                <p class="f_l">公开课程</p>
+                <span class="f_r"><a href="<?php echo base_url('course/type?type=1'); ?>" class="more">更多...</a></span>
+                <div class="clear"> </div>
+            </div>
+            <div class="pad_left">
+                <table class="t_center" width="530" border="0" align="center" cellpadding="0" cellspacing="0">
+                	<?php foreach ($courses1 as $row): ?>
+                    <tr>
+                        <td align="left"><p><a href="<?php echo base_url('course/?cid=' . $row['cid']); ?>"><?php echo $row['name']; ?></a></p></td>
+                        <td width="80"><?php echo $row['time']; ?></td>
+                        <td width="60"><?php echo $row['price']; ?></td>
+                        <td width="40"><a href="<?php echo base_url('apply/?cid=' . $row['cid']); ?>">报名</a></td>
+                    </tr>
+                    <?php endforeach; ?>
+                </table>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="content1_foot1"></div>
+    </div>
+    <div class="content1_foot2"></div>
+    <div id="content2">
+        <div id="content2_left">
+            <div id="img_change">
+                <div> 
+                	<?php foreach ($ad_img2 as $row): ?>
+                	<span><a target="_blank" href="<?php echo $row['url']; ?>"><img src="<?php echo $row['path']; ?>" width="260" height="200" /></a></span>
+                	<?php endforeach; ?>
+                </div>
+                <div class="img_num">
+                    <div style="float:right">
+                        <p class="img_numcheck">1</p>
+                		<?php for($i = 2; $i <= $ad_img2_num; ++$i):?>
+                		<p><?php echo $i;?></p>
+                
+                		<?php endfor; ?>
+                    </div>
+                </div>
+            </div>
+            <div id="contact" class="left_1">
+                <div class="title_2_index">
+                    <p class="f_l">咨询中心</p>
+                    <div class="clear"> </div>
+                </div>
+                <div>
+                    <table class="f_c" width="240" border="0" cellspacing="0">
+                        <tr>
+                            <td width="70"><b>在线咨询：</b></td>
+                            <td width="166"><a href="tencent://message/?uin=1918623812" title="钟老师"><img src="http://wpa.qq.com/pa?p=1:1918623812:4" border="0" />钟老师</a>（1918623812） </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><a href="tencent://message/?uin=22062284" title="李老师"><img src="http://wpa.qq.com/pa?p=1:22062284:4" border="0" />李老师</a>（22062284）</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><a href="tencent://message/?uin=34074407" title="王老师"><img src="http://wpa.qq.com/pa?p=1:34074407:4" border="0" />王老师</a>（34074407）</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="t_center img_link">
+           		<a href="<?php echo base_url('about/?aid=5'); ?>"><img src="<?php echo base_url('static/common/img/edp.jpg'); ?>"  width="260"/></a>
+            	<a href="<?php echo base_url('course/type/?type=1'); ?>"><img src="<?php echo base_url('static/common/img/a_content_right_05.jpg'); ?>"  width="260" height="70" /></a>
+            	<a href="<?php echo base_url('course/type/?type=2'); ?>"><img src="<?php echo base_url('static/common/img/a_content_right_07.jpg'); ?>"  width="260" height="70" /></a>
+            	<a href="<?php echo base_url('article/type/?type=6'); ?>"><img src="<?php echo base_url('static/common/img/a_content_right_06.jpg'); ?>"  width="260" height="70" /></a>
+            </div>
+        </div>
+        <div id="content2_right">
+            <div class="information">
+                <div id="stu">
+                    <div class="title_3_index">
+                        <p class="f_l">在职研究生课程</p>
+                        <span class="f_r"><a href="<?php echo base_url('course/type?type=2'); ?>" class="more">更多...</a></span>
+                        <div class="clear"> </div>
+                    </div>
+                    <div>
+                        <ul>
+                        	<?php foreach ($courses2 as $row): ?>
+                            <li><a href="<?php echo base_url('course/?cid=' . $row['cid']); ?>"><?php echo $row['name']; ?></a></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                </div>
+                <div id="friend_link">
+                    <div class="title_3_index">
+                        <p class="f_l">定制课程</p>
+                        <span class="f_r"><a href="<?php echo base_url('article/type?type=6'); ?>" class="more">更多...</a></span>
+                        <div class="clear"> </div>
+                    </div>
+                    <div>
+                        <ul>
+                        	<?php foreach ($courses3 as $row): ?>
+                            <li><a href="<?php echo base_url('article/?aid=' . $row['aid']); ?>"><?php echo $row['title']; ?></a></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"> </div>
+            </div>
+            <div class="information">
+                <div id="stu">
+                    <div class="title_3_index">
+                        <p class="f_l">活动预告</p>
+                        <span class="f_r"><a href="<?php echo base_url('article/type?type=8'); ?>" class="more">更多...</a></span>
+                        <div class="clear"> </div>
+                    </div>
+                    <div>
+                        <ul>
+                            <?php foreach ($activities as $row): ?>
+                            <li><a href="<?php echo base_url('article/?aid=' . $row['aid']); ?>"><?php echo $row['title']; ?></a></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                </div>
+                <div id="friend_link">
+                    <div class="title_3_index">
+                        <p class="f_l">通知公告</p>
+                        <span class="f_r"><a href="<?php echo base_url('article/type?type=9'); ?>" class="more">更多...</a></span>
+                        <div class="clear"> </div>
+                    </div>
+                    <div>
+                        <ul>
+                        	<?php foreach ($notice as $row): ?>
+                            <li><a href="<?php echo base_url('article/?aid=' . $row['aid']); ?>"><?php echo $row['title']; ?></a></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="stu_change">
+            	<p><a href="<?php echo base_url('group/type/?type=2'); ?>">学员风采</a></p>
+                <div>
+                    <div class="ws-prev"></div>
+                    <div class="ws-box">
+                        <ul>
+                        	<?php foreach ($students as $row): ?>
+                            <li>
+                                <a href="<?php echo base_url('group/?gid=' . $row['gid']); ?>"><img src="<?php echo $row['avatar']; ?>" width="140" height="105" /></a>
+                                <a href="<?php echo base_url('group/?gid=' . $row['gid']); ?>"><?php echo $row['title']?></a>
+                            </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                    <div class="ws-next"></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div id="link" class="box">
+    <div class="f_l link_l"><b>友情链接：</b></div>
+    <div>
+        <ul>
+        	<?php foreach ($links as $row): ?>
+            <li><a href="<?php echo $row['url']; ?>" target="_blank" title="<?php echo $row['title']; ?>"><?php echo $row['name']; ?></a></li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+    <div class="clear"></div>
+</div>
