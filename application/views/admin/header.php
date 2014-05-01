@@ -3,10 +3,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>EDP管理中心 北京理工大学管理学院</title>
-<link href="static/admin/css/admin.css" rel="stylesheet" type="text/css" />
-<link rel=stylesheet href="static/ueditor/themes/default/ueditor.css" />
-<script type=text/javascript src="static/admin/js/jquery-1.8.0.js"></script>
-<script type=text/javascript src="static/admin/js/admin.js"></script>
+<link href="<?php echo base_url('static/admin/css/admin.css'); ?>" rel="stylesheet" type="text/css" />
+<link rel=stylesheet href="<?php echo base_url('static/ueditor/themes/default/ueditor.css'); ?>" />
+<script type=text/javascript src="<?php echo base_url('static/admin/js/jquery-1.8.0.js'); ?>"></script>
+<script type=text/javascript src="<?php echo base_url('static/admin/js/admin.js'); ?>"></script>
 </head>
 
 <body>

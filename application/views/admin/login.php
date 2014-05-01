@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>管理员登陆</title>
-<link href="static/admin/css/admin.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url('static/admin/css/admin.css'); ?>" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
