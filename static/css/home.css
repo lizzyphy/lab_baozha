@@ -81,6 +81,10 @@ body{
 	width:100%;
 	height:81px;
 }
+#foot a{
+	color:#FFF;
+}
+
 .foot1{
 	padding-top:15px;
 	text-align:center;
