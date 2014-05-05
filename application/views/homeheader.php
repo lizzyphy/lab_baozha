@@ -35,7 +35,6 @@
     </div>
 	<div class="middle" id="navi">
     	<ul class="middle">
-        	<li><a href="index.php">首页</a></li>
         	<li><a href="index.php">实验室概况</a>
             	<div class="naviout" style="display:none;">
                     <a href="index.php">实验室简介</a>
@@ -49,8 +48,8 @@
             <!--<li><a href="index.php">机构设置</a>
                 <div class="naviout" style="display:none;">
                         <a href="index.php">办公室</a>
-                        <a href="index.php">实验仿真中心</a>
-                        <a href="index.php">实验室分部</a>
+                        <a href="index.php">实验中心</a>
+                        <a href="index.php">仿真与计算中心</a>
                         <a href="index.php">室务委员会</a>
                         <a href="index.php">学术委员会</a>
                         <a href="index.php">挂靠机构</a>
@@ -96,8 +95,9 @@
             </li>
             <li><a href="index.php">合作交流</a>
             	<div class="naviout" style="display:none;">
-                	<a href="index.php">国内合作交流</a>
-                    <a href="index.php">国外合作交流</a>
+                	<a href="index.php">国内合作</a>
+                    <a href="index.php">国际合作</a>
+                    <a href="index.php">国际合作项目</a>
                 </div>
             </li>
             <li><a href="index.php">运行管理</a></li>
