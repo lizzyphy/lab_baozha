@@ -43,6 +43,7 @@
                     <a href="index.php">组织机构</a>
                     <a href="index.php">实验室大事记</a>
                     <a href="index.php">图片展示</a>
+                    <a href="index.php">联系我们</a>
                 </div>
             </li>
             <!--<li><a href="index.php">机构设置</a>
