@@ -5,9 +5,9 @@ class Index extends  CI_Controller {
  		parent::__construct();
  		$this->load->helper('url');		
  	}
-
 	function index()
 	{
+
 		$this->load->view('homeheader');
 		$this->load->view('homecontent');
 		$this->load->view('homefoot');

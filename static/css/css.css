@@ -84,6 +84,7 @@ a:hover {
 	color:#BB0022;
 }
 .left ul {
+	padding-top:10px;
 	padding-bottom:10px;
 }
 .left li{
@@ -108,8 +109,7 @@ a:hover {
 }
 .left1 ul {
 	padding-top:10px;
-	padding-bottom:10px;
-	
+	padding-bottom:10px;	
 }
 #center_ul{
 	border: 1px solid rgb(221, 221, 221);
@@ -295,7 +295,7 @@ table {
 	margin-right:10px;
 	font-size:14px;
 	padding: 20px 15px 0 15px;
-	border: 1px solid #A2BAD7;
+	border: 1px solid #999;
 	font-weight:bold;
 	color:#003366;
 	display:block;
@@ -310,7 +310,7 @@ table {
 }
 .contact{
 	font-size:14px;
-	line-height:30px;
-	padding:10px 0 20px 20px;
+	line-height:28px;
+	padding:10px 0 0 20px;
 	
 }

@@ -132,13 +132,11 @@
     </div>
     
     <div>
-     <!--
     <div class="left">
             <div class="title1" style="width:213px;">
                 <img width="5" height="14" src="<?php echo base_url('static/img/shu.png'); ?>" />
                 <span>&nbsp;&nbsp;友情链接</span>
             </div>
-            <div class="img_1"><img width="218" height="190" src="<?php echo base_url('static/img/lj.jpg'); ?>" /></div>
             <ul>
                 <li><span><a href="www.baidu.com" title="中华人民共和国科学技术部">中华人民共和国科学技术部 </a></span>
                 </li>
@@ -153,7 +151,6 @@
             </ul> 
            <div class="clear"></div>
         </div>
--->
         <div class="left1">
             <div class="title_center">
                 <div class="float_l">&nbsp;&nbsp;专家讲坛信息</div>
@@ -165,29 +162,7 @@
 	            <div class="img_content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014年4月3日-4日，应安全与防护协同创新中心和爆炸科学与技术国家重点实验室的
 	            	邀请，国际著名爆轰专家、美国工程院院士、马里兰大学Elaine S. Oran教授来实
 	            	验室进行学术交流与访问，在此期间先后做了...</div>
-	            <div class="clear"></div>
             </div>
-			<div id="center_ul">
-	            <ul>
-	                <li><span  class="left_span"><a href="www.baidu.com" title="国际著名爆轰专家到我校国家重点实验室进行学术交流 ">国际著名爆轰专家到我校国家重点实 </a></span>
-	                <span class="time1">03-10</span>
-	                </li>
-	                <li><span class="left_span"><a href="www.baidu.com" title="爆炸科学与技术国家重点实验室邀请英国、俄罗斯、波兰、以色列国际著名学者交流访问">爆炸科学与技术国家重点实验室邀请...</a></span>
-	                <span class="time1">03-10</span>
-	                </li>
-	                <li><span class="left_span"><a href="www.baidu.com" title="国家重点实验室邀请郭林教授为师生做学术报告">国家重点实验室邀请郭林教授为</a></span>
-	                <span class="time1">03-10</span>
-	                </li>
-	                <li><span class="left_span"><a href="www.baidu.com" title="青少年科技后备人才早期培养计划（第13期）师生见面会">青少年科技后备人才早期培养计划...</a></span>
-	                <span class="time1">03-10</span>
-	                </li>
-	                <li><span class="left_span"><a href="www.baidu.com" title="2013 International Workshop on Intensive Loading and Its Effects & Innovation Research Group Symposium on Dynamic Mechanical Behavior of Complex Media/ Structure">
-	                2013 International Workshop on...</a></span>
-	                <span class="time1">03-10</span>
-	                </li>
-	            </ul>
-	            <div class="clear"></div>
-	        </div>
             <div class="clear"></div>
         </div>
     <!-- 
@@ -256,24 +231,7 @@
             	<p>网站地址：http://est.bit.edu.cn</p>
             </div>
         <div class="clear"></div>
-                    <div class="title1" style="width:213px;">
-                <img width="5" height="14" src="<?php echo base_url('static/img/shu.png'); ?>" />
-                <span>&nbsp;&nbsp;友情链接</span>
-            </div>
-            <ul>
-                <li><span><a href="www.baidu.com" title="中华人民共和国科学技术部">中华人民共和国科学技术部 </a></span>
-                </li>
-                <li><span><a href="www.baidu.com" title="北京理工大学机电学院">北京理工大学机电学院</a></span>
-                </li>
-                <li><span><a href="www.baidu.com" title="中华人民共和国教育部">中华人民共和国教育部</a></span>
-                </li>
-                <li><span><a href="www.baidu.com" title="中华人民共和国工业和信息化部">中华人民共和国工业和信息化部</a></span>
-                </li>
-                <li><span><a href="www.baidu.com" title="南京航空航天大学">南京航空航天大学</a></span>
-                </li>
-            </ul> 
-           <div class="clear"></div>
-        </div>
-         <div class="clear"></div>
+ </div>
+ <div class="clear"></div>
     </div>
 </div>
