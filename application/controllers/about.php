@@ -18,25 +18,19 @@ class About extends CI_Controller
 	{
 		$aid = (int) $this->input->get('aid');
 		
-		$data['about'] = $this->about_m->get($aid);
+		$data['article'] = $this->about_m->get($aid);
+		$data['name'] = $this->about_m->get_second_name($aid);
 
-		$left_navi['title'] = '关于我们';
 		$abouts = $this->about_m->get_list();
-		$i = 0;
-		foreach ($abouts as $about) {
-			$left_navi['types'][$i]['tid'] = $about['aid'];
-			$left_navi['types'][$i]['type'] = $about['type'];
-			++$i;
-		}
 		
 		if($aid == FALSE) {
-			$data['about'] = $abouts[0];	
+			$data['article'] = $abouts[0];	
 		}
 		
-		$this->load->view('header.php');
-		$this->load->view('img_1.php', array('img'	=>	7));
-		$this->load->view('left_navi.php', $left_navi);
+		$this->load->view('homeheader.php');
+		$this->load->view('img_new.php');
+		$this->load->view('left_navi_new.php');
 		$this->load->view('about.php', $data);
-		$this->load->view('footer.php');
+		$this->load->view('homefoot.php');
 	}
 }

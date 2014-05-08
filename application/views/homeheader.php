@@ -67,27 +67,17 @@
     </div>
 	<div class="middle" id="navi">
     	<ul class="middle">
-        	<li><a href="index.php">首页</a></li>
-        	<li><a href="index.php">实验室概况</a>
+        	<li><a href="<?php echo base_url('index'); ?>">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+        	<li><a href="<?php echo base_url('about/?aid=2')?>">实验室概况</a>
             	<div class="naviout" style="display:none;">
-                    <a href="index.php">实验室简介</a>
-                    <a href="index.php">发展历程</a>
-                    <a href="index.php">领导班子</a>
-                    <a href="index.php">组织机构</a>
-                    <a href="index.php">实验室大事记</a>
-                    <a href="index.php">图片展示</a>
+                    <a href="<?php echo base_url('about/?aid=2')?>">实验室简介</a>
+                    <a href="<?php echo base_url('about/?aid=3')?>">发展历程</a>
+                    <a href="<?php echo base_url('about/?aid=8')?>">领导班子</a>
+                    <a href="<?php echo base_url('about/?aid=9')?>">组织机构</a>
+                    <a href="<?php echo base_url('about/?aid=17')?>">实验室大事记</a>
+                    <a href="<?php echo base_url('about/?aid=18')?>">图片展示</a>
                 </div>
             </li>
-            <!--<li><a href="index.php">机构设置</a>
-                <div class="naviout" style="display:none;">
-                        <a href="index.php">办公室</a>
-                        <a href="index.php">实验中心</a>
-                        <a href="index.php">仿真与计算中心</a>
-                        <a href="index.php">室务委员会</a>
-                        <a href="index.php">学术委员会</a>
-                        <a href="index.php">挂靠机构</a>
-                </div>
-            </li>-->
             <li><a href="index.php">研究方向</a>
             	<div class="naviout" style="display:none;">
                 	<a href="index.php">含能材料理论与应用技术</a>

@@ -69,7 +69,18 @@ class Article_m extends CI_Model
 		}
 		return $return;
 	}
-	
+	public function get_list_link($limit, $offset = 0)
+	{
+		$i = 0;
+		$return = array();	
+		$this->db->select('lid, name, url, title');
+		$query = $this->db->get('link', $limit, $offset);
+		foreach ($query->result_array() as $row) {
+			$return[$i] = $row;
+			++$i;
+		}
+		return $return;
+	}
 	public function set_list_type($type = 0) 
 	{
 		if($type != 0) {

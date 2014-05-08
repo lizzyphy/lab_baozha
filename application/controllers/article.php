@@ -13,25 +13,26 @@ class Article extends CI_Controller
 
 	/**
 	 * 首页
-	 */
+*/
 	public function index() 
 	{
 		$aid = (int) $this->input->get('aid');
 		$data['article'] = $this->article_m->get($aid);
 		
-		$this->load->view('header.php');
-		$this->load->view('img_1.php', array('img'	=>	1));
-		if(isset($data['article']['type']) && $data['article']['type'] == 6) {
+		$this->load->view('homeheader');
+		$this->load->view('img_new');
+	/*	if(isset($data['article']['type']) && $data['article']['type'] == 6) {
 			$this->load->view('left_course.php');
 		} elseif(isset($data['article']['type']) && $data['article']['type'] == 12) {
 			$this->load->view('left_alumni.php');
 		} elseif($data['article']['type'] == 13 || $data['article']['type'] == 14 || $data['article']['type'] == 15 || $data['article']['type'] == 16) {
 			$this->load->view('left_policy.php');
 		} else {
-			$this->load->view('left_news.php');
-		}
-		$this->load->view('article.php', $data);
-		$this->load->view('footer.php');
+			$this->load->view('left_news.php');}
+	*/	
+		$this->load->view('left_navi_new');
+		$this->load->view('content3', $data);
+		$this->load->view('homefoot');
 	}
 	
 	public function type() 
