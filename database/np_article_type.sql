@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2014 年 05 月 08 日 08:23
+-- 生成日期: 2014 年 05 月 08 日 14:04
 -- 服务器版本: 5.5.24-log
 -- PHP 版本: 5.3.13
 
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `np_article_type` (
   `pid` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
   PRIMARY KEY (`tid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=73 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=78 ;
 
 --
 -- 转存表中的数据 `np_article_type`
@@ -94,7 +94,12 @@ INSERT INTO `np_article_type` (`tid`, `pid`, `name`) VALUES
 (69, 59, '学术委员会'),
 (70, 64, '挂靠机构1'),
 (71, 64, '挂靠机构2'),
-(72, 22, '开放课题表格');
+(72, 22, '开放课题表格'),
+(73, 0, '新闻中心'),
+(74, 73, '新闻快讯'),
+(75, 73, '最新通知'),
+(76, 73, '专家讲坛信息'),
+(77, 73, '学术会议信息');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
