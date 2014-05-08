@@ -51,6 +51,11 @@ body{
 	float:right;
 	margin-top:15px;
 }
+
+.tab_hover a {
+	color: #FF0000;
+}
+
 #navi {
 	/*height:50px;*/
 	background-image:url(../img/dbj.jpg);
@@ -113,6 +118,7 @@ body{
 }
 .naviout a:hover{
 	background: #B8D3F1;
+	color: #064481;
 }
 .navi_hover {
 	background-image:url(../img/dhover.jpg);
@@ -121,4 +127,60 @@ body{
 .navi_hover a {
 	color: #064481!important;
 }
-	
+
+
+.spanout {
+	position:absolute;
+    z-index:1000;
+	background:#FFF;
+    display:none;
+	border: 1px solid #E5E5E5;
+	border-bottom: none;
+	top:-1px;
+	left:100px;
+	width:140px;
+}
+.spanout a {
+/*	font-weight:normal;*/
+	_width:145px;
+	display: block;
+	color: #064481;
+	font-size: 12px;
+	line-height: 30px;
+	text-decoration: none;
+	text-align: left !important;
+	padding:0 20px;
+	border-bottom:1px solid #E5E5E5;
+}	
+
+.spanout2 {
+	position:absolute;
+    z-index:1000;
+	background:#FFF;
+    display:none;
+	border: 1px solid #E5E5E5;
+	border-bottom: none;
+	top:154px;
+	left:100px;
+	width:140px;
+}
+.spanout2 a {
+/*	font-weight:normal;*/
+	_width:145px;
+	display: block;
+	color: #064481;
+	font-size: 12px;
+	line-height: 30px;
+	text-decoration: none;
+	text-align: left !important;
+	padding:0 20px;
+	border-bottom:1px solid #E5E5E5;
+}	
+
+.span_hover {
+	background: #B8D3F1;
+	color: #064481;
+}
+.span_hover a {
+	color: #064481!important;
+}

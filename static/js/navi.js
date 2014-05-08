@@ -15,4 +15,26 @@ function navihover() {
 			$(this).removeClass("navi_hover");
         }
     );
+	
+	$("#navi span").hover(
+        function(){
+            $('span', $(this)).css({'display':'block'});
+			$(".title",$(this)).addClass("span_hover");
+        },
+        function(){
+            $('span', $(this)).css({'display':'none'});
+			$(".title",$(this)).removeClass("span_hover");
+        }
+    );
+	
+	$(".head_tab td").hover(
+        function(){
+            $('div', $(this)).css({'display':'block'});
+			$(this).addClass("tab_hover");
+        },
+        function(){
+            $('div', $(this)).css({'display':'none'});
+			$(this).removeClass("tab_hover");
+        }
+    );
 }
