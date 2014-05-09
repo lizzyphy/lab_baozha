@@ -1,0 +1,38 @@
+/* CSS Document */
+.right_group{
+	width:735px;
+	margin:10px 10px 0 10px ;
+	padding-left:15px;
+}
+
+.right_group_p{
+	float:left;
+}
+
+.right_group_c{
+	width:500px;
+	float:left;
+	margin:0 0 0 10px;
+}
+
+#group_title{
+	float:left;
+	padding:0px 0 0 10px;
+	font-size:12px;
+	font-weight:bold;
+	
+}
+
+#group_time{
+	float:left;
+	padding:0px 0 0 10px;
+	font-size:12px;
+	color:#666;
+}
+
+#group_content{
+	float:left;
+	padding:0px 0 0 10px;
+	font-size:12px;
+	
+}

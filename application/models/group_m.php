@@ -2,21 +2,56 @@
 /**
  * 团队管理模型层
  * 
- * @author 风格独特
+ * @author 
  */
 
 class Group_m extends CI_Model 
 {
-	const GROUP_TEACHER	=	1;
+	//const GROUP_TEACHER	=	1;
 	
-	const GROUP_STUDENT	=	2;
+	//const GROUP_STUDENT	=	2;
 	
-	const GROUP_ALUMN	=	3;
+	//const GROUP_ALUMN	=	3;
 	
 	public function __construct() 
 	{
 		parent::__construct();
 		$this->load->database();
+	}
+	
+	
+	public function get_second_name($aid)
+	{
+		$aid = (int) $aid;
+		$this->db->select('pid,name');
+		$this->db->where('tid', $aid);
+		$query = $this->db->get('article_type');
+		if($query->num_rows() > 0) {
+			//return $query->row_array();
+			$arr=$query->row_array();
+			$data['second_name'] = $arr['name'];
+			$pid = $arr['pid'];
+			$arr1 = $this->get_first_name($pid);
+			$data['first_name'] = $arr1['first_name'];
+				
+		}
+		
+		return $data;
+	}
+	
+	public function get_first_name($pid)
+	{
+		$pid = (int) $pid;
+		$this->db->select('name');
+		$this->db->where('tid', $pid);
+		$query = $this->db->get('article_type');
+		if($query->num_rows() > 0) {
+			//return $query->row_array();
+			$arr=$query->row_array();
+			$data['first_name'] = $arr['name'];				
+		}
+		
+		return $data;
 	}
 	
 	public function get($gid)
@@ -37,7 +72,7 @@ class Group_m extends CI_Model
 			$this->db->where('type', $type);
 		}
 		
-		$this->db->order_by('order ASC, gid ASC');
+		$this->db->order_by('gid ASC');
 		$query = $this->db->get('group', $limit, $offset);
 		$return = $query->result_array();
 		return $return;

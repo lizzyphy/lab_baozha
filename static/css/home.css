@@ -178,8 +178,8 @@ body{
 }	
 
 .span_hover {
-	background: #B8D3F1;
-	color: #064481;
+	background: #B8D3F1 !important;
+	color: #064481 !important;
 }
 .span_hover a {
 	color: #064481!important;

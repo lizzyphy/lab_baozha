@@ -20,7 +20,7 @@ class Group extends CI_Controller
 		$data = $this->group_m->get($gid);
 		$data['type_name'] = $this->group_m->get_typename($data['type']);
 		
-		$this->load->view('header.php');
+		/*$this->load->view('header.php');
 		$this->load->view('img_1.php', array('img'	=>	4));
 		if($data['type'] == 3) {
 			$this->load->view('left_alumni.php');
@@ -28,13 +28,19 @@ class Group extends CI_Controller
 			$this->load->view('left_group.php');
 		}
 		$this->load->view('group.php', $data);
-		$this->load->view('footer.php');
+		$this->load->view('footer.php');*/
+		$this->load->view('homeheader.php');
+		$this->load->view('left_navi_new.php');
+		$this->load->view('content3.php', $data);
+		$this->load->view('homefoot.php');
+		
 	}
 	
 	public function type() 
 	{
 		$per_page = 10;
 		$type = (int) $this->input->get('type');
+		$gid = $type;
 		$p = (int) $this->input->get('p');
 		if($p < 1) {
 			$p = 1;
@@ -45,18 +51,23 @@ class Group extends CI_Controller
 		
 		$data['groups'] = $this->group_m->get_list($per_page, $per_page * ($p - 1), $type);
 		$data['page_html'] =  $this->_page_init($per_page);
-		$data['title'] = $this->group_m->get_typename($type);
-		$data['type'] = $type;
+		$data['article'] = $this->group_m->get_list(5,0,$gid);
+		//var_dump($data['article']);
+		$data['name'] = $this->group_m->get_second_name($gid);
+		//$data['title'] = $this->group_m->get_typename($type);
+		//$data['type'] = $type;
 		
-		$this->load->view('header.php');
-		$this->load->view('img_1.php', array('img'	=>	4));
+		$this->load->view('homeheader.php');
+		/*$this->load->view('img_1.php', array('img'	=>	4));
 		if($data['type'] == 3) {
 			$this->load->view('left_alumni.php');
 		} else {
 			$this->load->view('left_group.php');
-		}
-		$this->load->view('group_list.php', $data);
-		$this->load->view('footer.php');
+		}*/
+		$this->load->view('img_new.php');
+		$this->load->view('left_navi_new.php');
+		$this->load->view('group.php', $data);
+		$this->load->view('homefoot.php');
 	}
 	
 	private function _page_init($per_page)
