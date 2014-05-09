@@ -79,7 +79,7 @@
                     <a href="<?php echo base_url('about/?aid=18')?>">图片展示</a>
                 </div>
             </li>
-            <li><a href="<?php echo base_url('direction/')?>">研究方向</a>
+            <li><a href="<?php echo base_url('direction/?aid=24')?>">研究方向</a>
             	<div class="naviout" style="display:none;">
                 	<a href="<?php echo base_url('direction/?aid=24')?>">含能材料理论与应用技术</a>
                     <a href="<?php echo base_url('direction/?aid=25')?>">爆轰学与爆炸技术</a>
@@ -88,7 +88,7 @@
                     <a href="<?php echo base_url('direction/?aid=28')?>">爆炸安全理论与评估技术</a>
                 </div>
             </li>
-            <li><a href="<?php echo base_url('group/type/')?>">学术队伍</a>
+            <li><a href="<?php echo base_url('group/type/?type=29')?>">学术队伍</a>
             	<div class="naviout" style="display:none;">
                 	<a href="<?php echo base_url('group/type/?type=29')?>">院士</a>
                     <a href="<?php echo base_url('group/type/?type=30')?>">突贡专家</a>
@@ -102,12 +102,12 @@
                     <a href="<?php echo base_url('group/type/?type=38')?>">流动人员</a>
                 </div>
             </li>
-            <li><a href="index.php">科研成果</a>
+            <li><a href="<?php echo base_url('article/type/?type=39')?>">科研成果</a>
             	<div class="naviout" style="display:none;">
-                	<a href="index.php">科研项目</a>
-                    <a href="index.php">获奖情况</a>
-                    <a href="index.php">申请发明专利</a>
-                    <a href="index.php">发表学术论文</a>
+                	<a href="<?php echo base_url('article/type/?type=39')?>">科研项目</a>
+                    <a href="<?php echo base_url('article/type/?type=40')?>">获奖情况</a>
+                    <a href="<?php echo base_url('article/type/?type=41')?>">申请发明专利</a>
+                    <a href="<?php echo base_url('article/type/?type=42')?>">发表学术论文</a>
                 </div>
             </li>
             <li><a href="index.php">学科建设</a>

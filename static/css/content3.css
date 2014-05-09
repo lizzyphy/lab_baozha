@@ -10,10 +10,13 @@
 	height:65px;
 }
 .right_content {
+	TEXT-INDENT: 2em;
 	padding: 10px 40px 30px 40px;
 	font-size: 12px;
+	
 }
 .content3_time {
+
 	width: 195px;
 	color: #666;
 	font-size: 12px;

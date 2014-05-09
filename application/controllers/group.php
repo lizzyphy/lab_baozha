@@ -9,6 +9,7 @@ class Group extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('group_m');
+		$this->load->library('pagination');
 	}
 
 	/**
@@ -17,8 +18,9 @@ class Group extends CI_Controller
 	public function index() 
 	{
 		$gid = (int) $this->input->get('gid');
-		$data = $this->group_m->get($gid);
-		$data['type_name'] = $this->group_m->get_typename($data['type']);
+		$type = (int) $this->input->get('type');
+		$data['name'] = $this->group_m->get_second_name($type);
+		$data['article'] = $this->group_m->get($gid);
 		
 		/*$this->load->view('header.php');
 		$this->load->view('img_1.php', array('img'	=>	4));
@@ -30,15 +32,17 @@ class Group extends CI_Controller
 		$this->load->view('group.php', $data);
 		$this->load->view('footer.php');*/
 		$this->load->view('homeheader.php');
+		$this->load->view('img_new.php');
 		$this->load->view('left_navi_new.php');
 		$this->load->view('content3.php', $data);
 		$this->load->view('homefoot.php');
 		
 	}
 	
+	
 	public function type() 
 	{
-		$per_page = 10;
+		$per_page = 1;
 		$type = (int) $this->input->get('type');
 		$gid = $type;
 		$p = (int) $this->input->get('p');
@@ -49,9 +53,9 @@ class Group extends CI_Controller
 			$type = 1;
 		}
 		
-		$data['groups'] = $this->group_m->get_list($per_page, $per_page * ($p - 1), $type);
-		$data['page_html'] =  $this->_page_init($per_page);
-		$data['article'] = $this->group_m->get_list(5,0,$gid);
+		$data['article'] = $this->group_m->get_list($per_page, $per_page * ($p - 1), $type);
+		$data['page_html'] =  $this->_page_init($per_page,$type);
+		//$data['article'] = $this->group_m->get_list(5,0,$gid);
 		//var_dump($data['article']);
 		$data['name'] = $this->group_m->get_second_name($gid);
 		//$data['title'] = $this->group_m->get_typename($type);
@@ -70,11 +74,11 @@ class Group extends CI_Controller
 		$this->load->view('homefoot.php');
 	}
 	
-	private function _page_init($per_page)
+	private function _page_init($per_page,$type)
 	{
 		$this->load->library('pagination');
 	
-		$type = (int) $this->input->get('type');
+		//$type = (int) $this->input->get('type');
 		if($type < 1) {
 			$type = 1;
 		}
@@ -92,6 +96,7 @@ class Group extends CI_Controller
 		$config['use_page_numbers'] = TRUE;
 	
 		$this->pagination->initialize($config);
-		return $this->pagination->create_links();
+		 $key = $this->pagination->create_links();
+		 return $key;
 	}
 }
