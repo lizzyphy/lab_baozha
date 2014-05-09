@@ -38,7 +38,6 @@
 	margin:2px 10px 0px 10px;
 	border-bottom:1px solid #c0c0c0;
 	text-align:left;
-	
 }
 
 #left_content a{
@@ -83,21 +82,26 @@
 	font-size:20px;
 	color:#215bbb;
 	font-weight:bold;
-	padding:15px 0px 5px 60px;
+	padding:15px 0px 5px 40px;
 	/*border-bottom:1px dashed #CCCCCC;*/
 	margin:0px 10px 0px 10px;
 }
 #right_content{
-	margin:10px 70px 50px 70px;
-	width:595px;
+	margin:10px 70px 50px 50px;
+	width:660px;
 	border:1px solid #ccc;
 	background-color:rgb(247, 247, 247);
 
 }
-
+#right_content li a{
+	white-space:nowrap;
+}
 #right_content ul li{
-	width:258px;
+	width:620px;
 	height:30px;
+	overflow:hidden;
+	display:block;
+	text-overflow:ellipsis;
 	padding-left:15px;
 	background-image:url(../img/2ji_list.jpg);
 	background-position:left;

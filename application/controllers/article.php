@@ -9,6 +9,7 @@ class Article extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('article_m');
+		$this->load->model('about_m');
 	}
 
 	/**
@@ -18,7 +19,9 @@ class Article extends CI_Controller
 	{
 		$aid = (int) $this->input->get('aid');
 		$data['article'] = $this->article_m->get($aid);
-		
+		$type = $data['article']['type'];
+		$data['type'] = $data['article']['type'];
+		$data['name'] = $this->about_m->get_second_name($type);
 		$this->load->view('homeheader');
 		$this->load->view('img_new');
 	/*	if(isset($data['article']['type']) && $data['article']['type'] == 6) {
@@ -49,11 +52,11 @@ class Article extends CI_Controller
 		
 		$data['articles'] = $this->article_m->get_list($per_page, $per_page * ($p - 1), $type);
 		$data['page_html'] =  $this->_page_init($per_page);
-		$data['title'] = $this->article_type_m->get_name($type);
+		$data['name'] = $this->about_m->get_second_name($type);
 		
-		$this->load->view('header.php');
-		$this->load->view('img_1.php', array('img'	=>	1));
-		if($type == 6) {
+		$this->load->view('homeheader');
+		$this->load->view('img_new');
+		/*if($type == 6) {
 			$this->load->view('left_course.php');
 		} else if($type == 12) {
 			$this->load->view('left_alumni.php');
@@ -61,9 +64,10 @@ class Article extends CI_Controller
 			$this->load->view('left_policy.php');
 		} else {
 			$this->load->view('left_news.php');
-		}
-		$this->load->view('article_list.php', $data);
-		$this->load->view('footer.php');
+		}*/
+		$this->load->view('left_navi_new');
+		$this->load->view('content2_left.php', $data);
+		$this->load->view('homefoot');
 	}
 	
 	function search() 
