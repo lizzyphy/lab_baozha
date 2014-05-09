@@ -7,6 +7,7 @@
 <link rel=stylesheet type="text/css" href="<?php echo base_url('static/css/css.css'); ?>" />
 <link rel=stylesheet type="text/css" href="<?php echo base_url('static/css/content2.css'); ?>" />
 <link rel=stylesheet type="text/css" href="<?php echo base_url('static/css/content3.css'); ?>" />
+<link rel=stylesheet type="text/css" href="<?php echo base_url('static/css/group.css'); ?>" />
 <script type="text/javascript" src="<?php echo base_url('static/js/pic.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('static/js/jquery-1.8.0.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('static/js/navi.js'); ?>"></script>
@@ -87,18 +88,18 @@
                     <a href="<?php echo base_url('direction/?aid=28')?>">爆炸安全理论与评估技术</a>
                 </div>
             </li>
-            <li><a href="index.php">学术队伍</a>
+            <li><a href="<?php echo base_url('group/type/')?>">学术队伍</a>
             	<div class="naviout" style="display:none;">
-                	<a href="index.php">院士</a>
-                    <a href="index.php">突贡专家</a>
-                    <a href="index.php">长江学者</a>
-                    <a href="index.php">杰青</a>
-                    <a href="index.php">百千万人才</a>
-                    <a href="index.php">新世纪优秀人才</a>
-                    <a href="index.php">方向带头人</a>
-                    <a href="index.php">博导</a>
-                    <a href="index.php">教授</a>
-                    <a href="index.php">流动人员</a>
+                	<a href="<?php echo base_url('group/type/?type=29')?>">院士</a>
+                    <a href="<?php echo base_url('group/type/?type=30')?>">突贡专家</a>
+                    <a href="<?php echo base_url('group/type/?type=31')?>">长江学者</a>
+                    <a href="<?php echo base_url('group/type/?type=32')?>">杰青</a>
+                    <a href="<?php echo base_url('group/type/?type=33')?>">百千万人才</a>
+                    <a href="<?php echo base_url('group/type/?type=34')?>">新世纪优秀人才</a>
+                    <a href="<?php echo base_url('group/type/?type=35')?>">方向带头人</a>
+                    <a href="<?php echo base_url('group/type/?type=36')?>">博导</a>
+                    <a href="<?php echo base_url('group/type/?type=37')?>">教授</a>
+                    <a href="<?php echo base_url('group/type/?type=38')?>">流动人员</a>
                 </div>
             </li>
             <li><a href="index.php">科研成果</a>

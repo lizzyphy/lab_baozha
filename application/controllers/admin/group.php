@@ -23,7 +23,8 @@ class Group extends CI_Controller
 		$per_page = 20;
 		$type = (int) $this->input->get('type');
 		if($type == FALSE) {
-			$type = group_m::GROUP_TEACHER;
+			//$type = group_m::GROUP_TEACHER;
+			$type = 29;
 		}
 		
 		$p = (int) $this->input->get('p');
@@ -56,7 +57,7 @@ class Group extends CI_Controller
 		
 		$type =(int) $this->input->get('type');
 		$avatar = $make_url . $info['url'];
-		$order = (int) $this->input->post('order');
+		$order = $this->input->post('order');
 		$title = $this->input->post('title', TRUE);
 		$content = $this->input->post('ue_content');
 		
@@ -83,7 +84,7 @@ class Group extends CI_Controller
 		$gid = (int) $this->input->get('gid');
 		$data['type'] = (int) $this->input->get('type');
 		$data['title'] = $this->input->post('title', TRUE);
-		$data['order'] = (int) $this->input->post('order');
+		$data['order'] = $this->input->post('order');
 		$data['content'] = $this->input->post('ue_content');
 
 		$this->group_m->edit($gid, $data);
@@ -105,7 +106,8 @@ class Group extends CI_Controller
 	{
 		$type = (int) $this->input->get('type');
 		if($type == FALSE) {
-			$type = group_m::GROUP_TEACHER;
+			//$type = group_m::GROUP_TEACHER;
+			$type = 29;
 		}
 		$data['order'] = '';
 		$data['title'] = '';
@@ -143,7 +145,8 @@ class Group extends CI_Controller
 	
 		$type = $this->input->get('type');
 		if($type == FALSE) {
-			$type = group_m::GROUP_TEACHER;
+			//$type = group_m::GROUP_TEACHER;
+			$type = 29;
 		}
 		$config['total_rows'] = $this->group_m->get_num($type);
 	
