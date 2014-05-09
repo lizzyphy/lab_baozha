@@ -36,10 +36,8 @@ class About_m extends CI_Model
 			$data['second_name'] = $arr['name'];
 			$pid = $arr['pid'];
 			$arr1 = $this->get_first_name($pid);
-			$data['first_name'] = $arr1['first_name'];
-				
+			$data['first_name'] = $arr1;		
 		}
-		
 		return $data;
 	}
 	
@@ -52,10 +50,10 @@ class About_m extends CI_Model
 		if($query->num_rows() > 0) {
 			//return $query->row_array();
 			$arr=$query->row_array();
-			$data['first_name'] = $arr['name'];				
+			$first_name = $arr['name'];				
 		}
 		
-		return $data;
+		return $first_name;
 	}
 	
 	public function get_list() 

@@ -64,7 +64,7 @@
             <div class="title">
                 <img width="530" height="5" src="<?php echo base_url('static/img/title.jpg'); ?>" />
                 <div class="float_l">&nbsp;&nbsp;&nbsp;&nbsp;新闻快讯</div>
-                <div class="more"><a href="www.baidu.com" title="更多">更多 &gt;</a></div>
+                <div class="more"><a href="<?php echo base_url('article/type?type=74'); ?>" title="更多">更多 &gt;</a></div>
             </div>
             <ul>
          	<?php foreach ($xwkx as $row):?>
@@ -76,7 +76,7 @@
             <div class="title">
                 <img width="530" height="5" src="<?php echo base_url('static/img/title.jpg'); ?>" />
                 <div class="float_l">&nbsp;&nbsp;&nbsp;&nbsp;最新通知</div>
-                <div class="more"><a href="www.baidu.com" title="更多">更多 &gt;</a></div>
+                <div class="more"><a href="<?php echo base_url('article/type?type=75'); ?>" title="更多">更多 &gt;</a></div>
             </div>
             <ul>
             <?php foreach ($zxtz as $row):?>
@@ -93,7 +93,7 @@
             <div class="title1">
                 <div class="float_l"><img width="5" height="14" src="<?php echo base_url('static/img/shu.png'); ?>" />
                 &nbsp;&nbsp;专家讲坛信息</div>
-                <div class="more"><a href="www.baidu.com" title="更多">更多 &gt;</a></div>
+                <div class="more"><a href="<?php echo base_url('article/type?type=76'); ?>" title="更多">更多 &gt;</a></div>
             </div>
             <div class="img_1"><img width="330" height="200" src="<?php echo base_url('static/img/zj.jpg'); ?>" /></div>
            <ul>
@@ -110,7 +110,7 @@
             <div class="title1">
                 <div class="float_l"><img width="5" height="14" src="<?php echo base_url('static/img/shu.png'); ?>" />
                 &nbsp;&nbsp;学术会议信息</div>
-                <div class="more"><a href="www.baidu.com" title="更多">更多 &gt;</a></div>
+                <div class="more"><a href="<?php echo base_url('article/type?type=77'); ?>" title="更多">更多 &gt;</a></div>
             </div>
             <ul>
                  <?php foreach ($xshy as $row):?>

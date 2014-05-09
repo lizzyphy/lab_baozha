@@ -33,7 +33,7 @@ class Index extends  CI_Controller {
 		$this->load->view('content2_left');
 		$this->load->view('homefoot');
 	}
-private function _page_init($per_page)
+	private function _page_init($per_page)
 	{
 		$this->load->library('pagination');
 		$type = (int) $this->input->get('type');

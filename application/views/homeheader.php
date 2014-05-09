@@ -112,9 +112,9 @@
             </li>
             <li><a href="index.php">学科建设</a>
             	<div class="naviout" style="display:none;">
-                    <a href="index.php">硕士点</a>
-                    <a href="index.php">博士点</a>
-                	<a href="index.php">博士后流动站</a>
+                    <a href="<?php echo base_url('about/?aid=43')?>">硕士点</a>
+                    <a href="<?php echo base_url('about/?aid=44')?>">博士点</a>
+                	<a href="<?php echo base_url('about/?aid=45')?>">博士后流动站</a>
                 </div>
             </li>
             <li><a href="index.php">合作交流</a>
