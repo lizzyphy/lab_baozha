@@ -17,19 +17,7 @@ class About extends CI_Controller
 	public function index() 
 	{
 		$aid = (int) $this->input->get('aid');
-		if(in_array($aid, array(59, 64)))
-		{
-			$data['type'] = $aid;
-			$data['article'] = $this->about_m->get_list2($aid);
-			$data['name'] = $this->about_m->get_second_name($aid);
-			$this->load->view('homeheader.php');
-			$this->load->view('img_new.php');
-			$this->load->view('left_navi_yxgl.php');
-			$this->load->view('about2.php', $data);
-			$this->load->view('homefoot.php');
-			
-		}
-		elseif($aid==110)
+		if($aid==110)
 		{
 			$data['article'] = $this->about_m->get($aid);
 			$this->load->view('homeheader.php');
