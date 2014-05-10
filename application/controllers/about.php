@@ -61,6 +61,9 @@ class About extends CI_Controller
 			elseif($aid == 43 || $aid == 44 || $aid == 45){
 				$this->load->view('left_subject.php');	
 			}
+			else{
+				$this->load->view('left_direction.php');	
+			}
 			
 			$this->load->view('about.php', $data);
 			$this->load->view('homefoot.php');

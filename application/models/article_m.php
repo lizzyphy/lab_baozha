@@ -148,7 +148,36 @@ class Article_m extends CI_Model
 		}
 		return $this->db->insert_id();
 	}
+	public function get_second_name($aid)
+	{
+		$aid = (int) $aid;
+		$this->db->select('pid,name');
+		$this->db->where('tid', $aid);
+		$query = $this->db->get('article_type');
+		if($query->num_rows() > 0) {
+			//return $query->row_array();
+			$arr=$query->row_array();
+			$data['second_name'] = $arr['name'];
+			$arr1 = $arr['pid'];
+			$data['first_name'] = $this->get_first_name($arr1);	
+		}
+		return $data;
+	}
 	
+	public function get_first_name($pid)
+	{
+		$pid = (int) $pid;
+		$this->db->select('name');
+		$this->db->where('tid', $pid);
+		$query = $this->db->get('article_type');
+		if($query->num_rows() > 0) {
+			//return $query->row_array();
+			$arr=$query->row_array();
+			$first_name = $arr['name'];				
+		}
+		
+		return $first_name;
+	}
 	public function edit($aid, $data) 
 	{
 		$aid = (int) $aid;

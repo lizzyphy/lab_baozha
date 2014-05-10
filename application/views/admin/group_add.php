@@ -18,6 +18,17 @@
 								<td><input name="title" type="text" value="<?php echo $title;?>" size="20" /></td>
 							</tr>
 							<tr>
+							<td>称号</td>
+								<td>
+									<select name="type">
+										<?php foreach ($types as $type): ?>
+										<option name="type" value="<?php echo $type['type'];?>"><?php echo $type['name']; ?></option>
+										<?php endforeach;?>
+									</select>
+								</td>
+							</tr>
+							<tr>
+							
 								<td>上传头像</td>
 								<td><input name="upfile" type="file" value="" size="80" /></td>
 							</tr>

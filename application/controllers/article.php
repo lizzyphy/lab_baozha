@@ -21,7 +21,7 @@ class Article extends CI_Controller
 		$data['article'] = $this->article_m->get($aid);
 		$type = $data['article']['type'];
 		$data['type'] = $data['article']['type'];
-		$data['name'] = $this->about_m->get_second_name($type);
+		$data['name'] = $this->article_m->get_second_name($type);
 		$this->load->view('homeheader');
 		$this->load->view('img_new');
 		if($data['article']['type'] == 79 || $data['article']['type'] == 80 || $data['article']['type'] == 81) {
@@ -65,7 +65,7 @@ class Article extends CI_Controller
 		
 		$data['articles'] = $this->article_m->get_list($per_page, $per_page * ($p - 1), $type);
 		$data['page_html'] =  $this->_page_init($per_page);
-		$data['name'] = $this->about_m->get_second_name($type);
+		$data['name'] = $this->article_m->get_second_name($type);
 		
 		$this->load->view('homeheader');
 		$this->load->view('img_new');

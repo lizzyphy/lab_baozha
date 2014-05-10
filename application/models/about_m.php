@@ -27,35 +27,17 @@ class About_m extends CI_Model
 	public function get_second_name($aid)
 	{
 		$aid = (int) $aid;
-		$this->db->select('pid,name');
-		$this->db->where('tid', $aid);
-		$query = $this->db->get('article_type');
+		$this->db->select('type');
+		$this->db->where('aid', $aid);
+		$query = $this->db->get('about');
 		if($query->num_rows() > 0) {
 			//return $query->row_array();
 			$arr=$query->row_array();
-			$data['second_name'] = $arr['name'];
-			$pid = $arr['pid'];
-			$arr1 = $this->get_first_name($pid);
-			$data['first_name'] = $arr1;		
+			$data['second_name'] = $arr['type'];	
 		}
 		return $data;
 	}
-	
-	public function get_first_name($pid)
-	{
-		$pid = (int) $pid;
-		$this->db->select('name');
-		$this->db->where('tid', $pid);
-		$query = $this->db->get('article_type');
-		if($query->num_rows() > 0) {
-			//return $query->row_array();
-			$arr=$query->row_array();
-			$first_name = $arr['name'];				
-		}
 		
-		return $first_name;
-	}
-	
 	public function get_list2($aid) 
 	{
 		$return = array();

@@ -11,19 +11,8 @@
 				<li class="title_1">文章管理</li>
 				<li><a href="index.php?d=admin&c=home&m=article">文章管理</a></li>
 				<li><a href="index.php?d=admin&c=article_type">类别管理</a></li>
-			<!-- <li class="title_1">课程管理</li>
-				<li><a href="index.php?d=admin&c=courses&type=1">公开课程</a></li>
-				<li><a href="index.php?d=admin&c=courses&type=2">在职研究生课程</a></li>
-				<li class="title_1">报名管理</li>
-				<li><a href="index.php?d=admin&c=student&type=1">公开课报名</a></li>
-				<li><a href="index.php?d=admin&c=student&type=2">在职研究生课报名</a></li> 
-				<li class="title_1">证书管理</li>
-				<li><a href="index.php?d=admin&c=cert">证书管理</a></li>
-			-->	
 				<li class="title_1">团队管理</li>
-				<li><a href="index.php?d=admin&c=group&type=1">教师队伍</a></li>
-				<li><a href="index.php?d=admin&c=group&type=2">学员风采</a></li>
-				<li><a href="index.php?d=admin&c=group&type=3">经管校友</a></li>
+				<li><a href="index.php?d=admin&c=group">教师队伍</a></li>
 				
 			</ul>
 		</div>

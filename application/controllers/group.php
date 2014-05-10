@@ -22,16 +22,6 @@ class Group extends CI_Controller
 		$data['type'] = $type;
 		$data['name'] = $this->group_m->get_second_name($type);
 		$data['article'] = $this->group_m->get($gid);
-		
-		/*$this->load->view('header.php');
-		$this->load->view('img_1.php', array('img'	=>	4));
-		if($data['type'] == 3) {
-			$this->load->view('left_alumni.php');
-		} else {
-			$this->load->view('left_group.php');
-		}
-		$this->load->view('group.php', $data);
-		$this->load->view('footer.php');*/
 		$this->load->view('homeheader.php');
 		$this->load->view('left_group.php');
 		$this->load->view('group3.php', $data);

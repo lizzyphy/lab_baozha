@@ -78,13 +78,13 @@
                     <a href="<?php echo base_url('about/?aid=18')?>">图片展示</a>
                 </div>
             </li>
-            <li><a href="<?php echo base_url('direction/?aid=24')?>">研究方向</a>
+            <li><a href="<?php echo base_url('about/?aid=24')?>">研究方向</a>
             	<div class="naviout" style="display:none;">
-                	<a href="<?php echo base_url('direction/?aid=24')?>">含能材料理论与应用技术</a>
-                    <a href="<?php echo base_url('direction/?aid=25')?>">爆轰学与爆炸技术</a>
-                    <a href="<?php echo base_url('direction/?aid=26')?>">材料与结构冲击动力学</a>
-                    <a href="<?php echo base_url('direction/?aid=27')?>">毁伤理论与防护技术</a>
-                    <a href="<?php echo base_url('direction/?aid=28')?>">爆炸安全理论与评估技术</a>
+                	<a href="<?php echo base_url('about/?aid=24')?>">含能材料理论与应用技术</a>
+                    <a href="<?php echo base_url('about/?aid=25')?>">爆轰学与爆炸技术</a>
+                    <a href="<?php echo base_url('about/?aid=26')?>">材料与结构冲击动力学</a>
+                    <a href="<?php echo base_url('about/?aid=27')?>">毁伤理论与防护技术</a>
+                    <a href="<?php echo base_url('about/?aid=28')?>">爆炸安全理论与评估技术</a>
                 </div>
             </li>
             <li><a href="<?php echo base_url('group/type/?type=29')?>">学术队伍</a>

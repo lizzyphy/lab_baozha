@@ -55,14 +55,13 @@ class Group extends CI_Controller
 		$up = new Uploader_ue( "upfile" , $config );
 		$info = $up->getFileInfo();
 		
-		$type =(int) $this->input->get('type');
 		$avatar = $make_url . $info['url'];
 		$order = $this->input->post('order');
 		$title = $this->input->post('title', TRUE);
 		$content = $this->input->post('ue_content');
-		
+		$type = $this->input->post('type');
 		$this->group_m->add($order, $type, $title, $avatar, $content);
-		redirect('d=admin&c=group&type=' . $type);
+		redirect('d=admin&c=group');
 	}
 	
 	public function edit()
@@ -104,16 +103,11 @@ class Group extends CI_Controller
 	
 	public function add_v()
 	{
-		$type = (int) $this->input->get('type');
-		if($type == FALSE) {
-			//$type = group_m::GROUP_TEACHER;
-			$type = 29;
-		}
 		$data['order'] = '';
 		$data['title'] = '';
 		$data['content'] = '';
-		$data['form_url'] = 'd=admin&c=group&m=add&type=' . $type;
-		
+		$data['form_url'] = 'd=admin&c=group&m=add';
+		$data['types'] = $this->group_m->get_types();
 		$this->load->view('admin/header.php', array('username' => $this->admin_user_m->user->username));
 		$this->load->view('admin/left_navi.php');
 		$this->load->view('admin/group_add.php', $data);
