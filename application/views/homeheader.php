@@ -157,7 +157,7 @@
                     <a href="<?php echo base_url('article/type/?type=51')?>">学科建设表格</a>
                 </div>
             </li>
-            <li><a href="<?php echo base_url('about/?aid=60')?>">联系我们</a>
+            <li><a href="<?php echo base_url('about/?aid=110')?>">联系我们</a>
             </li>
          </ul>
          <div class="clear"></div>

@@ -38,7 +38,7 @@ class About extends CI_Controller
 			$this->load->view('about3.php', $data);
 			$this->load->view('homefoot.php');
 		}
-		elseif($aid==60)
+		elseif($aid==110)
 		{
 			$data['article'] = $this->about_m->get($aid);
 			$this->load->view('homeheader.php');
