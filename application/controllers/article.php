@@ -63,9 +63,10 @@ class Article extends CI_Controller
 			$type = 2;
 		}
 		
+		$data['type'] = $type;
+		
 		if(in_array($type, array(59, 64)))
 		{
-			$data['type'] = $type;
 			$data['article'] = $this->about_m->get_list2($type);
 			$data['name'] = $this->about_m->get_second_name($type);
 			$this->load->view('homeheader.php');
@@ -90,6 +91,16 @@ class Article extends CI_Controller
 			$this->load->view('about.php', $data);
 			$this->load->view('homefoot.php');
 		}
+		elseif(in_array($type, array(2,3,8,9)))
+		{
+			$data['article'] = $this->about_m->get($type);
+			$data['name'] = $this->about_m->get_second_name($type);
+			$this->load->view('homeheader.php');
+			$this->load->view('img_new.php');
+			$this->load->view('left_navi_new.php');
+			$this->load->view('about.php', $data);
+			$this->load->view('homefoot.php');
+		}
 		else
 		{
 			$data['articles'] = $this->article_m->get_list($per_page, $per_page * ($p - 1), $type);
@@ -98,7 +109,11 @@ class Article extends CI_Controller
 			
 			$this->load->view('homeheader');
 			$this->load->view('img_new');
-			if($type == 78 || $type == 79 || $type == 80 || $type == 81) {
+			if($type==17 || $type == 18)
+			{
+				$this->load->view('left_navi_new.php');
+			}
+			elseif($type == 78 || $type == 79 || $type == 80 || $type == 81) {
 				$this->load->view('left_academic.php');
 			} 
 			elseif($type == 46 || $type == 47 || $type == 58) {
