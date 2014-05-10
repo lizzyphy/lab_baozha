@@ -3,18 +3,11 @@
 	<div class="focus">
         <div id="pic">
             <ul>
+            <?php foreach ($picture_url as $row):?>
                 <li>
-                <a href=""><img width="1000" height="300" src="<?php echo base_url('static/img/1.jpg'); ?>" /></a>
+                <a href=""><img width="1000" height="300" src="<?php echo base_url($row['path']); ?>" /></a>
                 </li>	
-                <li>
-                <a href=""><img width="1000" height="300" src="<?php echo base_url('static/img/2.jpg'); ?>" /></a>
-                </li>
-                <li>
-                <a href=""><img width="1000" height="300" src="<?php echo base_url('static/img/3.jpg'); ?>" /></a>
-                </li>
-                <li>
-                <a href=""><img width="1000" height="300" src="<?php echo base_url('static/img/4.jpg'); ?>" /></a>
-                </li>
+            <?php endforeach;?>
             </ul>
         </div>
     </div>
@@ -32,17 +25,19 @@
     <div>
         <div style="_padding-top:5px; width: 440px; float:left;">
             <div>	
+            <?php foreach ($flash_url as $row):?>
                 <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
                 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" 
                 WIDTH="440" HEIGHT="350"> 
-            <PARAM NAME=movie VALUE="<?php echo base_url('static/img/爱如潮水.swf'); ?>"> 
+            <PARAM NAME=movie VALUE="<?php echo base_url($row['path']); ?>"> 
             <PARAM NAME=quality VALUE=high> 
             <PARAM NAME=bgcolor VALUE=#FFFFFF> 
-            <EMBED src="<?php echo base_url('static/img/爱如潮水.swf'); ?>" quality=high bgcolor=#FFFFFF WIDTH="440" HEIGHT="350" 
+            <EMBED src="<?php echo base_url($row['path']); ?>" quality=high bgcolor=#FFFFFF WIDTH="440" HEIGHT="350" 
             NAME="myMovieName" ALIGN="" TYPE="application/x-shockwave-flash" 
             PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"> 
             </EMBED> 
             </OBJECT>
+            <?php endforeach;?>
                 <div class="clear"></div>
             </div>
             <form action="<?php echo base_url('index/search')?>" method="get" >

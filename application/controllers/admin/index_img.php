@@ -41,7 +41,7 @@ class Index_img extends CI_Controller
 		$config = array(
 				"savePath" => "upload/" ,
 				"maxSize" => 100000 , //单位KB
-				"allowFiles" => array( ".gif" , ".png" , ".jpg" , ".jpeg" , ".bmp"  )
+				"allowFiles" => array( ".swf" ,".gif" , ".png" , ".jpg" , ".jpeg" , ".bmp"  )
 		);
 		$up = new Uploader_ue( "upfile" , $config );
 		$info = $up->getFileInfo();

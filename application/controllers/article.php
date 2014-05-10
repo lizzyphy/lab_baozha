@@ -68,7 +68,7 @@ class Article extends CI_Controller
 		if(in_array($type, array(59, 64)))
 		{
 			$data['article'] = $this->about_m->get_list2($type);
-			$data['name'] = $this->about_m->get_second_name($type);
+			$data['name'] = $this->article_m->get_second_name($type);
 			$this->load->view('homeheader.php');
 			$this->load->view('img_new.php');
 			$this->load->view('left_navi_yxgl.php');
@@ -79,7 +79,7 @@ class Article extends CI_Controller
 		elseif(in_array($type, array(60,61,62,63,64,65,66,67,68,69,70,71)))
 		{
 			$data['article'] = $this->about_m->get($type);
-			$data['name'] = $this->about_m->get_second_name($type);
+			$data['name'] = $this->article_m->get_second_name($type);
 			$abouts = $this->about_m->get_list();	
 			if($type == FALSE) {
 				$data['article'] = $abouts[0];	
@@ -88,24 +88,24 @@ class Article extends CI_Controller
 			$this->load->view('homeheader.php');
 			$this->load->view('img_new.php');
 			$this->load->view('left_navi_yxgl.php');			
-			$this->load->view('about.php', $data);
+			$this->load->view('article2.php', $data);
 			$this->load->view('homefoot.php');
 		}
 		elseif(in_array($type, array(2,3,8,9)))
 		{
 			$data['article'] = $this->about_m->get($type);
-			$data['name'] = $this->about_m->get_second_name($type);
+			$data['name'] = $this->article_m->get_second_name($type);
 			$this->load->view('homeheader.php');
 			$this->load->view('img_new.php');
 			$this->load->view('left_navi_new.php');
-			$this->load->view('about.php', $data);
+			$this->load->view('article2.php', $data);
 			$this->load->view('homefoot.php');
 		}
 		else
 		{
 			$data['articles'] = $this->article_m->get_list($per_page, $per_page * ($p - 1), $type);
 			$data['page_html'] =  $this->_page_init($per_page);
-			$data['name'] = $this->about_m->get_second_name($type);
+			$data['name'] = $this->article_m->get_second_name($type);
 			
 			$this->load->view('homeheader');
 			$this->load->view('img_new');

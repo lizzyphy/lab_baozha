@@ -81,6 +81,34 @@ class Article_m extends CI_Model
 		}
 		return $return;
 	}
+	public function get_list_img($limit, $offset = 0)
+	{
+		$i = 0;
+		$return = array();	
+		$this->db->select('path');
+		$this->db->where('type',1);
+		$this->db->order_by('id DESC');
+		$query = $this->db->get('index_img', $limit, $offset);
+		foreach ($query->result_array() as $row) {
+			$return[$i] = $row;
+			++$i;
+		}
+		return $return;
+	}
+	public function get_list_flash($limit, $offset = 0)
+	{
+		$i = 0;
+		$return = array();	
+		$this->db->select('path');
+		$this->db->where('type',2);
+		$this->db->order_by('id DESC');
+		$query = $this->db->get('index_img', $limit, $offset);
+		foreach ($query->result_array() as $row) {
+			$return[$i] = $row;
+			++$i;
+		}
+		return $return;
+	}
 	public function set_list_type($type = 0) 
 	{
 		if($type != 0) {

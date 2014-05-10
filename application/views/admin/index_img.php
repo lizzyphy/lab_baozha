@@ -10,7 +10,7 @@
 					<table width="100%" border="0" cellpadding="0" cellspacing="0">
 						<tr class="title_3">
 							<td width="5%">排序</td>
-							<td width="30%">图片预览</td>
+							<td width="30%">预览</td>
 							<td width="30%">链接地址</td>
 							<td width="25%">标题</td>
 							<td width="10%">操作</td>

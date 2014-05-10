@@ -22,7 +22,8 @@ class Index extends  CI_Controller {
 		$data['xshy'] = $this->article_m->get_list(12, 0, 79);
 		//友情链接
 		$data['link'] = $this->article_m->get_list_link(5, 0);
-		
+		$data['picture_url'] = $this->article_m->get_list_img(4, 0);
+		$data['flash_url'] = $this->article_m->get_list_flash(1, 0);
 		$this->load->view('homeheader');
 		$this->load->view('homecontent',$data);
 		$this->load->view('homefoot');

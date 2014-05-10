@@ -1,1 +1,0 @@
-<div id="mainpic" class="box"><img width="960" height="190" src="<?php echo base_url('static/common/img/banner/' . $img . '.jpg')?>" /></div>
