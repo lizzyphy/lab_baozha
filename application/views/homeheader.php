@@ -22,41 +22,41 @@
             <div id="head_r">
                 <table class="head_tab">
                     <tr>
-                    	<td><a href="index.php">OA系统</a>&nbsp;&nbsp;&nbsp;|</td>
-                        <td><a href="index.php">开放基金</a>&nbsp;&nbsp;&nbsp;|
+                    	<td><a href="http://est.bit.edu.cn/labadmin/login.php">OA系统</a>&nbsp;&nbsp;&nbsp;|</td>
+                        <td><a href="<?php echo base_url('article/type?type=92'); ?>">开放基金</a>&nbsp;&nbsp;&nbsp;|
                         	<div class="naviout" style="display:none;">
-                            	<a href="index.php">开放基金管理条例</a>
-                                <a href="index.php">开放基金指南</a>
-                                <a href="index.php">年度批准项目</a>
-                                <a href="index.php">历年发布项目统计</a>
-                                <a href="index.php">开放课题相关表格（含申请书）</a>
+                            	<a href="<?php echo base_url('article/type?type=92'); ?>">开放基金管理条例</a>
+                                <a href="<?php echo base_url('article/type?type=93'); ?>">开放基金指南</a>
+                                <a href="<?php echo base_url('article/type?type=94'); ?>">年度批准项目</a>
+                                <a href="<?php echo base_url('article/type?type=95'); ?>">历年发布项目统计</a>
+                                <a href="<?php echo base_url('article/type?type=96'); ?>">开放课题相关表格（含申请书）</a>
                             </div>
                         </td>
-                        <td><a href="index.php">学术交流</a>&nbsp;&nbsp;&nbsp;|
+                        <td><a href="<?php echo base_url('article/type?type=80'); ?>">学术交流</a>&nbsp;&nbsp;&nbsp;|
                         	<div class="naviout" style="display:none;">
-                            	<a href="index.php">专家讲坛</a>
-                                <a href="index.php">学术报告会议</a>
-                                <a href="index.php">主办国际国内会议</a>
+                            	<a href="<?php echo base_url('article/type?type=80'); ?>">专家讲坛</a>
+                                <a href="<?php echo base_url('article/type?type=79'); ?>">学术报告会议</a>
+                                <a href="<?php echo base_url('article/type?type=81'); ?>">主办国际国内会议</a>
                             </div>
                         </td>
                         <td><a href="index.php">资源共享</a>&nbsp;&nbsp;&nbsp;|
                         	<div class="naviout" style="display:none;">
-                            	<a href="index.php">30万元以上大型仪器设备</a>
-                                <a href="index.php">大型实验设施</a>
-                                <a href="index.php">开放共享设备</a>
-                                <a href="index.php">服务收费标准</a>
+                            	<a href="<?php echo base_url('article/type?type=98'); ?>">30万元以上大型仪器设备</a>
+                                <a href="<?php echo base_url('article/type?type=99'); ?>">大型实验设施</a>
+                                <a href="<?php echo base_url('article/type?type=100'); ?>">开放共享设备</a>
+                                <a href="<?php echo base_url('article/type?type=101'); ?>">服务收费标准</a>
                             </div>
                         </td>
-                        <td><a href="index.php">管理制度</a>&nbsp;&nbsp;&nbsp;|
+                        <td><a href="<?php echo base_url('about/?aid=83')?>">管理制度</a>&nbsp;&nbsp;&nbsp;|
                         	<div class="naviout" style="display:none;">
-                            	<a href="index.php">规章制度</a>
-                                <a href="index.php">学术委员会章程</a>
-                                <a href="index.php">学术交流与论文管理条例</a>
-                                <a href="index.php">开放基金管理条例</a>
-                                <a href="index.php">自主研究课题管理条例</a>
-                                <a href="index.php">资产管理和使用办法</a>
-                                <a href="index.php">重点实验室学术论文署名格式</a>
-                                <a href="index.php">计算与仿真中心机房安全管理制度</a>
+                            	<a href="<?php echo base_url('about/?aid=83')?>">规章制度</a>
+                                <a href="<?php echo base_url('about/?aid=84')?>">学术委员会章程</a>
+                                <a href="<?php echo base_url('about/?aid=85')?>">学术交流与论文管理条例</a>
+                                <a href="<?php echo base_url('about/?aid=86')?>">开放基金管理条例</a>
+                                <a href="<?php echo base_url('about/?aid=87')?>">自主研究课题管理条例</a>
+                                <a href="<?php echo base_url('about/?aid=88')?>">资产管理和使用办法</a>
+                                <a href="<?php echo base_url('about/?aid=89')?>">重点实验室学术论文署名格式</a>
+                                <a href="<?php echo base_url('about/?aid=90')?>">计算与仿真中心安全管理制度</a>
                             </div>
                         </td>
                         <td><a href="index.php">ENGLISH</a></td> 
@@ -157,7 +157,7 @@
                     <a href="<?php echo base_url('article/type/?type=51')?>">学科建设表格</a>
                 </div>
             </li>
-            <li><a href="<?php echo base_url('about/?aid=60')?>">联系我们</a>
+            <li><a href="<?php echo base_url('about/?aid=110')?>">联系我们</a>
             </li>
          </ul>
          <div class="clear"></div>

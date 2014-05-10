@@ -29,7 +29,7 @@ class Direction extends CI_Controller
 		
 		$this->load->view('homeheader.php');
 		$this->load->view('img_new.php');
-		$this->load->view('left_navi_new.php');
+		$this->load->view('left_direction.php');
 		$this->load->view('about.php', $data);
 		$this->load->view('homefoot.php');
 	}

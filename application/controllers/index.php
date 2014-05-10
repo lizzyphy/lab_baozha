@@ -17,9 +17,9 @@ class Index extends  CI_Controller {
 		//最新通知
 		$data['zxtz'] = $this->article_m->get_list(5, 0, 75);
 		//专家讲坛
-		$data['zjjt'] = $this->article_m->get_list(5, 0, 76);
+		$data['zjjt'] = $this->article_m->get_list(5, 0, 80);
 		//学术会议
-		$data['xshy'] = $this->article_m->get_list(12, 0, 77);
+		$data['xshy'] = $this->article_m->get_list(12, 0, 79);
 		//友情链接
 		$data['link'] = $this->article_m->get_list_link(5, 0);
 		
@@ -33,17 +33,15 @@ class Index extends  CI_Controller {
 		$this->load->view('content2_left');
 		$this->load->view('homefoot');
 	}
-	private function _page_init($per_page)
+	private function _page_init_search($per_page, $total_rows)
 	{
 		$this->load->library('pagination');
-		$type = (int) $this->input->get('type');
-		if($type < 1) {
-			$type = 2;
-		}
-	
-		$config['total_rows'] = $this->article_m->get_num($type);
+		
+		$keyword = $this->input->get('keywords', TRUE);
+		
+		$config['total_rows'] = $total_rows;
 		$config['per_page'] = $per_page;
-		$config['base_url'] = base_url('article/type/?type=' . $type);
+		$config['base_url'] = base_url('index/search/?keywords=' . $keyword);
 		$config['num_links'] = 20;
 		$config['query_string_segment'] = 'p';
 		$config['first_link'] = '首页';
@@ -55,17 +53,24 @@ class Index extends  CI_Controller {
 		$this->pagination->initialize($config);
 		return $this->pagination->create_links();
 	}
+
 	
-	public function search() 
+	function search() 
 	{
-		$data['title'] = '搜索结果';
 		$per_page = 20;
-		$keywords = $this->input->get('keywords');
-		$data['keywords'] = $keywords;
-		$data['articles'] = $this->article_m->get_search($keywords,5,0,0);
-		$data['page_html'] =  $this->_page_init($per_page);
+		$p = (int) $this->input->get('p');
+		$keyword = $this->input->get('keywords', TRUE);
+		if($p < 1) {
+			$p = 1;
+		}
+		$data['keywords'] = $keyword;
+		$data['articles'] = $this->article_m->get_search($keyword, $per_page, $per_page * ($p - 1));
+		$total_rows = $this->article_m->get_num(0, $keyword);
+		$data['page_html'] =  $this->_page_init_search($per_page, $total_rows);
+		
+		
 		$this->load->view('homeheader');
-		$this->load->view('search',$data);
+		$this->load->view('search.php', $data);
 		$this->load->view('homefoot');
 	}
 }
