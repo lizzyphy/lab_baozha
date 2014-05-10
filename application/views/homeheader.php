@@ -68,14 +68,14 @@
 	<div class="middle" id="navi">
     	<ul class="middle">
         	<li><a href="<?php echo base_url('index'); ?>">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
-        	<li><a href="<?php echo base_url('about/?aid=2')?>">实验室概况</a>
+        	<li><a href="<?php echo base_url('article/type/?type=2')?>">实验室概况</a>
             	<div class="naviout" style="display:none;">
-                    <a href="<?php echo base_url('about/?aid=2')?>">实验室简介</a>
-                    <a href="<?php echo base_url('about/?aid=3')?>">发展历程</a>
-                    <a href="<?php echo base_url('about/?aid=8')?>">领导班子</a>
-                    <a href="<?php echo base_url('about/?aid=9')?>">组织机构</a>
-                    <a href="<?php echo base_url('about/?aid=17')?>">实验室大事记</a>
-                    <a href="<?php echo base_url('about/?aid=18')?>">图片展示</a>
+                    <a href="<?php echo base_url('article/type/?type=2')?>">实验室简介</a>
+                    <a href="<?php echo base_url('article/type/?type=3')?>">发展历程</a>
+                    <a href="<?php echo base_url('article/type/?type=8')?>">领导班子</a>
+                    <a href="<?php echo base_url('article/type/?type=9')?>">组织机构</a>
+                    <a href="<?php echo base_url('article/type/?type=17')?>">实验室大事记</a>
+                    <a href="<?php echo base_url('article/type/?type=18')?>">图片展示</a>
                 </div>
             </li>
             <li><a href="<?php echo base_url('about/?aid=24')?>">研究方向</a>
@@ -123,25 +123,25 @@
                     <a href="<?php echo base_url('article/type/?type=58')?>">国际合作项目</a>
                 </div>
             </li>
-            <li><a href="<?php echo base_url('about/?aid=59')?>">运行管理</a>
+            <li><a href="<?php echo base_url('article/type/?type=59')?>">运行管理</a>
             	<div class="naviout" style="display:none;">
-                	<span class="title"><a href="<?php echo base_url('about/?aid=59')?>">实验室机构</a>
+                	<span class="title"><a href="<?php echo base_url('article/type/?type=59')?>">实验室机构</a>
                         <span class="spanout" style="display:none;">
-                            <a href="<?php echo base_url('about/?aid=65')?>">办公室</a>
-                            <a href="<?php echo base_url('about/?aid=66')?>">实验中心</a>
-                            <a href="<?php echo base_url('about/?aid=67')?>">仿真与计算中心</a>
-                            <a href="<?php echo base_url('about/?aid=68')?>">事务委员会</a>
-                            <a href="<?php echo base_url('about/?aid=69')?>">学术委员会</a>
+                            <a href="<?php echo base_url('article/type/?type=65')?>">办公室</a>
+                            <a href="<?php echo base_url('article/type/?type=66')?>">实验中心</a>
+                            <a href="<?php echo base_url('article/type/?type=67')?>">仿真与计算中心</a>
+                            <a href="<?php echo base_url('article/type/?type=68')?>">事务委员会</a>
+                            <a href="<?php echo base_url('article/type/?type=69')?>">学术委员会</a>
                         </span>
                     </span>
-                    <a href="<?php echo base_url('about/?aid=60')?>">规章制度</a>
-                    <a href="<?php echo base_url('about/?aid=61')?>">内部通知</a>
-                    <a href="<?php echo base_url('about/?aid=62')?>">招聘信息</a>
-                    <a href="<?php echo base_url('about/?aid=63')?>">文化建设</a>
-                    <span class="title"><a href="<?php echo base_url('about/?aid=64')?>">挂靠机构</a>
+                    <a href="<?php echo base_url('article/type/?type=60')?>">规章制度</a>
+                    <a href="<?php echo base_url('article/type/?type=61')?>">内部通知</a>
+                    <a href="<?php echo base_url('article/type/?type=62')?>">招聘信息</a>
+                    <a href="<?php echo base_url('article/type/?type=63')?>">文化建设</a>
+                    <span class="title"><a href="<?php echo base_url('article/type/?type=64')?>">挂靠机构</a>
                     	<span class="spanout2" style="display:none;">
-                            <a href="<?php echo base_url('about/?aid=70')?>">挂靠机构1</a>
-                    		<a href="<?php echo base_url('about/?aid=71')?>">挂靠机构2</a>
+                            <a href="<?php echo base_url('article/type/?type=70')?>">挂靠机构1</a>
+                    		<a href="<?php echo base_url('article/type/?type=71')?>">挂靠机构2</a>
                         </span>
                     </span>
                     

@@ -10,7 +10,7 @@
         <div id="right_content">
             <ul>
             <?php foreach($article as $r):?>
-                <li><span><a href="<?php echo base_url('about/?aid=' . $r['tid']); ?>"><?php echo $r['name'];?></a></span>
+                <li><span><a href="<?php echo base_url('article/type/?type=' . $r['tid']); ?>"><?php echo $r['name'];?></a></span>
                 </li>
             <?php endforeach;?>
             </ul>

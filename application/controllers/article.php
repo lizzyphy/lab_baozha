@@ -63,39 +63,84 @@ class Article extends CI_Controller
 			$type = 2;
 		}
 		
-		$data['articles'] = $this->article_m->get_list($per_page, $per_page * ($p - 1), $type);
-		$data['page_html'] =  $this->_page_init($per_page);
-		$data['name'] = $this->article_m->get_second_name($type);
+		$data['type'] = $type;
 		
-		$this->load->view('homeheader');
-		$this->load->view('img_new');
-		if($type == 78 || $type == 79 || $type == 80 || $type == 81) {
-			$this->load->view('left_academic.php');
-		} 
-		elseif($type == 46 || $type == 47 || $type == 58) {
-			$this->load->view('left_navi_hzjl.php');
-		}
-		elseif($type == 92 || $type == 93 || $type == 94 || $type == 95 || $type == 96)
+		if(in_array($type, array(59, 64)))
 		{
-			$this->load->view('left_fund.php');
+			$data['article'] = $this->about_m->get_list2($type);
+			$data['name'] = $this->about_m->get_second_name($type);
+			$this->load->view('homeheader.php');
+			$this->load->view('img_new.php');
+			$this->load->view('left_navi_yxgl.php');
+			$this->load->view('about2.php', $data);
+			$this->load->view('homefoot.php');
+			
 		}
-		elseif($type == 39 || $type == 40 || $type == 41 || $type == 42)
+		elseif(in_array($type, array(60,61,62,63,64,65,66,67,68,69,70,71)))
 		{
-			$this->load->view('left_navi_kycg.php');
+			$data['article'] = $this->about_m->get($type);
+			$data['name'] = $this->about_m->get_second_name($type);
+			$abouts = $this->about_m->get_list();	
+			if($type == FALSE) {
+				$data['article'] = $abouts[0];	
+			}
+			
+			$this->load->view('homeheader.php');
+			$this->load->view('img_new.php');
+			$this->load->view('left_navi_yxgl.php');			
+			$this->load->view('about.php', $data);
+			$this->load->view('homefoot.php');
 		}
-		elseif($type == 48 || $type == 49 || $type == 50 || $type == 51 || $type == 72)
+		elseif(in_array($type, array(2,3,8,9)))
 		{
-			$this->load->view('left_navi_xgxz.php');
+			$data['article'] = $this->about_m->get($type);
+			$data['name'] = $this->about_m->get_second_name($type);
+			$this->load->view('homeheader.php');
+			$this->load->view('img_new.php');
+			$this->load->view('left_navi_new.php');
+			$this->load->view('about.php', $data);
+			$this->load->view('homefoot.php');
 		}
-		elseif($type == 98 || $type == 99 || $type == 100 || $type == 101)
+		else
 		{
-			$this->load->view('left_share.php');
+			$data['articles'] = $this->article_m->get_list($per_page, $per_page * ($p - 1), $type);
+			$data['page_html'] =  $this->_page_init($per_page);
+			$data['name'] = $this->about_m->get_second_name($type);
+			
+			$this->load->view('homeheader');
+			$this->load->view('img_new');
+			if($type==17 || $type == 18)
+			{
+				$this->load->view('left_navi_new.php');
+			}
+			elseif($type == 78 || $type == 79 || $type == 80 || $type == 81) {
+				$this->load->view('left_academic.php');
+			} 
+			elseif($type == 46 || $type == 47 || $type == 58) {
+				$this->load->view('left_navi_hzjl.php');
+			}
+			elseif($type == 92 || $type == 93 || $type == 94 || $type == 95 || $type == 96)
+			{
+				$this->load->view('left_fund.php');
+			}
+			elseif($type == 39 || $type == 40 || $type == 41 || $type == 42)
+			{
+				$this->load->view('left_navi_kycg.php');
+			}
+			elseif($type == 48 || $type == 49 || $type == 50 || $type == 51 || $type == 72)
+			{
+				$this->load->view('left_navi_xgxz.php');
+			}
+			elseif($type == 98 || $type == 99 || $type == 100 || $type == 101)
+			{
+				$this->load->view('left_share.php');
+			}
+			else {
+				$this->load->view('left_news.php');
+			}
+			$this->load->view('content2_left.php', $data);
+			$this->load->view('homefoot');
 		}
-		else {
-			$this->load->view('left_news.php');
-		}
-		$this->load->view('content2_left.php', $data);
-		$this->load->view('homefoot');
 	}
 	
 	private function _page_init($per_page)
