@@ -19,6 +19,7 @@ class Group extends CI_Controller
 	{
 		$gid = (int) $this->input->get('gid');
 		$type = (int) $this->input->get('type');
+		$data['type'] = $type;
 		$data['name'] = $this->group_m->get_second_name($type);
 		$data['article'] = $this->group_m->get($gid);
 		
@@ -34,7 +35,7 @@ class Group extends CI_Controller
 		$this->load->view('homeheader.php');
 		$this->load->view('img_new.php');
 		$this->load->view('left_navi_new.php');
-		$this->load->view('content3.php', $data);
+		$this->load->view('group3.php', $data);
 		$this->load->view('homefoot.php');
 		
 	}
@@ -52,7 +53,7 @@ class Group extends CI_Controller
 		if($type < 1) {
 			$type = 1;
 		}
-		
+		$data['type'] = $type;
 		$data['article'] = $this->group_m->get_list($per_page, $per_page * ($p - 1), $type);
 		$data['page_html'] =  $this->_page_init($per_page,$type);
 		//$data['article'] = $this->group_m->get_list(5,0,$gid);
