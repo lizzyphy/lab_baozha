@@ -27,6 +27,15 @@ class Article extends CI_Controller
 		if($data['article']['type'] == 79 || $data['article']['type'] == 80 || $data['article']['type'] == 81) {
 			$this->load->view('left_academic.php');
 		} 
+		elseif($data['article']['type'] == 46 || $data['article']['type'] == 47 || $data['article']['type'] == 58) {
+			$this->load->view('left_navi_hzjl.php');
+		} 
+		elseif($data['article']['type'] == 39 || $data['article']['type'] == 40 || $data['article']['type'] == 41 || $data['article']['type'] == 42) {
+			$this->load->view('left_navi_kycg.php');
+		}
+		elseif($data['article']['type'] == 48 || $data['article']['type'] == 49 || $data['article']['type'] == 50 || $data['article']['type'] == 51 || $data['article']['type'] == 72) {
+			$this->load->view('left_navi_xgxz.php');
+		}
 		elseif($data['article']['type'] == 92 || $data['article']['type'] == 93 || $data['article']['type'] == 94 || $data['article']['type'] == 95 || $data['article']['type'] == 96)
 		{
 			$this->load->view('left_fund.php');
@@ -44,7 +53,7 @@ class Article extends CI_Controller
 	
 	public function type() 
 	{
-		$per_page = 2;
+		$per_page = 20;
 		$type = (int) $this->input->get('type');
 		$p = (int) $this->input->get('p');
 		if($p < 1) {
@@ -63,9 +72,20 @@ class Article extends CI_Controller
 		if($type == 78 || $type == 79 || $type == 80 || $type == 81) {
 			$this->load->view('left_academic.php');
 		} 
+		elseif($type == 46 || $type == 47 || $type == 58) {
+			$this->load->view('left_navi_hzjl.php');
+		}
 		elseif($type == 92 || $type == 93 || $type == 94 || $type == 95 || $type == 96)
 		{
 			$this->load->view('left_fund.php');
+		}
+		elseif($type == 39 || $type == 40 || $type == 41 || $type == 42)
+		{
+			$this->load->view('left_navi_kycg.php');
+		}
+		elseif($type == 48 || $type == 49 || $type == 50 || $type == 51 || $type == 72)
+		{
+			$this->load->view('left_navi_xgxz.php');
 		}
 		elseif($type == 98 || $type == 99 || $type == 100 || $type == 101)
 		{
