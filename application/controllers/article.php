@@ -44,7 +44,7 @@ class Article extends CI_Controller
 	
 	public function type() 
 	{
-		$per_page = 20;
+		$per_page = 2;
 		$type = (int) $this->input->get('type');
 		$p = (int) $this->input->get('p');
 		if($p < 1) {

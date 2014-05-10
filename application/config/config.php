@@ -16,6 +16,11 @@
 */
 $config['base_url']	= '';
 
+/**
+ * 上传路劲的合成配置
+ */
+$config['admin_upload'] = '/';
+
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -180,7 +185,7 @@ $config['directory_trigger']	= 'd'; // experimental not currently in use
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 0;
+$config['log_threshold'] = 1;
 
 /*
 |--------------------------------------------------------------------------

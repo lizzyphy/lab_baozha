@@ -56,6 +56,18 @@ class About_m extends CI_Model
 		return $first_name;
 	}
 	
+	public function get_list2($aid) 
+	{
+		$return = array();
+		$this->db->where('pid', $aid);
+		$this->db->order_by('tid ASC');
+		$query = $this->db->get('article_type');
+		if($query->num_rows() > 0) {
+			$return = $query->result_array();
+		}
+		return $return;
+	}
+	
 	public function get_list() 
 	{
 		$return = array();
