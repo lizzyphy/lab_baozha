@@ -93,7 +93,7 @@
             <div class="title1">
                 <div class="float_l"><img width="5" height="14" src="<?php echo base_url('static/img/shu.png'); ?>" />
                 &nbsp;&nbsp;专家讲坛信息</div>
-                <div class="more"><a href="<?php echo base_url('article/type?type=76'); ?>" title="更多">更多 &gt;</a></div>
+                <div class="more"><a href="<?php echo base_url('article/type?type=80'); ?>" title="更多">更多 &gt;</a></div>
             </div>
             <div class="img_1"><img width="330" height="200" src="<?php echo base_url('static/img/zj.jpg'); ?>" /></div>
            <ul>
@@ -110,7 +110,7 @@
             <div class="title1">
                 <div class="float_l"><img width="5" height="14" src="<?php echo base_url('static/img/shu.png'); ?>" />
                 &nbsp;&nbsp;学术会议信息</div>
-                <div class="more"><a href="<?php echo base_url('article/type?type=77'); ?>" title="更多">更多 &gt;</a></div>
+                <div class="more"><a href="<?php echo base_url('article/type?type=79'); ?>" title="更多">更多 &gt;</a></div>
             </div>
             <ul>
                  <?php foreach ($xshy as $row):?>
@@ -131,7 +131,7 @@
             <div class="img_1"><img width="218" height="200" src="<?php echo base_url('static/img/lj.jpg'); ?>" /></div>
             <ul>
                 <?php foreach ($link as $row):?>
-                <li><span><a href="<?php echo $row['url']; ?>" title="<?php echo $row['title']; ?>"><?php echo $row['title']; ?></a></span>
+                <li><span><a href="<?php echo $row['url']; ?>" target='_blank' title="<?php echo $row['title']; ?>"><?php echo $row['title']; ?></a></span>
 				<?php endforeach; ?>
             </ul>
         </div>

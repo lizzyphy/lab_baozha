@@ -1,18 +1,16 @@
-
-<div id="content">
-	<div id="content_left">
-		<div class="title_1">
-			<p>优秀团队</p>
-		</div>
-		<div class="left_navi">
-			<ul id="nav1">
-				<li><a href="<?php echo base_url('group/type/?type=1'); ?>">师资团队</a></li>
-				<li><a href="<?php echo base_url('group/type/?type=2'); ?>">学员风采</a></li>
-			</ul>
-		</div>
-		<div id="ad">
-			<a href="<?php echo base_url('course/type/?type=1'); ?>"><img src="<?php echo base_url('static/common/img/a_content_right_05.jpg'); ?>" width="210" border="0" /></a> 
-			<a href="<?php echo base_url('course/type/?type=2'); ?>"><img src="<?php echo base_url('static/common/img/a_content_right_07.jpg'); ?>" width="210" border="0" /></a>
-			<a href="<?php echo base_url('article/type/?type=6'); ?>"><img src="<?php echo base_url('static/common/img/a_content_right_06.jpg'); ?>" width="210" border="0" /></a>
-		</div>
-	</div>
+	<div class="list_left">
+        <div id="left_content">
+            <ul>
+                <li><a href="<?php echo base_url('group/type/?type=29')?>">&nbsp;&nbsp;&nbsp;&nbsp;院士</a></li>
+                <li> <a href="<?php echo base_url('group/type/?type=30')?>">&nbsp;&nbsp;&nbsp;&nbsp;突贡专家</a></li>
+                <li> <a href="<?php echo base_url('group/type/?type=31')?>">&nbsp;&nbsp;&nbsp;&nbsp;长江学者</a></li>
+                <li> <a href="<?php echo base_url('group/type/?type=32')?>">&nbsp;&nbsp;&nbsp;&nbsp;杰青</a></li>
+                <li> <a href="<?php echo base_url('group/type/?type=33')?>">&nbsp;&nbsp;&nbsp;&nbsp;百千万人才</a></li>
+                <li> <a href="<?php echo base_url('group/type/?type=34')?>">&nbsp;&nbsp;&nbsp;&nbsp;新世纪优秀人才</a></li>
+                <li>  <a href="<?php echo base_url('group/type/?type=35')?>">&nbsp;&nbsp;&nbsp;&nbsp;方向带头人</a></li>
+                <li> <a href="<?php echo base_url('group/type/?type=36')?>">&nbsp;&nbsp;&nbsp;&nbsp;博导</a></li>
+                <li> <a href="<?php echo base_url('group/type/?type=37')?>">&nbsp;&nbsp;&nbsp;&nbsp;教授</a></li>
+                <li> <a href="<?php echo base_url('group/type/?type=38')?>">&nbsp;&nbsp;&nbsp;&nbsp;流动人员</a></li>
+            </ul>
+         </div>
+    </div>

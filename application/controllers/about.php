@@ -29,7 +29,15 @@ class About extends CI_Controller
 		
 		$this->load->view('homeheader.php');
 		$this->load->view('img_new.php');
-		$this->load->view('left_navi_new.php');
+		if($aid == 2 || $aid == 3 || $aid == 8 || $aid == 9 || $aid == 17 || $aid == 18 ) {
+			$this->load->view('left_navi_new.php');
+		}
+		 elseif($aid == 83 || $aid == 84 || $aid == 85|| $aid == 86 || $aid == 87 || $aid == 88|| $aid == 89 || $aid == 90 ) {
+			$this->load->view('left_policy.php');
+		}
+		elseif($aid == 43 || $aid == 44 || $aid == 45){
+			$this->load->view('left_subject.php');	
+		}
 		$this->load->view('about.php', $data);
 		$this->load->view('homefoot.php');
 	}

@@ -30,7 +30,7 @@ class Group extends CI_Controller
 		$this->load->view('group.php', $data);
 		$this->load->view('footer.php');*/
 		$this->load->view('homeheader.php');
-		$this->load->view('left_navi_new.php');
+		$this->load->view('left_group.php');
 		$this->load->view('content3.php', $data);
 		$this->load->view('homefoot.php');
 		
@@ -65,7 +65,7 @@ class Group extends CI_Controller
 			$this->load->view('left_group.php');
 		}*/
 		$this->load->view('img_new.php');
-		$this->load->view('left_navi_new.php');
+		$this->load->view('left_group.php');
 		$this->load->view('group.php', $data);
 		$this->load->view('homefoot.php');
 	}
