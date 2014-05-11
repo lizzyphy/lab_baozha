@@ -4,11 +4,10 @@
 .right_title {
 	width:600px;
 	font-size:20px;
-	color:#215bbb;
+	color:#064481;
 	font-weight:bold;
     text-align: center;
 	padding-top: 20px;
-	height:65px;
 	margin:0 auto;
 }
 
@@ -35,12 +34,10 @@
 	font-size: 12px;
 	
 }
-.content3_time {
-
-	width: 100px;
+.content3_time {;
 	color: #666;
 	font-size: 12px;
-	float: right;
+    text-align:center;
 	padding-top: 10px;
 	font-weight: normal;
 }

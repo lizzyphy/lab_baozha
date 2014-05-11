@@ -37,7 +37,7 @@ class About extends CI_Controller
 			
 			$this->load->view('homeheader.php');
 			$this->load->view('img_new.php');
-			if($aid == 2 || $aid == 3 || $aid == 8 || $aid == 9 || $aid == 17 || $aid == 18 ) {
+			if($aid == 2 || $aid == 3 || $aid == 8 || $aid == 9 || $aid == 17 || $aid == 18  || $aid == 46 ) {
 				$this->load->view('left_navi_new.php');
 			}
 			 elseif($aid == 83 || $aid == 84 || $aid == 85 || $aid == 87 || $aid == 88|| $aid == 89 || $aid == 90 ) {
