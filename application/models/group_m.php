@@ -58,20 +58,6 @@ class Group_m extends CI_Model
 		return $return;
 	}
 	
-	public function get_typename($type)
-	{
-		if($type == Group_m::GROUP_TEACHER) {
-			return '师资团队';
-		}
-		if($type == Group_m::GROUP_STUDENT) {
-			return '学员风采';
-		}
-		if($type == Group_m::GROUP_ALUMN) {
-			return '经管校友';
-		}
-		return '';
-	}
-	
 	public function get_num($type = 0)
 	{
 		$this->db->where('type', $type);
