@@ -30,30 +30,26 @@
 	float:left;
 }
 
-
-
 #left_content ul li{
-	height:50px;
-	line-height:50px;
+	height:40px;
+	line-height:40px;
 	margin:2px 10px 0px 10px;
-	border-bottom:1px solid #c0c0c0;
+	border-bottom:1px solid #DDD;
 	text-align:left;
 }
-
 #left_content a{
-	font-weight:bold;
-	color:#215bbb;
+	color:#064481;
 	display:block;
 }
 
 #left_content a:hover{
-	background-color:#edf5fc;	
+	background-color:#CCC;	
 }
 
 
 .list_right{
 	background-color:#FFF;
-	width:755px;
+	width:760px;
 	line-height:30px;
 	float:left;
 	-webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 0 6px rgba(0, 0, 0, 0.2);
@@ -65,11 +61,12 @@
 #right_head{
 	line-height:50px;
 	padding-top:10px;
-	margin:10px 10px 0px 10px;
+	margin:0 30px 0px 10px;
 	padding-left:15px;
-	font-family: "microsoft yahei";
 }
-
+#right_head p {
+    border-bottom: 2px solid #004080;
+}
 #right_head a{
 	color: #666;
 }
@@ -80,7 +77,7 @@
 
 #right_title{
 	font-size:20px;
-	color:#215bbb;
+	color:#064481;
 	font-weight:bold;
 	padding:15px 0px 5px 40px;
 	/*border-bottom:1px dashed #CCCCCC;*/
@@ -89,13 +86,16 @@
 #right_content{
 	margin:10px 70px 50px 50px;
 	width:660px;
-
+}
+.list_content {
+    margin:10px 30px 50px 20px !important;
+    width:100% !important;
 }
 #right_content li a{
 	white-space:nowrap;
 }
 #right_content ul li{
-	width:620px;
+	width:670px;
 	height:30px;
 	overflow:hidden;
 	display:block;

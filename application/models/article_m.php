@@ -178,6 +178,11 @@ class Article_m extends CI_Model
 	}
 	public function get_second_name($aid)
 	{
+		$data = array(
+			'first_name'	=> '',
+			'second_name'	=> '',
+		);
+		
 		$aid = (int) $aid;
 		$this->db->select('pid,name');
 		$this->db->where('tid', $aid);
