@@ -45,22 +45,18 @@ class Group extends CI_Controller
 		$data['type'] = $type;
 		$data['article'] = $this->group_m->get_list($per_page, $per_page * ($p - 1), $type);
 		$data['page_html'] =  $this->_page_init($per_page,$type);
-		//$data['article'] = $this->group_m->get_list(5,0,$gid);
-		//var_dump($data['article']);
 		$data['name'] = $this->group_m->get_second_name($gid);
-		//$data['title'] = $this->group_m->get_typename($type);
-		//$data['type'] = $type;
 		
 		$this->load->view('homeheader.php');
-		/*$this->load->view('img_1.php', array('img'	=>	4));
-		if($data['type'] == 3) {
-			$this->load->view('left_alumni.php');
-		} else {
-			$this->load->view('left_group.php');
-		}*/
 		$this->load->view('img_new.php');
 		$this->load->view('left_group.php');
-		$this->load->view('group.php', $data);
+		if($type = 30 || $type =33 ||$type = 34)
+		{
+			$this->load->view('group2.php', $data);
+		}
+		else {
+			$this->load->view('group.php', $data);
+		}
 		$this->load->view('homefoot.php');
 	}
 	
