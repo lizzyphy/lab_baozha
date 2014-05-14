@@ -33,7 +33,7 @@ class Group extends CI_Controller
 	
 	public function type() 
 	{
-		$per_page = 1;
+		$per_page = 5;
 		$type = (int) $this->input->get('type');
 		$gid = $type;
 		$p = (int) $this->input->get('p');
