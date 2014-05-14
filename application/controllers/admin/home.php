@@ -80,7 +80,7 @@ class Home extends CI_Controller
 		$data['content'] = '';
 		$data['tid'] = 0;
 		$data['form_url'] = 'd=admin&c=article&m=add';
-		var_dump($data['types']);
+		//var_dump($data['types']);
 		$this->load->view('admin/header.php', array('username' => $this->admin_user_m->user->username));
 		$this->load->view('admin/left_navi.php');
 		$this->load->view('admin/article_add.php', $data);

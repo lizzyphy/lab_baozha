@@ -24,7 +24,11 @@ class Article extends CI_Controller
 		$data['name'] = $this->article_m->get_second_name($type);
 		$this->load->view('homeheader');
 		$this->load->view('img_new');
-		if($data['article']['type'] == 79 || $data['article']['type'] == 80 || $data['article']['type'] == 81) {
+		if($type==17 || $type == 18)
+			{
+				$this->load->view('left_navi_new.php');
+			}
+		elseif($data['article']['type'] == 79 || $data['article']['type'] == 80 || $data['article']['type'] == 81) {
 			$this->load->view('left_academic.php');
 		} 
 		elseif($data['article']['type'] == 46 || $data['article']['type'] == 47 || $data['article']['type'] == 58) {

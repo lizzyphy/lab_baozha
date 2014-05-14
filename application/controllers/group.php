@@ -23,6 +23,7 @@ class Group extends CI_Controller
 		$data['name'] = $this->group_m->get_second_name($type);
 		$data['article'] = $this->group_m->get($gid);
 		$this->load->view('homeheader.php');
+		$this->load->view('img_new.php');
 		$this->load->view('left_group.php');
 		$this->load->view('group3.php', $data);
 		$this->load->view('homefoot.php');

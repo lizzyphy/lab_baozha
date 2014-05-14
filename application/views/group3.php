@@ -5,7 +5,7 @@
         </div>
         <div class="right_title">
         	<p><?php echo $article['title'];?></p>
-        <div class="content3_time"><?php echo $article['add_date'];?></div></div>
+        </div>
         <div class="clear"></div>
         <?php if(isset($article['avatar'])):?>
         	<div class="right_group_p_more">

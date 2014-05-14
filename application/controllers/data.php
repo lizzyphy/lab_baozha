@@ -17,15 +17,40 @@ class Data extends CI_Controller
 	public function index() 
 	{
 		$my_lab = $this->load->database('my_lab',TRUE);
-		$lab = $this->load->database('default',TRUE);
-		$query = $lab->get('lab_news');
+		$lab_baozha = $this->load->database('default',TRUE);
+		$my_lab->where('mid', 24);
+		$my_lab->order_by('date DESC');
+		$query = $my_lab->get('news');
 		
 		
 		if($query->num_rows() > 0) 
 		{
 			$array = $query->result_array() ;
-			//var_dump($array);
+			
 			foreach($array as $a)
+			{
+				if(empty($a['title']))
+				{
+					$a['title'] = '';
+				}
+			if(empty($a['content']))
+				{
+					$a['content'] = '';
+				}
+			if(empty($a['date']))
+				{
+					$a['date'] = '';
+				}
+			$data = array(
+				              'type'=>'48',
+				              'title'=>$a['title'],
+							  'content'=>$a['content'],
+							  'add_date'=>$a['date'],
+				              'add_time'=>time(),
+				              'add_user'=>'wangte'
+			);	
+			//var_dump($array);
+			/*foreach($array as $a)
 			{
 				if(empty($a['n_id']))
 				{
@@ -71,17 +96,18 @@ class Data extends CI_Controller
 				//echo $a['n_content'];
 				$data = array(
 				              'nid'=>$a['n_id'],
-				              'mid'=>$a['m_id'],
-							  'mlid'=>$a['m_lid'],
+				              //'mid'=>$a['m_id'],
+							  //'mlid'=>$a['m_lid'],
 							  'title'=>$a['n_title'],
 				              'image'=>$a['n_image'],
-				              'imgsrc'=>$a['imgsrc'],
+				              //'imgsrc'=>$a['imgsrc'],
 				              'name'=>$a['n_name'],
 				              'content'=>$a['n_content'],
-				              'click'=>$a['n_click'],
+				             // 'click'=>$a['n_click'],
 				              'date'=>$a['n_date']
-				);
-				$my_lab->insert('news',$data);
+				);*/
+				$lab_baozha->insert('article',$data);
+				//$my_lab->insert('zxtz',$data);
 			}
 		}
 	}
