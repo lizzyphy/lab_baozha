@@ -50,7 +50,7 @@ class Group extends CI_Controller
 		$this->load->view('homeheader.php');
 		$this->load->view('img_new.php');
 		$this->load->view('left_group.php');
-		if($type = 30 || $type =33 ||$type = 34)
+		if($type == 30 || $type == 33 ||$type == 34 )
 		{
 			$this->load->view('group2.php', $data);
 		}
