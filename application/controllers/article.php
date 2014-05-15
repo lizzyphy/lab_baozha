@@ -71,7 +71,7 @@ class Article extends CI_Controller
 		
 		if(in_array($type, array(59, 64)))
 		{
-			$data['article'] = $this->about_m->get_list2($type);
+			$data['article'] = $this->article_m->get_list2($type);
 			$data['name'] = $this->article_m->get_second_name($type);
 			$this->load->view('homeheader.php');
 			$this->load->view('img_new.php');
@@ -82,9 +82,9 @@ class Article extends CI_Controller
 		}
 		elseif(in_array($type, array(60,61,62,63,64,65,66,67,68,69,70,71)))
 		{
-			$data['article'] = $this->about_m->get($type);
+			$data['article'] = $this->article_m->get($type);
 			$data['name'] = $this->article_m->get_second_name($type);
-			$abouts = $this->about_m->get_list();	
+			$abouts = $this->article_m->get_list();	
 			if($type == FALSE) {
 				$data['article'] = $abouts[0];	
 			}
@@ -95,9 +95,9 @@ class Article extends CI_Controller
 			$this->load->view('article2.php', $data);
 			$this->load->view('homefoot.php');
 		}
-		elseif(in_array($type, array(2,3,8,9)))
+		elseif(in_array($type, array(2,3,8,9,102)))
 		{
-			$data['article'] = $this->about_m->get($type);
+			$data['article'] = $this->article_m->get_type($type);
 			$data['name'] = $this->article_m->get_second_name($type);
 			$this->load->view('homeheader.php');
 			$this->load->view('img_new.php');
