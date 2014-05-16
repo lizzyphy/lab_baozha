@@ -123,7 +123,7 @@
                 <img width="5" height="14" src="<?php echo base_url('static/img/shu.png'); ?>" />
                 <span>&nbsp;&nbsp;友情链接</span>
             </div>
-            <div class="img_1"><img width="218" height="200" src="<?php echo base_url('static/img/lj.jpg'); ?>" /></div>
+            <div class="img_1"><img width="218" height="190" src="<?php echo base_url('static/img/lj.jpg'); ?>" /></div>
             <ul>
                 <?php foreach ($link as $row):?>
                 <li><span><a href="<?php echo $row['url']; ?>" target='_blank' title="<?php echo $row['title']; ?>"><?php echo $row['title']; ?></a></span>

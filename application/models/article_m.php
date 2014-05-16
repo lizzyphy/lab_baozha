@@ -44,6 +44,27 @@ class Article_m extends CI_Model
 		return FALSE;
 	}
 	
+	public function get_type($type)
+	{
+		$type = intval($type);
+		$this->db->where('type', $type);
+		$query = $this->db->get('article');
+		if($query->num_rows() == 1) {
+			$row = $query->row_array();
+			$query->free_result();
+			return array(
+						'type'		=>	$type,
+						'type_name'	=>	$this->article_type_m->get_name($row['type']),
+						'title'		=>	$row['title'],
+						'content'	=>	$row['content'],
+						'add_date'	=>	$row['add_date'],
+						'add_time'	=>	$row['add_time'],
+						'add_user'	=>	$row['add_user'],
+					);
+		}
+		return FALSE;
+	}
+	
 	/**
 	 * 获取文章列表，不包括文章内容字段
 	 * 
