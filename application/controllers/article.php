@@ -84,7 +84,7 @@ class Article extends CI_Controller
 		{
 			$data['article'] = $this->article_m->get($type);
 			$data['name'] = $this->article_m->get_second_name($type);
-			$abouts = $this->article_m->get_list();	
+			$abouts = $this->article_m->get_list($type);	
 			if($type == FALSE) {
 				$data['article'] = $abouts[0];	
 			}

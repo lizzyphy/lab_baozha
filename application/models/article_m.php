@@ -90,6 +90,20 @@ class Article_m extends CI_Model
 		}
 		return $return;
 	}
+	public function get_list2($type)
+	{
+		$i = 0;
+		if($type > 0) {
+			$this->db->where('pid', (int) $type);
+		}
+		$this->db->select('tid,name');
+		$query = $this->db->get('article_type');
+		foreach ($query->result_array() as $row) {
+			$return[$i] = $row;
+			$i++;
+		}
+		return $return;
+	}
 	public function get_list_link($limit, $offset = 0)
 	{
 		$i = 0;
