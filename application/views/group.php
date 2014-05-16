@@ -10,7 +10,7 @@
 	        <div class="right_group_c">
 	        	<div class="group_title"><a href="<?php echo base_url('group/?type='.$a['type'].'&gid='.$a['gid'])?>"><?php echo $a['title'];?></a></div>
 	        	<div class="clear"></div>
-	        	<div class="group_content"><?php echo strip_tags(substr($a['content'],0,901) . "..."); ?></div>
+	        	<div class="group_content"><?php echo strip_tags(substr($a['content'],0,937) . "..."); ?></div>
 	        </div>
 	        <div class="clear"></div>
         </div>
