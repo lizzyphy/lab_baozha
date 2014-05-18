@@ -6,10 +6,10 @@
         <div id="right_title">
         	<p><?php echo $name['second_name'];?></p>
         </div>
-        <div class="list_content" id="right_content">
+        <div id="right_content">
             <ul>
             <?php foreach($articles as $r):?>
-                <li><span><a href="<?php echo base_url('article/?aid=' . $r['aid']); ?>"><?php echo $r['title'];?></a></span>
+                <li><span class="content2"><a href="<?php echo base_url('article/?aid=' . $r['aid']); ?>"><?php echo $r['title'];?></a></span>
                 <span class="time"><?php echo $r['add_date'];?></span>
                 </li>
             <?php endforeach;?>

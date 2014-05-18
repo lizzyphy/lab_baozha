@@ -84,7 +84,7 @@
 	margin:0px 10px 0px 10px;
 }
 #right_content{
-	margin:10px 70px 50px 50px;
+	margin:10px 70px 50px 30px;
 	width:660px;
 }
 .list_content {
@@ -92,7 +92,9 @@
     width:100% !important;
 }
 #right_content li a{
+	overflow:hidden;
 	white-space:nowrap;
+	text-overflow:ellipsis;
 }
 #right_content ul li{
 	width:670px;

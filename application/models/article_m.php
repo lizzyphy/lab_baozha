@@ -73,7 +73,7 @@ class Article_m extends CI_Model
 	 * @param integer $type
 	 * @param string $order
 	 */
-	public function get_list($limit, $offset = 0, $type = 0, $order = 'add_time DESC')
+	public function get_list($limit, $offset = 0, $type = 0, $order = 'add_date DESC,add_time DESC')
 	{
 		$i = 0;
 		$return = array();
