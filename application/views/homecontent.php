@@ -94,7 +94,7 @@
            <ul>
             <?php foreach ($zjjt as $row):?>
                 <li><span  class="left_span"><a href="<?php echo base_url('article/?aid=' . $row['aid']); ?>" title="<?php echo $row['title']; ?> "><?php echo $row['title']; ?> </a></span>
-                <span class="time1"><?php $date=date('m-d',"$row[add_time]");  echo $date; ?></span>
+                <span class="time1"><?php echo substr("$row[add_date]",5,5); ?></span>
                 </li>
            <?php endforeach; ?>
            </ul>
@@ -110,7 +110,7 @@
             <ul>
                  <?php foreach ($xshy as $row):?>
                 <li><span class="left_span"><a href="<?php echo base_url('article/?aid=' . $row['aid']); ?>" title="<?php echo $row['title']; ?>"><?php echo $row['title']; ?> </a></span>
-                <span class="time1"><?php $date=date('m-d',"$row[add_time]");  echo $date; ?></span>
+                <span class="time1"><?php  echo substr("$row[add_date]",5,5);  ?></span>
                 </li>
                
              <?php endforeach; ?>
