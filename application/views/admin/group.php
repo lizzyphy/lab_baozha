@@ -4,7 +4,7 @@
 			<div class="title_2">团队管理</div>
 			<div class="content">
 				<div class="func">
-					<a href="index.php?d=admin&c=group&m=add_v&type=<?php echo $type; ?>">添加</a>
+					<a href="index.php?d=admin&c=group&m=add_v">添加</a>
 				</div>
 				<div>
 					<table width="100%" border="0" cellpadding="0" cellspacing="0">
@@ -17,7 +17,9 @@
 						<?php foreach ($groups as $group): ?>
 						<tr>
 							<td><?php echo $group['order'];?></td>
-							<td><img src="<?php echo $group['avatar'];?>" title="<?php echo $group['title'];?>" width="120" height="100" /></td>
+							<td><?php if ($group['avatar']!='/'){?><img src="<?php echo $group['avatar'];?>" title="<?php echo $group['title'];?>" width="120" height="100" />
+								<?php }else echo $group['type_name'];?>
+							</td>
 							<td><?php echo $group['title'];?></td>
 							<td>
 								<a href="index.php?d=admin&c=group&m=edit_v&gid=<?php echo $group['gid']; ?>">编辑</a>

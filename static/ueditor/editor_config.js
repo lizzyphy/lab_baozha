@@ -95,7 +95,7 @@
                 'imagecenter', '|', 'insertimage', 'insertvideo', 'attachment', 'map', 'gmap', 'insertframe','highlightcode', 'pagebreak','template','background', '|',
                 'horizontal', 'date', 'time', 'spechars', 'wordimage', '|',
                 'inserttable', 'deletetable', 'insertparagraphbeforetable', 'insertrow', 'deleterow', 'insertcol', 'deletecol', 'mergecells', 'mergeright', 'mergedown', 'splittocells', 'splittorows', 'splittocols', '|',
-                'print', 'preview', 'searchreplace','help']
+                'print', 'preview', 'searchreplace']
         ]
         //当鼠标放在工具栏上时显示的tooltip提示,留空支持自动多语言配置，否则以配置值为准
         ,labelMap:{
@@ -137,7 +137,7 @@
 
         //,imagePopup:true      //图片操作的浮层开关，默认打开
 
-        ,initialStyle:'body{font-size:12px; line-height:22px;}'   //编辑器内部样式,可以用来改变字体等
+        ,initialStyle:'body{font-size:14px; line-height:22px;}'   //编辑器内部样式,可以用来改变字体等
 
         //,emotionLocalization:false //是否开启表情本地化，默认关闭。若要开启请确保emotion文件夹下包含官网提供的images表情文件夹
 
@@ -235,7 +235,7 @@
 
         //wordCount
         //,wordCount:false          //是否开启字数统计
-        //,maximumWords:10000       //允许的最大字符数
+        ,maximumWords:50000       //允许的最大字符数
         //字数统计提示，{#count}代表当前字数，{#leave}代表还可以输入多少字符数,留空支持多语言自动切换，否则按此配置显示
         //,wordCountMsg:''   //当前已输入 {#count} 个字符，您还可以输入{#leave} 个字符
         //超出字数限制提示  留空支持多语言自动切换，否则按此配置显示
@@ -309,20 +309,20 @@
 
         //autotypeset
         //  //自动排版参数
-         // ,autotypeset:{
-             // mergeEmptyline : true,         //合并空行
-             // removeClass : true,           //去掉冗余的class
+          ,autotypeset:{
+             mergeEmptyline : true,         //合并空行
+             removeClass : true,           //去掉冗余的class
              // removeEmptyline : false,      //去掉空行
              // // textAlign : "left" ,           //段落的排版方式，可以是 left,right,center,justify 去掉这个属性表示不执行排版
              // imageBlockLine : 'center',      //图片的浮动方式，独占一行剧中,左右浮动，默认: center,left,right,none 去掉这个属性表示不执行排版
              // // pasteFilter : false,            //根据规则过滤没事粘贴进来的内容
-             // clearFontSize : true,          //去掉所有的内嵌字号，使用编辑器默认的字号
-             // clearFontFamily : true,        //去掉所有的内嵌字体，使用编辑器默认的字体
-             // removeEmptyNode : true ,       // 去掉空节点
+             clearFontSize : true,          //去掉所有的内嵌字号，使用编辑器默认的字号
+             clearFontFamily : true,        //去掉所有的内嵌字体，使用编辑器默认的字体
+             removeEmptyNode : true ,       // 去掉空节点
              // //可以去掉的标签
              // removeTagNames : {标签名字:1},
              // //indent : false,                 // 行首缩进
              // //indentValue : '2em'             //行首缩进的大小
-         // }
+          }
     };
 })();

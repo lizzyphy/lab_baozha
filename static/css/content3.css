@@ -29,10 +29,11 @@
 }
 
 .right_content {
-	TEXT-INDENT: 2em;
-	padding: 10px 40px 30px 40px;
-	font-size: 12px;
-	
+	padding: 20px 40px 30px 40px;
+	font-size: 14px;
+}
+.right_content p{
+	margin-bottom:10px;
 }
 .content3_time {;
 	color: #666;
@@ -41,3 +42,4 @@
 	padding-top: 10px;
 	font-weight: normal;
 }
+
