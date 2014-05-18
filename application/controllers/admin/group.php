@@ -21,21 +21,19 @@ class Group extends CI_Controller
 	public function index() 
 	{
 		$per_page = 20;
-		$type = (int) $this->input->get('type');
-		if($type == FALSE) {
+		//$type = (int) $this->input->get('type');
+		//if($type == FALSE) {
 			//$type = group_m::GROUP_TEACHER;
-			$type = 29;
-		}
+			//$type = 29;
+		//}
 		
 		$p = (int) $this->input->get('p');
 		if($p < 1) {
 			$p = 1;
 		}
 		
-		$data['groups'] = $this->group_m->get_list($per_page, ($p - 1) * $per_page, $type);
+		$data['groups'] = $this->group_m->get_list_admin($per_page, ($p - 1) * $per_page);
 		$data['page_html'] =  $this->_page_init($per_page);
-		$data['type'] = $type;
-		
 		$this->load->view('admin/header.php', array('username' => $this->admin_user_m->user->username));
 		$this->load->view('admin/left_navi.php');
 		$this->load->view('admin/group.php', $data);

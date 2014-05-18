@@ -40,6 +40,10 @@ class Article extends CI_Controller
 		elseif($data['article']['type'] == 48 || $data['article']['type'] == 49 || $data['article']['type'] == 50 || $data['article']['type'] == 51 || $data['article']['type'] == 72) {
 			$this->load->view('left_navi_xgxz.php');
 		}
+		elseif (in_array($type, array(60,61,62,63)))
+		{
+			$this->load->view('left_navi_yxgl.php');
+		}
 		elseif($data['article']['type'] == 92 || $data['article']['type'] == 93 || $data['article']['type'] == 94 || $data['article']['type'] == 95 || $data['article']['type'] == 96)
 		{
 			$this->load->view('left_fund.php');
@@ -80,9 +84,9 @@ class Article extends CI_Controller
 			$this->load->view('homefoot.php');
 			
 		}
-		elseif(in_array($type, array(60,61,62,63,64,65,66,67,68,69,70,71)))
+		elseif(in_array($type, array(65,66,67,68,69,70,71)))
 		{
-			$data['article'] = $this->article_m->get($type);
+			$data['article'] = $this->article_m->get_type($type);
 			$data['name'] = $this->article_m->get_second_name($type);
 			$abouts = $this->article_m->get_list($type);	
 			if($type == FALSE) {
@@ -134,6 +138,10 @@ class Article extends CI_Controller
 			elseif($type == 48 || $type == 49 || $type == 50 || $type == 51 || $type == 72)
 			{
 				$this->load->view('left_navi_xgxz.php');
+			}
+			elseif (in_array($type, array(60,61,62,63)))
+			{
+				$this->load->view('left_navi_yxgl.php');
 			}
 			elseif($type == 98 || $type == 99 || $type == 100 || $type == 101)
 			{

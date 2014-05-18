@@ -58,6 +58,25 @@ class Group_m extends CI_Model
 		return $return;
 	}
 	
+	public function get_list_admin($limit, $offset = 0)
+	{
+		$i = 0;
+		$return = array();
+		$this->db->order_by('gid ASC');
+		$query = $this->db->get('group', $limit, $offset);
+		$return = $query->result_array();	
+		while($i < $query->num_rows)
+		{
+			foreach($return as $a)
+			{
+			$type_name = $this->get_second_name($a['type']);	
+			$return[$i]['type_name'] = $type_name['second_name'];
+			$i++;	
+			}	
+		}
+		return $return;		
+	}
+	
 	public function get_num($type = 0)
 	{
 		$this->db->where('type', $type);

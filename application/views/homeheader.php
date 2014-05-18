@@ -39,7 +39,7 @@
                                 <a href="<?php echo base_url('article/type?type=81'); ?>">主办国际国内会议</a>
                             </div>
                         </td>
-                        <td><a href="index.php">资源共享</a>&nbsp;&nbsp;&nbsp;|
+                        <td><a href="<?php echo base_url('article/type?type=98'); ?>">资源共享</a>&nbsp;&nbsp;&nbsp;|
                         	<div class="naviout" style="display:none;">
                             	<a href="<?php echo base_url('article/type?type=98'); ?>">大型仪器（30万以上）</a>
                                 <a href="<?php echo base_url('article/type?type=99'); ?>">大型实验设施</a>
@@ -49,12 +49,12 @@
                         </td>
                         <td><a href="<?php echo base_url('article/type?type=60')?>">规章制度</a>&nbsp;&nbsp;&nbsp;|
                         	<div class="naviout" style="display:none;">
-                                <a href="<?php echo base_url('about/?aid=84')?>">学术委员会章程</a>
-                                <a href="<?php echo base_url('about/?aid=85')?>">学术交流与论文管理条例</a>
-                                <a href="<?php echo base_url('about/?aid=87')?>">自主研究课题管理条例</a>
-                                <a href="<?php echo base_url('about/?aid=88')?>">资产管理和使用办法</a>
-                                <a href="<?php echo base_url('about/?aid=89')?>">重点实验室学术论文署名格式</a>
-                                <a href="<?php echo base_url('about/?aid=90')?>">计算与仿真中心安全管理制度</a>
+                                <a href="<?php echo base_url('article/?aid=402')?>">学术委员会章程</a>
+                                <a href="<?php echo base_url('article/?aid=403')?>">学术交流与论文管理条例</a>
+                                <a href="<?php echo base_url('article/?aid=404')?>">自主研究课题管理条例</a>
+                                <a href="<?php echo base_url('article/?aid=405')?>">资产管理和使用办法</a>
+                                <a href="<?php echo base_url('article/?aid=406')?>">重点实验室学术论文署名格式</a>
+                                <a href="<?php echo base_url('article/?aid=407')?>">计算与仿真中心安全管理制度</a>
                             </div>
                         </td>
                         <td><a href="index.php">ENGLISH</a></td> 
