@@ -4,7 +4,7 @@
 			<div class="title_2">首页图片管理</div>
 			<div class="content">
 				<div class="func">
-					<a href="index.php?d=admin&c=index_img&m=add_v&type=<?php echo $type; ?>">添加</a>
+					<?php if ($type != 2): ?><a href="index.php?d=admin&c=index_img&m=add_v&type=<?php echo $type; ?>">添加</a><?php endif;?>
 				</div>
 				<div>
 					<table width="100%" border="0" cellpadding="0" cellspacing="0">
@@ -23,7 +23,7 @@
 							<td><?php echo $img['title'];?></td>
 							<td>
 								<a href="index.php?d=admin&c=index_img&m=edit_v&id=<?php echo $img['id']; ?>">编辑</a>
-								<a onclick="return del_alert()" href="index.php?d=admin&c=index_img&m=del&id=<?php echo $img['id']; ?>&type=<?php echo $img['type'];?>">删除</a>
+								<?php if ($type != 2): ?><a onclick="return del_alert()" href="index.php?d=admin&c=index_img&m=del&id=<?php echo $img['id']; ?>&type=<?php echo $img['type'];?>">删除</a><?php endif;?>
 							</td>
 						</tr>
 						<?php endforeach;?>

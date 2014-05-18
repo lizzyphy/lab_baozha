@@ -7,7 +7,7 @@
 				<li><a href="index.php?d=admin&c=about">关于我们</a></li>
 				<li><a href="index.php?d=admin&c=link">友情链接</a></li>
 				<li><a href="index.php?d=admin&c=index_img&type=1">首页切换大图</a></li>
-				<li><a href="index.php?d=admin&c=index_img&type=2">首页添加flash</a></li>
+				<li><a href="index.php?d=admin&c=index_img&type=2">首页flash管理</a></li>
 				<li class="title_1">文章管理</li>
 				<li><a href="index.php?d=admin&c=home&m=article">文章管理</a></li>
 				<li><a href="index.php?d=admin&c=article_type">类别管理</a></li>
