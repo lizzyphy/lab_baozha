@@ -23,7 +23,10 @@
 							</tr>
 							<tr>
 								<td>上传图片</td>
-								<td><input name="upfile" type="file" value="" size="80" /></td>
+								<td><p style="color:#F00; margin-bottom:2px;">
+								<?php if ($type ==1):?>&nbsp;&nbsp;上传图片大小 长*宽 为1000*300
+								<?php else:?>&nbsp;&nbsp;上传flash大小 长*宽 为440*350<?php endif;?></p>
+								<input name="upfile" type="file" value="" size="80" /></td>
 							</tr>
 						</table>
 						<div class="button"><button type="submit">提交</button></div>

@@ -103,7 +103,7 @@ class Index_img extends CI_Controller
 		$data['title'] = '';
 		$data['url'] = '';
 		$data['form_url'] = 'd=admin&c=index_img&m=add&type=' . $type;
-		
+		$data['type'] = $type;
 		$this->load->view('admin/header.php', array('username' => $this->admin_user_m->user->username));
 		$this->load->view('admin/left_navi.php');
 		$this->load->view('admin/index_img_add.php', $data);

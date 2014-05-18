@@ -47,7 +47,7 @@
                                 <a href="<?php echo base_url('article/type?type=101'); ?>">服务收费标准</a>
                             </div>
                         </td>
-                        <td><a href="<?php echo base_url('about/?aid=84')?>">规章制度</a>&nbsp;&nbsp;&nbsp;|
+                        <td><a href="<?php echo base_url('article/type/?type=60')?>">规章制度</a>&nbsp;&nbsp;&nbsp;|
                         	<div class="naviout" style="display:none;">
                                 <a href="<?php echo base_url('article/?aid=402')?>">学术委员会章程</a>
                                 <a href="<?php echo base_url('article/?aid=403')?>">学术交流与论文管理条例</a>
@@ -134,7 +134,7 @@
                             <a href="<?php echo base_url('article/type/?type=69')?>">学术委员会</a>
                         </span>
                     </span>
-                    <a href="<?php echo base_url('about/?aid=84')?>">规章制度</a>
+                    <a href="<?php echo base_url('article/type/?type=60')?>">规章制度</a>
                     <a href="<?php echo base_url('article/type/?type=61')?>">内部通知</a>
                     <a href="<?php echo base_url('article/type/?type=62')?>">招聘信息</a>
                     <a href="<?php echo base_url('article/type/?type=63')?>">文化建设</a>
