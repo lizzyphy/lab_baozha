@@ -121,6 +121,14 @@ a:hover {
 #right1{
 	margin-left:10px;
 }
+
+.content2{
+	width:550px;
+	display:block;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	float:left; 
+}
 .time{ 
 	width:75px; 
 	float:right; 
