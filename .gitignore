@@ -4,3 +4,5 @@
 .project
 application/config/database.php
 .travis.yml
+labadmin
+application/logs
