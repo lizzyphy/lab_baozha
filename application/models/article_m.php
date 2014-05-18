@@ -122,7 +122,7 @@ class Article_m extends CI_Model
 		$return = array();	
 		$this->db->select('path');
 		$this->db->where('type',1);
-		$this->db->order_by('id DESC');
+		$this->db->order_by('order');
 		$query = $this->db->get('index_img', $limit, $offset);
 		foreach ($query->result_array() as $row) {
 			$return[$i] = $row;
