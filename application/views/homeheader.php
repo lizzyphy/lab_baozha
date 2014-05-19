@@ -80,11 +80,11 @@
             </li>
             <li><a href="<?php echo base_url('about/?aid=24')?>">研究方向</a>
             	<div class="naviout" style="display:none;">
-                	<a href="<?php echo base_url('about/?aid=24')?>">含能材料理论与应用技术</a>
-                    <a href="<?php echo base_url('about/?aid=25')?>">爆轰学与爆炸技术</a>
-                    <a href="<?php echo base_url('about/?aid=26')?>">材料与结构冲击动力学</a>
-                    <a href="<?php echo base_url('about/?aid=27')?>">毁伤理论与防护技术</a>
-                    <a href="<?php echo base_url('about/?aid=28')?>">爆炸安全理论与评估技术</a>
+                	<a href="<?php echo base_url('about/?aid=24')?>">含能材料理论与应用</a>
+                    <a href="<?php echo base_url('about/?aid=25')?>">爆炸与毁伤力学</a>
+                    <a href="<?php echo base_url('about/?aid=26')?>">毁伤理论及应用</a>
+                    <a href="<?php echo base_url('about/?aid=27')?>">防护理论与技术</a>
+                    <a href="<?php echo base_url('about/?aid=28')?>">爆炸安全理论与技术</a>
                 </div>
             </li>
             <li><a href="<?php echo base_url('group/type/?type=29')?>">学术队伍</a>
@@ -130,7 +130,7 @@
                             <a href="<?php echo base_url('article/type/?type=65')?>">办公室</a>
                             <a href="<?php echo base_url('article/type/?type=66')?>">实验中心</a>
                             <a href="<?php echo base_url('article/type/?type=67')?>">仿真与计算中心</a>
-                            <a href="<?php echo base_url('article/type/?type=68')?>">事务委员会</a>
+                            <a href="<?php echo base_url('article/type/?type=68')?>">室务委员会</a>
                             <a href="<?php echo base_url('article/type/?type=69')?>">学术委员会</a>
                         </span>
                     </span>

@@ -84,6 +84,17 @@ class Article extends CI_Controller
 			$this->load->view('homefoot.php');
 			
 		}
+		elseif($type == 60)
+		{
+			$data['articles'] = $this->article_m->get_list3($per_page, $per_page * ($p - 1), $type);
+			$data['page_html'] =  $this->_page_init($per_page);
+			$data['name'] = $this->article_m->get_second_name($type);
+			$this->load->view('homeheader');
+			$this->load->view('img_new');
+			$this->load->view('left_navi_yxgl.php');
+			$this->load->view('content2_left.php', $data);
+			$this->load->view('homefoot');
+		}
 		elseif(in_array($type, array(65,66,67,68,69,70,71)))
 		{
 			$data['article'] = $this->article_m->get_type($type);
@@ -139,7 +150,7 @@ class Article extends CI_Controller
 			{
 				$this->load->view('left_navi_xgxz.php');
 			}
-			elseif (in_array($type, array(60,61,62,63)))
+			elseif (in_array($type, array(61,62,63)))
 			{
 				$this->load->view('left_navi_yxgl.php');
 			}
