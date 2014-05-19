@@ -140,8 +140,11 @@
                     <a href="<?php echo base_url('article/type/?type=63')?>">文化建设</a>
                     <span class="title"><a href="<?php echo base_url('article/type/?type=64')?>">挂靠机构</a>
                     	<span class="spanout2" style="display:none;">
-                            <a href="<?php echo base_url('article/type/?type=70')?>">挂靠机构1</a>
-                    		<a href="<?php echo base_url('article/type/?type=71')?>">挂靠机构2</a>
+                            <a href="<?php echo base_url('article/type/?type=70')?>">期刊编辑部</a>
+                    		<a href="<?php echo base_url('article/type/?type=71')?>">安全培训中心</a>
+                    		<a href="<?php echo base_url('article/type/?type=103')?>">烟花质量监督检验</a>
+                    		<a href="<?php echo base_url('article/type/?type=104')?>">北阳爆破</a>
+                    		<a href="<?php echo base_url('article/type/?type=105')?>">火工分析中心</a>
                         </span>
                     </span>
                     

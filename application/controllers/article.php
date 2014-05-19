@@ -95,7 +95,7 @@ class Article extends CI_Controller
 			$this->load->view('content2_left.php', $data);
 			$this->load->view('homefoot');
 		}
-		elseif(in_array($type, array(65,66,67,68,69,70,71)))
+		elseif(in_array($type, array(65,66,67,68,69,70,71,103,104,105)))
 		{
 			$data['article'] = $this->article_m->get_type($type);
 			$data['name'] = $this->article_m->get_second_name($type);
