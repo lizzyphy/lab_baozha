@@ -90,6 +90,23 @@ class Article_m extends CI_Model
 		}
 		return $return;
 	}
+	public function get_list3($limit, $offset = 0, $type = 0, $order = 'add_date ASC,add_time ASC')
+	{
+		$i = 0;
+		$return = array();
+		if($type > 0) {
+			$this->db->where('type', (int) $type);
+		}
+		$this->db->select('aid, type, title, add_time, add_date, add_user');
+		$this->db->order_by($order);
+		$query = $this->db->get('article', $limit, $offset);
+		foreach ($query->result_array() as $row) {
+			$return[$i] = $row;
+			$return[$i]['type_name'] = $this->article_type_m->get_name($row['type']);
+			++$i;
+		}
+		return $return;
+	}
 	public function get_list2($type)
 	{
 		$i = 0;
