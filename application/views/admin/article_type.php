@@ -17,7 +17,7 @@
 						<tr>
 							<td><?php echo $type['tid']?></td>
 							<td><?php if($type['level'] == 2) echo '|——';if($type['level']==3) echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|——'?><?php echo $type['name']?></td>
-							<td><a href="index.php?d=admin&c=article_type&m=edit_v&tid=<?php echo $type['tid'];?>">编辑</a> | <a  onclick="return del_alert()" href="index.php?d=admin&c=article_type&m=del&tid=<?php echo $type['tid'];?>">删除</a></td>
+							<td><a href="index.php?d=admin&c=article_type&m=edit_v&tid=<?php echo $type['tid'];?>">编辑</a> <!-- | <a  onclick="return del_alert()" href="index.php?d=admin&c=article_type&m=del&tid=<?php echo $type['tid'];?>">删除</a> --></td>
 						</tr>
 						<?php endforeach;?>
 					</table>
