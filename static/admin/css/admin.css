@@ -235,3 +235,16 @@ a:hover {
 .t_c {
 	text-align:center;
 }
+
+.input_ser{
+	width:300px;
+	border-right:none!important;
+
+	margin-bottom:5px;
+}
+
+.input_sub{
+	width:50px;
+	margin-left:-5px;
+	border-left:none!important;
+}

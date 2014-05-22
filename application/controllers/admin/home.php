@@ -12,6 +12,7 @@ class Home extends CI_Controller
 		parent::__construct();
 		$this->load->database();
 		$this->load->helper('form');
+		$this->load->helper('url');
 		$this->load->model('admin_user_m');
 		if($this->admin_user_m->check_login() === FALSE) {
 			redirect('d=admin&c=index');
@@ -30,6 +31,8 @@ class Home extends CI_Controller
 	
 	public function article()
 	{
+		$keywords = '';
+		$data[keywords] = '';
 		$per_page = 20;
 		$p = (int) $this->input->get('p');
 		if($p < 1) {
@@ -38,7 +41,7 @@ class Home extends CI_Controller
 		$this->load->model('article_m');
 		
 		$data['articles'] = $this->article_m->get_list($per_page, ($p - 1) * $per_page);
-		$data['page_html'] =  $this->_page_init($per_page);
+		$data['page_html'] =  $this->_page_init($per_page,$keywords);
 
 		$this->load->view('admin/header.php', array('username' => $this->admin_user_m->user->username));
 		$this->load->view('admin/left_navi.php');
@@ -46,7 +49,27 @@ class Home extends CI_Controller
 		$this->load->view('admin/footer.php');
 	}
 	
-	private function _page_init($per_page) 
+	public function article_search()
+	{
+		$keywords = $this->input->post('keywords');
+		$data['keywords'] = $keywords;
+		$per_page = 20;
+		$p = (int) $this->input->get('p');
+		if($p < 1) {
+			$p = 1;
+		}
+		$this->load->model('article_m');
+	
+		$data['articles'] = $this->article_m->search($keywords,$per_page, ($p - 1) * $per_page);
+		$data['page_html'] =  $this->_page_init($per_page,$keywords);
+	
+		$this->load->view('admin/header.php', array('username' => $this->admin_user_m->user->username));
+		$this->load->view('admin/left_navi.php');
+		$this->load->view('admin/article.php', $data);
+		$this->load->view('admin/footer.php');
+	}
+	
+	private function _page_init($per_page,$keywords) 
 	{
 		$this->load->library('pagination');
 		
@@ -54,7 +77,7 @@ class Home extends CI_Controller
 		if($type === FALSE) {
 			$type = 0;
 		}
-		$config['total_rows'] = $this->article_m->get_num($type);
+		$config['total_rows'] = $this->article_m->get_num($type,$keywords);
 		
 		$config['per_page'] = $per_page;
 		$config['base_url'] = 'index.php?d=admin&c=home&m=article';

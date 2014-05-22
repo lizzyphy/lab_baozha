@@ -13,6 +13,7 @@ class Index extends CI_Controller
 		$this->load->model('admin_user_m');
 		$this->load->library('captcha_np');
 		$this->load->helper('form');
+		$this->load->helper('url');
 	}
 
 	/**
