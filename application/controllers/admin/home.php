@@ -32,7 +32,7 @@ class Home extends CI_Controller
 	public function article()
 	{
 		$keywords = '';
-		$data[keywords] = '';
+		$data['keywords'] = '';
 		$per_page = 20;
 		$p = (int) $this->input->get('p');
 		if($p < 1) {
