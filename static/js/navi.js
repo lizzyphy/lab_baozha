@@ -16,14 +16,14 @@ function navihover() {
         }
     );
 	
-	$("#navi span").hover(
+	$("#navi p").hover(
         function(){
             $('span', $(this)).css({'display':'block'});
-			$(".title",$(this)).addClass("span_hover");
+			$(this).addClass("span_hover");
         },
         function(){
             $('span', $(this)).css({'display':'none'});
-			$(".title",$(this)).removeClass("span_hover");
+			$(this).removeClass("span_hover");
         }
     );
 	

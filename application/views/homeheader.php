@@ -48,7 +48,7 @@
                             </div>
                         </td>
                         <td><a href="<?php echo base_url('article/type/?type=60')?>">规章制度</a>&nbsp;&nbsp;&nbsp;|
-                        	<div class="naviout" style="display:none;">
+                        	<div class="naviout1" style="display:none;">
                                 <a href="<?php echo base_url('article/?aid=402')?>">学术委员会章程</a>
                                 <a href="<?php echo base_url('article/?aid=403')?>">学术交流与论文管理条例</a>
                                 <a href="<?php echo base_url('article/?aid=404')?>">自主研究课题管理条例</a>
@@ -125,7 +125,7 @@
             </li>
             <li><a href="<?php echo base_url('article/type/?type=59')?>">运行管理</a>
             	<div class="naviout" style="display:none;">
-                	<span class="title"><a href="<?php echo base_url('article/type/?type=59')?>">实验室机构</a>
+                	<p style="height: 30px;"><a href="<?php echo base_url('article/type/?type=59')?>">实验室机构</a>
                         <span class="spanout" style="display:none;">
                             <a href="<?php echo base_url('article/type/?type=65')?>">办公室</a>
                             <a href="<?php echo base_url('article/type/?type=66')?>">实验中心</a>
@@ -133,12 +133,12 @@
                             <a href="<?php echo base_url('article/type/?type=68')?>">室务委员会</a>
                             <a href="<?php echo base_url('article/type/?type=69')?>">学术委员会</a>
                         </span>
-                    </span>
+                    </p>
                     <a href="<?php echo base_url('article/type/?type=60')?>">规章制度</a>
                     <a href="<?php echo base_url('article/type/?type=61')?>">内部通知</a>
                     <a href="<?php echo base_url('article/type/?type=62')?>">招聘信息</a>
                     <a href="<?php echo base_url('article/type/?type=63')?>">文化建设</a>
-                    <span class="title"><a href="<?php echo base_url('article/type/?type=64')?>">挂靠机构</a>
+                    <p style="height: 30px;"><a href="<?php echo base_url('article/type/?type=64')?>">挂靠机构</a>
                     	<span class="spanout2" style="display:none;">
                             <a href="<?php echo base_url('article/type/?type=70')?>">期刊编辑部</a>
                     		<a href="<?php echo base_url('article/type/?type=71')?>">安全培训中心</a>
@@ -146,7 +146,7 @@
                     		<a href="<?php echo base_url('article/type/?type=104')?>">北阳爆破</a>
                     		<a href="<?php echo base_url('article/type/?type=105')?>">火工分析中心</a>
                         </span>
-                    </span>
+                    </p>
                     
                 </div>
             </li>

@@ -106,7 +106,7 @@ body{
 }
 .naviout a {
 /*	font-weight:normal;*/
-	_width:145px;
+	_width:125px;
 	display: block;
 	color: #064481;
 	font-size: 12px;
@@ -120,6 +120,32 @@ body{
 	background: #B8D3F1;
 	color: #064481;
 }
+
+.naviout1 {
+	position:absolute;
+    z-index:1000;
+	background:#FFF;
+    display:none;
+	border: 1px solid #E5E5E5;
+	border-bottom: none;
+}
+.naviout1 a {
+/*	font-weight:normal;*/
+	_width:165px;
+	display: block;
+	color: #064481;
+	font-size: 12px;
+	line-height: 30px;
+	text-decoration: none;
+	text-align: left !important;
+	padding:0 20px;
+	border-bottom:1px solid #E5E5E5;
+}
+.naviout1 a:hover{
+	background: #B8D3F1;
+	color: #064481;
+}
+
 .navi_hover {
 	background-image:url(../img/dhover.jpg);
 	background-repeat:repeat-x;
@@ -137,7 +163,7 @@ body{
 	border: 1px solid #E5E5E5;
 	border-bottom: none;
 	top:-1px;
-	left:100px;
+	left:102px;
 	width:140px;
 }
 .spanout a {
@@ -161,7 +187,8 @@ body{
 	border: 1px solid #E5E5E5;
 	border-bottom: none;
 	top:154px;
-	left:100px;
+	left:102px;
+	
 	width:150px;
 }
 .spanout2 a {
