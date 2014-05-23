@@ -238,13 +238,16 @@ a:hover {
 
 .input_ser{
 	width:300px;
+	min-height:17px;
 	border-right:none!important;
-
 	margin-bottom:5px;
 }
 
 .input_sub{
+	_height:30px;
+	height:29px;
 	width:50px;
 	margin-left:-5px;
+	margin-bottom:5px;
 	border-left:none!important;
 }
