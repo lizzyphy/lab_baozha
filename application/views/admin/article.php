@@ -23,8 +23,8 @@
 					<table width="100%" border="0" cellpadding="0" cellspacing="0">
 						<tr class="title_3">
 							<td width="10%">时间</td>
-							<td width="58%">标题</td>
-							<td width="10%">分类</td>
+							<td width="50%">标题</td>
+							<td width="18%">分类</td>
 							<td width="10%">添加人</td>
 							<td>操作</td>
 						</tr>

@@ -27,6 +27,9 @@ class About_m extends CI_Model
 	public function get_second_name($aid)
 	{
 		$aid = (int) $aid;
+		$data = array(
+				'second_name'	=> '',
+		);
 		$this->db->select('type');
 		$this->db->where('aid', $aid);
 		$query = $this->db->get('about');

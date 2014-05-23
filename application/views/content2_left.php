@@ -14,7 +14,7 @@
                 </li>
             <?php endforeach;?>
             </ul>
-            <div id="page" style="text-align:center; font-size:12px;";>
+            <div id="page" style="text-align:center; font-size:14px;";>
             	<?php echo $page_html; ?>
             </div>
         </div>
