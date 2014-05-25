@@ -75,7 +75,7 @@
                     <a href="<?php echo base_url('article/type/?type=9')?>">组织机构</a>
                     <a href="<?php echo base_url('article/type/?type=17')?>">实验室大事记</a>
                     <a href="<?php echo base_url('article/type/?type=18')?>">图片展示</a>
-                    <a href="<?php echo base_url('article/type/?type=102')?>">联系我们</a>
+                    <!-- <a href="<?php echo base_url('article/type/?type=102')?>">联系我们</a> -->
                 </div>
             </li>
             <li><a href="<?php echo base_url('about/?aid=24')?>">研究方向</a>

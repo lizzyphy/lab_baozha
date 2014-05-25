@@ -47,8 +47,7 @@ a:hover {
 	padding:10px 0 10px 10px;
 }
 .right li a{
-	background: url(../img/list_bg.gif) no-repeat 5px center;
-	padding-left: 20px;
+
 	padding-right:5px;
 }
 .right li a:hover {
@@ -72,7 +71,7 @@ a:hover {
 	padding: 10px 10px 10px 10px;
 	border-radius: 7px;
 	margin-top:5px;
-	_padding-bottom: 18px;
+	_padding-bottom: 52px;
 }
 .left li a{
 	background: url(../img/list_bg.gif) no-repeat 5px center;
@@ -100,11 +99,10 @@ a:hover {
 	padding: 10px 10px 10px 10px;
 	border-radius: 7px;
 	margin-top:5px;
+	_height:460px;
 }
 .left1 li a{
-	background: url(../img/list_bg.gif) no-repeat 5px center;
-	padding-left: 25px;
-	width:300px;
+	width:280px;
 }
 .left1 li a:hover {
 	color:#BB0022;
@@ -114,6 +112,7 @@ a:hover {
 	padding-bottom:10px;
 }
 .left1 li{
+
 	width:340px; 
 	line-height:30px; 
 	font-size:14px;
@@ -208,22 +207,27 @@ a:hover {
 	margin-top:350px;
 }
 .right_span{
+	padding-left: 25px;
+	background: url(../img/list_bg.gif) no-repeat 5px center;
 	overflow:hidden;
 	display:block;
 	text-overflow:ellipsis;
 	float:left;
-	width: 440px;
+	width: 410px;
 }
 .right_span a{
 	white-space:nowrap;
 }
 .left_span{
+	padding-left: 25px;
+	background: url(../img/list_bg.gif) no-repeat 5px center;
 	overflow:hidden;
 	display:block;
 	text-overflow:ellipsis;
 	float:left;
-	width: 280px;
+	width: 270px;
 }
+
 .left_span a{
 	white-space:nowrap;
 }
