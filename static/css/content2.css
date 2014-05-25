@@ -19,6 +19,7 @@
 
 .list_left{
 	width:220px;
+	_width:200px;
 	/*height:600px;*/
 	line-height:30px;
 	padding:10px 0px 10px 0px;
@@ -97,7 +98,7 @@
 	text-overflow:ellipsis;
 }
 #right_content ul li{
-	width:670px;
+	width:650px;
 	height:30px;
 	overflow:hidden;
 	display:block;
