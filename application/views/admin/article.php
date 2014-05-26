@@ -23,9 +23,10 @@
 					<table width="100%" border="0" cellpadding="0" cellspacing="0">
 						<tr class="title_3">
 							<td width="10%">时间</td>
-							<td width="50%">标题</td>
+							<td width="40%">标题</td>
 							<td width="18%">分类</td>
 							<td width="10%">添加人</td>
+							<td width="10%">调序</td>
 							<td>操作</td>
 						</tr>
 						<?php foreach ($articles as $article): ?>
@@ -38,6 +39,10 @@
 							<?php endif;?>
 							<td><?php echo $article['type_name']; ?></td>
 							<td><?php echo $article['add_user']; ?></td>
+							<td>
+								<a  href="index.php?d=admin&c=home&m=article_up&aid=<?php echo $article['aid']; ?>">上移</a>
+								<a  href="index.php?d=admin&c=home&m=article_down&aid=<?php echo $article['aid']; ?>">下移</a>
+							</td>
 							<td>
 								<a href="<?php echo base_url('article/?aid=' . $article['aid']); ?>" target="_blank">查看</a>
 								<a href="index.php?d=admin&c=home&m=article_edit&aid=<?php echo $article['aid']; ?>">编辑</a>

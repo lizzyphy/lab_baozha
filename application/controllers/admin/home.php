@@ -35,6 +35,7 @@ class Home extends CI_Controller
 		$data['keywords'] = '';
 		$per_page = 20;
 		$p = (int) $this->input->get('p');
+		//var_dump($p);
 		if($p < 1) {
 			$p = 1;
 		}
@@ -48,6 +49,25 @@ class Home extends CI_Controller
 		$this->load->view('admin/article.php', $data);
 		$this->load->view('admin/footer.php');
 	}
+	
+	public function article_up()
+	{
+		
+		$aid = (int) $this->input->get('aid');
+		$this->load->model('article_m');
+		$this->article_m->up($aid);
+		redirect('d=admin&c=home&m=article');
+	}
+	
+	public function article_down()
+	{
+		
+		$aid = (int) $this->input->get('aid');
+		$this->load->model('article_m');
+		$this->article_m->down($aid);
+		redirect('d=admin&c=home&m=article');
+	}
+	
 	
 	public function article_search()
 	{

@@ -60,7 +60,9 @@
                 <img width="530" height="5" src="<?php echo base_url('static/img/title.jpg'); ?>" />
                 <div class="float_l">&nbsp;&nbsp;&nbsp;&nbsp;新闻快讯</div>
                 <div class="more"><a href="<?php echo base_url('article/type?type=74'); ?>" title="更多">更多 &gt;</a></div>
+                
             </div>
+            <div class="clear"></div>
             <ul>
          	<?php foreach ($xwkx as $row):?>
                 <li><span class="right_span"><a href="<?php echo base_url('article/?aid=' . $row['aid']); ?>" title="<?php echo $row['title']; ?>"><?php echo $row['title']; ?></a></span>
@@ -72,6 +74,7 @@
                 <img width="530" height="5" src="<?php echo base_url('static/img/title.jpg'); ?>" />
                 <div class="float_l">&nbsp;&nbsp;&nbsp;&nbsp;最新通知</div>
                 <div class="more"><a href="<?php echo base_url('article/type?type=75'); ?>" title="更多">更多 &gt;</a></div>
+                <div class="clear"></div>
             </div>
             <ul>
             <?php foreach ($zxtz as $row):?>

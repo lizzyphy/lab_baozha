@@ -8,6 +8,7 @@ class Group extends CI_Controller
 	public function __construct() 
 	{
 		parent::__construct();
+		$this->load->model('article_m');
 		$this->load->model('group_m');
 		$this->load->library('pagination');
 	}
@@ -22,7 +23,9 @@ class Group extends CI_Controller
 		$data['type'] = $type;
 		$data['name'] = $this->group_m->get_second_name($type);
 		$data['article'] = $this->group_m->get($gid);
-		$this->load->view('homeheader.php');
+		$data1['rules_regulations'] = $this->article_m->get_list(20, 0, 60);
+		$this->load->view('homeheader',$data1);
+		//$this->load->view('homeheader.php');
 		$this->load->view('img_new.php');
 		$this->load->view('left_group.php');
 		$this->load->view('group3.php', $data);
@@ -47,8 +50,9 @@ class Group extends CI_Controller
 		$data['article'] = $this->group_m->get_list($per_page, $per_page * ($p - 1), $type);
 		$data['page_html'] =  $this->_page_init($per_page,$type);
 		$data['name'] = $this->group_m->get_second_name($gid);
-		
-		$this->load->view('homeheader.php');
+		$data1['rules_regulations'] = $this->article_m->get_list(20, 0, 60);
+		$this->load->view('homeheader',$data1);
+		//$this->load->view('homeheader.php');
 		$this->load->view('img_new.php');
 		$this->load->view('left_group.php');
 		if($type == 30 || $type == 33 ||$type == 34 )

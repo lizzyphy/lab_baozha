@@ -22,7 +22,9 @@ class Article extends CI_Controller
 		$type = $data['article']['type'];
 		$data['type'] = $data['article']['type'];
 		$data['name'] = $this->article_m->get_second_name($type);
-		$this->load->view('homeheader');
+		$data1['rules_regulations'] = $this->article_m->get_list(20, 0, 60);
+		$this->load->view('homeheader',$data1);
+		//$this->load->view('homeheader');
 		$this->load->view('img_new');
 		if($type==17 || $type == 18)
 			{
@@ -61,6 +63,7 @@ class Article extends CI_Controller
 	
 	public function type() 
 	{
+		$data1['rules_regulations'] = $this->article_m->get_list(20, 0, 60);
 		$per_page = 20;
 		$type = (int) $this->input->get('type');
 		$p = (int) $this->input->get('p');
@@ -77,7 +80,9 @@ class Article extends CI_Controller
 		{
 			$data['article'] = $this->article_m->get_list2($type);
 			$data['name'] = $this->article_m->get_second_name($type);
-			$this->load->view('homeheader.php');
+			
+			$this->load->view('homeheader',$data1);
+			//$this->load->view('homeheader.php');
 			$this->load->view('img_new.php');
 			$this->load->view('left_navi_yxgl.php');
 			$this->load->view('about2.php', $data);
@@ -86,10 +91,11 @@ class Article extends CI_Controller
 		}
 		elseif($type == 60)
 		{
-			$data['articles'] = $this->article_m->get_list3($per_page, $per_page * ($p - 1), $type);
+			$data['articles'] = $this->article_m->get_list($per_page, $per_page * ($p - 1), $type);
 			$data['page_html'] =  $this->_page_init($per_page);
 			$data['name'] = $this->article_m->get_second_name($type);
-			$this->load->view('homeheader');
+			$this->load->view('homeheader',$data1);
+			//$this->load->view('homeheader');
 			$this->load->view('img_new');
 			$this->load->view('left_navi_yxgl.php');
 			$this->load->view('content2_left.php', $data);
@@ -103,8 +109,8 @@ class Article extends CI_Controller
 			if($type == FALSE) {
 				$data['article'] = $abouts[0];	
 			}
-			
-			$this->load->view('homeheader.php');
+			$this->load->view('homeheader',$data1);
+			//$this->load->view('homeheader.php');
 			$this->load->view('img_new.php');
 			$this->load->view('left_navi_yxgl.php');			
 			$this->load->view('article2.php', $data);
@@ -114,7 +120,8 @@ class Article extends CI_Controller
 		{
 			$data['article'] = $this->article_m->get_type($type);
 			$data['name'] = $this->article_m->get_second_name($type);
-			$this->load->view('homeheader.php');
+			$this->load->view('homeheader',$data1);
+			//$this->load->view('homeheader.php');
 			$this->load->view('img_new.php');
 			$this->load->view('left_navi_new.php');
 			$this->load->view('article2.php', $data);
@@ -126,7 +133,7 @@ class Article extends CI_Controller
 			$data['page_html'] =  $this->_page_init($per_page);
 			$data['name'] = $this->article_m->get_second_name($type);
 			
-			$this->load->view('homeheader');
+			$this->load->view('homeheader',$data1);
 			$this->load->view('img_new');
 			if($type==17 || $type == 18)
 			{

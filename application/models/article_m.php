@@ -92,7 +92,7 @@ class Article_m extends CI_Model
 		return $return;
 	}
 	
-	public function get_list($limit, $offset = 0, $type = 0, $order = 'add_date DESC,add_time DESC')
+	public function get_list($limit, $offset = 0, $type = 0, $order = 'type ASC,aid DESC,add_date DESC,add_time DESC')
 	{
 		$i = 0;
 		$return = array();
@@ -297,4 +297,39 @@ class Article_m extends CI_Model
 		}
 		return TRUE;
 	}
+	
+	public function up($aid)
+	{
+		$aid = (int) $aid;
+		$aid1 = 0;
+		$aid2 = $aid+1;
+		$data1 = array('aid' => $aid1);
+		$this->db->where('aid', $aid);
+		$this->db->update('article', $data1);
+		$data2 = array('aid' => $aid);
+		$this->db->where('aid', $aid2);
+		$this->db->update('article', $data2);
+		$data = array('aid' => $aid2);
+		$this->db->where('aid', $aid1);
+		$this->db->update('article', $data);
+		return TRUE;
+	}
+	
+	public function down($aid)
+	{
+		$aid = (int) $aid;
+		$aid1 = 0;
+		$aid2 = $aid-1;
+		$data1 = array('aid' => $aid1);
+		$this->db->where('aid', $aid);
+		$this->db->update('article', $data1);
+		$data2 = array('aid' => $aid);
+		$this->db->where('aid', $aid2);
+		$this->db->update('article', $data2);
+		$data = array('aid' => $aid2);
+		$this->db->where('aid', $aid1);
+		$this->db->update('article', $data);
+		return TRUE;
+	}
+	
 }

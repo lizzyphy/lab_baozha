@@ -24,16 +24,17 @@ class Index extends  CI_Controller {
 		$data['link'] = $this->article_m->get_list_link(5, 0);
 		$data['picture_url'] = $this->article_m->get_list_img(4, 0);
 		$data['flash_url'] = $this->article_m->get_list_flash(1, 0);
-		$this->load->view('homeheader');
+		$data1['rules_regulations'] = $this->article_m->get_list(20, 0, 60);
+		$this->load->view('homeheader',$data1);
 		$this->load->view('homecontent',$data);
 		$this->load->view('homefoot');
 	}
-	public function second()
+	/*public function second()
 	{
 		$this->load->view('homeheader');
 		$this->load->view('content2_left');
 		$this->load->view('homefoot');
-	}
+	}*/
 	private function _page_init_search($per_page, $total_rows)
 	{
 		$this->load->library('pagination');

@@ -31,6 +31,7 @@ a:hover {
 	font-weight:bold;
 	font-size:16px;
 	font-family: "microsoft yahei";
+	margin-bottom:30px\9;
 }
 .float_l{
 	float:left;
@@ -72,6 +73,7 @@ a:hover {
 	border-radius: 7px;
 	margin-top:5px;
 	_padding-bottom: 52px;
+	padding-bottom: 54px\9;
 }
 .left li a{
 	background: url(../img/list_bg.gif) no-repeat 5px center;
@@ -100,6 +102,7 @@ a:hover {
 	border-radius: 7px;
 	margin-top:5px;
 	_height:460px;
+	height:455px\9;
 }
 .left1 li a{
 	width:280px;

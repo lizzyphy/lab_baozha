@@ -49,12 +49,9 @@
                         </td>
                         <td><a href="<?php echo base_url('article/type/?type=60')?>">规章制度</a>&nbsp;&nbsp;&nbsp;|
                         	<div class="naviout1" style="display:none;">
-                                <a href="<?php echo base_url('article/?aid=402')?>">学术委员会章程</a>
-                                <a href="<?php echo base_url('article/?aid=403')?>">学术交流与论文管理条例</a>
-                                <a href="<?php echo base_url('article/?aid=404')?>">自主研究课题管理条例</a>
-                                <a href="<?php echo base_url('article/?aid=405')?>">资产管理和使用办法</a>
-                                <a href="<?php echo base_url('article/?aid=406')?>">重点实验室学术论文署名格式</a>
-                                <a href="<?php echo base_url('article/?aid=407')?>">计算与仿真中心安全管理制度</a>
+                        		<?php foreach ($rules_regulations as $row):?>
+                        			<a href="<?php echo base_url('article/?aid=');echo $row['aid'];?>"><?php echo $row['title']; ?></a>
+                        		<?php endforeach;?>
                             </div>
                         </td>
                         <td><a href="index.php">ENGLISH</a></td> 

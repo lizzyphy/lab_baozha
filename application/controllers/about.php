@@ -9,6 +9,7 @@ class About extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('about_m');
+		$this->load->model('article_m');
 	}
 
 	/**
@@ -16,11 +17,14 @@ class About extends CI_Controller
 	 */
 	public function index() 
 	{
+		$data1['rules_regulations'] = $this->article_m->get_list(20, 0, 60);
 		$aid = (int) $this->input->get('aid');
 		if($aid==110)
 		{
 			$data['article'] = $this->about_m->get($aid);
-			$this->load->view('homeheader.php');
+			
+			$this->load->view('homeheader',$data1);
+			//$this->load->view('homeheader.php');
 			$this->load->view('img_new.php');
 			$this->load->view('left_navi_new.php');
 			$this->load->view('contact.php', $data);
@@ -34,8 +38,8 @@ class About extends CI_Controller
 			if($aid == FALSE) {
 				$data['article'] = $abouts[0];	
 			}
-			
-			$this->load->view('homeheader.php');
+			$this->load->view('homeheader',$data1);
+			//$this->load->view('homeheader.php');
 			$this->load->view('img_new.php');
 			if($aid == 83 || $aid == 84 || $aid == 85 || $aid == 87 || $aid == 88|| $aid == 89 || $aid == 90 ) {
 				$this->load->view('left_policy.php');
