@@ -8,7 +8,7 @@
 
 class Upload extends CI_Controller 
 {
-	private $config = array();
+	private $ue_config = array();
 	
 	public function __construct() 
 	{
@@ -22,10 +22,10 @@ class Upload extends CI_Controller
 		header("Content-Type: text/html; charset=utf-8");
 		
 		// 加载UE上传库
-		$this->load->library('uploader_ue');
+		$this->load->library('Uploader_ue');
 		
 		// 加载上传配置文件
-		$this->config = json_decode(preg_replace("/\/\*[\s\S]+?\*\//", "", file_get_contents(__DIR__ . "/ue_config.json")), true);
+		$this->ue_config = json_decode(preg_replace("/\/\*[\s\S]+?\*\//", "", file_get_contents(__DIR__ . "/ue_config.json")), true);
 	}
 	
 	public function index() 
@@ -34,7 +34,7 @@ class Upload extends CI_Controller
 		
 		switch ($action) {
 			case 'config':
-				$result =  json_encode($this->config);
+				$result =  json_encode($this->ue_config);
 				break;
 		
 				/* 上传图片 */
@@ -81,43 +81,43 @@ class Upload extends CI_Controller
 		switch ($_GET['action']) {
 			case 'uploadimage':
 				$config = array(
-					"pathFormat" => $this->config['imagePathFormat'],
-					"maxSize" => $this->config['imageMaxSize'],
-					"allowFiles" => $this->config['imageAllowFiles']
+					"pathFormat" => $this->ue_config['imagePathFormat'],
+					"maxSize" => $this->ue_config['imageMaxSize'],
+					"allowFiles" => $this->ue_config['imageAllowFiles']
 				);
-				$fieldName = $this->config['imageFieldName'];
+				$fieldName = $this->ue_config['imageFieldName'];
 				break;
 			case 'uploadscrawl':
 				$config = array(
-					"pathFormat" => $this->config['scrawlPathFormat'],
-					"maxSize" => $this->config['scrawlMaxSize'],
-					"allowFiles" => $this->config['scrawlAllowFiles'],
+					"pathFormat" => $this->ue_config['scrawlPathFormat'],
+					"maxSize" => $this->ue_config['scrawlMaxSize'],
+					"allowFiles" => $this->ue_config['scrawlAllowFiles'],
 					"oriName" => "scrawl.png"
 				);
-				$fieldName = $this->config['scrawlFieldName'];
+				$fieldName = $this->ue_config['scrawlFieldName'];
 				$base64 = "base64";
 				break;
 			case 'uploadvideo':
 				$config = array(
-					"pathFormat" => $this->config['videoPathFormat'],
-					"maxSize" => $this->config['videoMaxSize'],
-					"allowFiles" => $this->config['videoAllowFiles']
+					"pathFormat" => $this->ue_config['videoPathFormat'],
+					"maxSize" => $this->ue_config['videoMaxSize'],
+					"allowFiles" => $this->ue_config['videoAllowFiles']
 				);
-				$fieldName = $this->config['videoFieldName'];
+				$fieldName = $this->ue_config['videoFieldName'];
 				break;
 			case 'uploadfile':
 			default:
 				$config = array(
-					"pathFormat" => $this->config['filePathFormat'],
-					"maxSize" => $this->config['fileMaxSize'],
-					"allowFiles" => $this->config['fileAllowFiles']
+					"pathFormat" => $this->ue_config['filePathFormat'],
+					"maxSize" => $this->ue_config['fileMaxSize'],
+					"allowFiles" => $this->ue_config['fileAllowFiles']
 				);
-				$fieldName = $this->config['fileFieldName'];
+				$fieldName = $this->ue_config['fileFieldName'];
 				break;
 		}
 		
 		/* 生成上传实例对象并完成上传 */
-		$up = new Uploader($fieldName, $config, $base64);
+		$up = new Uploader_ue($fieldName, $config, $base64);
 		
 		/**
 		 * 得到上传文件所对应的各个参数,数组结构
@@ -140,16 +140,16 @@ class Upload extends CI_Controller
 		switch ($_GET['action']) {
 			/* 列出文件 */
 			case 'listfile':
-				$allowFiles = $this->config['fileManagerAllowFiles'];
-				$listSize = $this->config['fileManagerListSize'];
-				$path = $this->config['fileManagerListPath'];
+				$allowFiles = $this->ue_config['fileManagerAllowFiles'];
+				$listSize = $this->ue_config['fileManagerListSize'];
+				$path = $this->ue_config['fileManagerListPath'];
 				break;
 				/* 列出图片 */
 			case 'listimage':
 			default:
-				$allowFiles = $this->config['imageManagerAllowFiles'];
-				$listSize = $this->config['imageManagerListSize'];
-				$path = $this->config['imageManagerListPath'];
+				$allowFiles = $this->ue_config['imageManagerAllowFiles'];
+				$listSize = $this->ue_config['imageManagerListSize'];
+				$path = $this->ue_config['imageManagerListPath'];
 		}
 		$allowFiles = substr(str_replace(".", "|", join("", $allowFiles)), 1);
 		
@@ -195,12 +195,12 @@ class Upload extends CI_Controller
 	{
 		/* 上传配置 */
 		$config = array(
-				"pathFormat" => $this->config['catcherPathFormat'],
-				"maxSize" => $this->config['catcherMaxSize'],
-				"allowFiles" => $this->config['catcherAllowFiles'],
+				"pathFormat" => $this->ue_config['catcherPathFormat'],
+				"maxSize" => $this->ue_config['catcherMaxSize'],
+				"allowFiles" => $this->ue_config['catcherAllowFiles'],
 				"oriName" => "remote.png"
 		);
-		$fieldName = $this->config['catcherFieldName'];
+		$fieldName = $this->ue_config['catcherFieldName'];
 		
 		/* 抓取远程图片 */
 		$list = array();
@@ -210,7 +210,7 @@ class Upload extends CI_Controller
 			$source = $_GET[$fieldName];
 		}
 		foreach ($source as $imgUrl) {
-			$item = new Uploader($imgUrl, $config, "remote");
+			$item = new Uploader_ue($imgUrl, $config, "remote");
 			$info = $item->getFileInfo();
 			array_push($list, array(
 				"state" => $info["state"],
@@ -235,7 +235,7 @@ class Upload extends CI_Controller
 			if ($file != '.' && $file != '..') {
 				$path2 = $path . $file;
 				if (is_dir($path2)) {
-					getfiles($path2, $allowFiles, $files);
+					$this->_getfiles($path2, $allowFiles, $files);
 				} else {
 					if (preg_match("/\.(".$allowFiles.")$/i", $file)) {
 						$files[] = array(

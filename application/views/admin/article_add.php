@@ -30,8 +30,8 @@
 						</table>
 						<div class="button"><button type="submit">提交</button></div>
 					</form>
-					<script type=text/javascript src="/static/ueditor/editor.config.js"></script>
-					<script type=text/javascript src="/static/ueditor/editor.all.min.js"></script>
+					<script type=text/javascript src="/static/ueditor/ueditor.config.js"></script>
+					<script type=text/javascript src="/static/ueditor/ueditor.all.min.js"></script>
 					<script type="text/javascript">
 						var ue = UE.getEditor('ue_content');
 					</script>
