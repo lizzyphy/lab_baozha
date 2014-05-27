@@ -73,14 +73,14 @@ class Article_m extends CI_Model
 	 * @param integer $type
 	 * @param string $order
 	 */
-	public function search($keywords,$limit, $offset = 0, $type = 0, $order = 'add_date DESC,add_time DESC')
+	public function search($keywords,$limit, $offset = 0, $type = 0, $order = 'type ASC,ord DESC,aid DESC,add_date DESC,add_time DESC')
 	{
 		$i = 0;
 		$return = array();
 		if($type > 0) {
 			$this->db->where('type', (int) $type);
 		}
-		$this->db->select('aid, type, title, add_time, add_date, add_user');
+		$this->db->select('aid, ord,type, title, add_time, add_date, add_user');
 		$this->db->order_by($order);
 		$this->db->like('title', $keywords);
 		$query = $this->db->get('article', $limit, $offset);
@@ -92,14 +92,14 @@ class Article_m extends CI_Model
 		return $return;
 	}
 	
-	public function get_list($limit, $offset = 0, $type = 0, $order = 'type ASC,aid DESC,add_date DESC,add_time DESC')
+	public function get_list($limit, $offset = 0, $type = 0, $order = 'type ASC,ord DESC,aid DESC,add_date DESC')
 	{
 		$i = 0;
 		$return = array();
 		if($type > 0) {
 			$this->db->where('type', (int) $type);
 		}
-		$this->db->select('aid, type, title, add_time, add_date, add_user');
+		$this->db->select('aid,ord, type, title, add_time, add_date, add_user');
 		$this->db->order_by($order);
 		$query = $this->db->get('article', $limit, $offset);
 		foreach ($query->result_array() as $row) {
@@ -116,7 +116,7 @@ class Article_m extends CI_Model
 		if($type > 0) {
 			$this->db->where('type', (int) $type);
 		}
-		$this->db->select('aid, type, title, add_time, add_date, add_user');
+		$this->db->select('aid,ord, type, title, add_time, add_date, add_user');
 		$this->db->order_by($order);
 		$query = $this->db->get('article', $limit, $offset);
 		foreach ($query->result_array() as $row) {
@@ -214,7 +214,7 @@ class Article_m extends CI_Model
 	{
 		$return = array();
 		$i = 0;
-		$this->db->select('aid, type, title, add_time, add_date, add_user');
+		$this->db->select('aid,ord, type, title, add_time, add_date, add_user');
 		$this->db->like('title', $keyword);
 		$this->db->order_by('aid DESC');
 		if($type != 0) {
@@ -245,7 +245,14 @@ class Article_m extends CI_Model
 		if($this->db->insert('article', $data) === FALSE) {
 			return FALSE;
 		}
-		return $this->db->insert_id();
+		$aid = $this->db->insert_id();
+		$data2 = array(
+			      'ord'   =>   $aid
+		);
+		$this->db->update('article', $data2);
+		return $aid;
+		
+		
 	}
 	public function get_second_name($aid)
 	{
@@ -298,84 +305,73 @@ class Article_m extends CI_Model
 		return TRUE;
 	}
 	
-	public function up($aid,$type)
+	public function up($ord,$type)
 	{
-		$aid = (int) $aid;
+		$ord = (int) $ord;
 		$type = (int) $type;
 		$this->db->where('type', $type);
-		$this->db->where('aid >', $aid);
-		$this->db->select_min('aid');
+		$this->db->where('ord >', $ord);
+		$this->db->select_min('ord');
 		$query = $this->db->get('article');
 		foreach ($query->result() as $row)
 		{
-			$aid2 = $row->aid;
+			$ord2 = $row->ord;
 		}
 		//if ($query->num_rows() == 1)
-		if (!empty($aid2))
-		{
-			/*foreach ($query->result() as $row)
-			{
-				$aid2 = $row->aid;
-			}*/
-			
-			$aid1 = 0;
-			//$aid2 = $aid+1;
-			$data1 = array('aid' => $aid1);
-			$this->db->where('aid', $aid);
+		if (!empty($ord2))
+		{			
+			$ord1 = 0;
+			$data1 = array('ord' => $ord1);
+			$this->db->where('ord', $ord);
 			$this->db->update('article', $data1);
-			$data2 = array('aid' => $aid);
-			$this->db->where('aid', $aid2);
+			$data2 = array('ord' => $ord);
+			$this->db->where('ord', $ord2);
 			$this->db->update('article', $data2);
-			$data = array('aid' => $aid2);
-			$this->db->where('aid', $aid1);
+			$data = array('ord' => $ord2);
+			$this->db->where('ord', $ord1);
 			$this->db->update('article', $data);
 			return TRUE;
 		}
 		else
 		{
-			$data1 = array('aid' => $aid);
-			$this->db->where('aid', $aid);
+			$data1 = array('ord' => $ord);
+			$this->db->where('ord', $ord);
 			return TRUE;
 		}
 		
 	}
 	
-	public function down($aid,$type)
+	public function down($ord,$type)
 	{
-		$aid = (int) $aid;
+		$ord = (int) $ord;
 		$type = (int) $type;
 		$this->db->where('type', $type);
-		$this->db->where('aid <', $aid);
-		$this->db->select_max('aid');
+		$this->db->where('ord <', $ord);
+		$this->db->select_max('ord');
 		$query = $this->db->get('article');
 		foreach ($query->result() as $row)
 		{
-			$aid2 = $row->aid;
+			$ord2 = $row->ord;
 		}
 		//if ($query->num_rows() == 1)
-		if (!empty($aid2))
+		if (!empty($ord2))
 		{
-			/*foreach ($query->result() as $row)
-			{
-				$aid2 = $row->aid;
-			}*/
-			$aid1 = 0;
-			//$aid2 = $aid-1;
-			$data1 = array('aid' => $aid1);
-			$this->db->where('aid', $aid);
+			$ord1 = 0;
+			$data1 = array('ord' => $ord1);
+			$this->db->where('ord', $ord);
 			$this->db->update('article', $data1);
-			$data2 = array('aid' => $aid);
-			$this->db->where('aid', $aid2);
+			$data2 = array('ord' => $ord);
+			$this->db->where('ord', $ord2);
 			$this->db->update('article', $data2);
-			$data = array('aid' => $aid2);
-			$this->db->where('aid', $aid1);
+			$data = array('ord' => $ord2);
+			$this->db->where('ord', $ord1);
 			$this->db->update('article', $data);
 			return TRUE;
 		}
 		else
 		{
-			$data1 = array('aid' => $aid);
-			$this->db->where('aid', $aid);
+			$data1 = array('ord' => $ord);
+			$this->db->where('ord', $ord);
 			return TRUE;
 		}
 	}

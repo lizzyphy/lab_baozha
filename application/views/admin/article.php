@@ -40,8 +40,8 @@
 							<td><?php echo $article['type_name']; ?></td>
 							<td><?php echo $article['add_user']; ?></td>
 							<td>
-								<a  href="index.php?d=admin&c=home&m=article_up&aid=<?php echo $article['aid']; ?>&type=<?php echo $article['type']; ?>">上移</a>
-								<a  href="index.php?d=admin&c=home&m=article_down&aid=<?php echo $article['aid']; ?>&type=<?php echo $article['type']; ?>">下移</a>
+								<a  href="index.php?d=admin&c=home&m=article_up&type=<?php echo $article['type']; ?>&order=<?php echo $article['ord']; ?>">上移</a>
+								<a  href="index.php?d=admin&c=home&m=article_down&type=<?php echo $article['type']; ?>&order=<?php echo $article['ord']; ?>">下移</a>
 							</td>
 							<td>
 								<a href="<?php echo base_url('article/?aid=' . $article['aid']); ?>" target="_blank">查看</a>
