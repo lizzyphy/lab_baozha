@@ -298,38 +298,86 @@ class Article_m extends CI_Model
 		return TRUE;
 	}
 	
-	public function up($aid)
+	public function up($aid,$type)
 	{
 		$aid = (int) $aid;
-		$aid1 = 0;
-		$aid2 = $aid+1;
-		$data1 = array('aid' => $aid1);
-		$this->db->where('aid', $aid);
-		$this->db->update('article', $data1);
-		$data2 = array('aid' => $aid);
-		$this->db->where('aid', $aid2);
-		$this->db->update('article', $data2);
-		$data = array('aid' => $aid2);
-		$this->db->where('aid', $aid1);
-		$this->db->update('article', $data);
-		return TRUE;
+		$type = (int) $type;
+		$this->db->where('type', $type);
+		$this->db->where('aid >', $aid);
+		$this->db->select_min('aid');
+		$query = $this->db->get('article');
+		foreach ($query->result() as $row)
+		{
+			$aid2 = $row->aid;
+		}
+		//if ($query->num_rows() == 1)
+		if (!empty($aid2))
+		{
+			/*foreach ($query->result() as $row)
+			{
+				$aid2 = $row->aid;
+			}*/
+			
+			$aid1 = 0;
+			//$aid2 = $aid+1;
+			$data1 = array('aid' => $aid1);
+			$this->db->where('aid', $aid);
+			$this->db->update('article', $data1);
+			$data2 = array('aid' => $aid);
+			$this->db->where('aid', $aid2);
+			$this->db->update('article', $data2);
+			$data = array('aid' => $aid2);
+			$this->db->where('aid', $aid1);
+			$this->db->update('article', $data);
+			return TRUE;
+		}
+		else
+		{
+			$data1 = array('aid' => $aid);
+			$this->db->where('aid', $aid);
+			return TRUE;
+		}
+		
 	}
 	
-	public function down($aid)
+	public function down($aid,$type)
 	{
 		$aid = (int) $aid;
-		$aid1 = 0;
-		$aid2 = $aid-1;
-		$data1 = array('aid' => $aid1);
-		$this->db->where('aid', $aid);
-		$this->db->update('article', $data1);
-		$data2 = array('aid' => $aid);
-		$this->db->where('aid', $aid2);
-		$this->db->update('article', $data2);
-		$data = array('aid' => $aid2);
-		$this->db->where('aid', $aid1);
-		$this->db->update('article', $data);
-		return TRUE;
+		$type = (int) $type;
+		$this->db->where('type', $type);
+		$this->db->where('aid <', $aid);
+		$this->db->select_max('aid');
+		$query = $this->db->get('article');
+		foreach ($query->result() as $row)
+		{
+			$aid2 = $row->aid;
+		}
+		//if ($query->num_rows() == 1)
+		if (!empty($aid2))
+		{
+			/*foreach ($query->result() as $row)
+			{
+				$aid2 = $row->aid;
+			}*/
+			$aid1 = 0;
+			//$aid2 = $aid-1;
+			$data1 = array('aid' => $aid1);
+			$this->db->where('aid', $aid);
+			$this->db->update('article', $data1);
+			$data2 = array('aid' => $aid);
+			$this->db->where('aid', $aid2);
+			$this->db->update('article', $data2);
+			$data = array('aid' => $aid2);
+			$this->db->where('aid', $aid1);
+			$this->db->update('article', $data);
+			return TRUE;
+		}
+		else
+		{
+			$data1 = array('aid' => $aid);
+			$this->db->where('aid', $aid);
+			return TRUE;
+		}
 	}
 	
 }

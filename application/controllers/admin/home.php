@@ -54,17 +54,51 @@ class Home extends CI_Controller
 	{
 		
 		$aid = (int) $this->input->get('aid');
+		$type = (int) $this->input->get('type');
 		$this->load->model('article_m');
-		$this->article_m->up($aid);
+		$this->article_m->up($aid,$type);
 		redirect('d=admin&c=home&m=article');
 	}
+	
+	/*public function up()
+	{
+		
+		$type = 17;
+		$this->db->where('type', $type);
+		$this->db->where('aid >', 362);
+		$this->db->select_min('aid');
+		$query = $this->db->get('article');
+		echo $query->num_rows(); 
+		foreach ($query->result() as $row)
+		{
+			$id = $row->aid;
+		}
+		if (empty($id))
+		{
+			var_dump($query);
+			
+		}
+		else 
+		{
+			foreach ($query->result() as $row)
+			{
+				echo $row->aid;
+			}
+			//echo $query->num_rows(). dffg;
+			//var_dump($query);
+		}
+		
+		//var_dump($query);
+	}*/
+	
 	
 	public function article_down()
 	{
 		
 		$aid = (int) $this->input->get('aid');
+		$type = (int) $this->input->get('type');
 		$this->load->model('article_m');
-		$this->article_m->down($aid);
+		$this->article_m->down($aid,$type);
 		redirect('d=admin&c=home&m=article');
 	}
 	
