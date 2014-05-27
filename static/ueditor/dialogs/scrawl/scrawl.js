@@ -12,7 +12,7 @@ var scrawl = function (options) {
     var canvas = $G("J_brushBoard"),
         context = canvas.getContext('2d'),
         drawStep = [], //undo redo存储
-        drawStepIndex = -1; //undo redo指针
+        drawStepIndex = 0; //undo redo指针
 
     scrawl.prototype = {
         isScrawl:false, //是否涂鸦
@@ -45,7 +45,6 @@ var scrawl = function (options) {
             me.brushWidth = options.drawBrushSize;//同步画笔粗细
             me.brushColor = options.drawBrushColor;//同步画笔颜色
 
-            $G("fileForm").action = editor.options.scrawlUrl + "?action=tmpImg";//初始form提交地址
             context.lineWidth = me.brushWidth;//初始画笔大小
             context.strokeStyle = me.brushColor;//初始画笔颜色
             context.fillStyle = "transparent";//初始画布背景颜色
@@ -77,13 +76,13 @@ var scrawl = function (options) {
                 isMouseDown = false,
                 isMouseMove = false,
                 isMouseUp = false,
-                buttonPress= 0,button, flag = '';
+                buttonPress = 0, button, flag = '';
 
             margin = parseInt(domUtils.getComputedStyle($G("J_wrap"), "margin-left"));
             drawStep.push(context.getImageData(0, 0, context.canvas.width, context.canvas.height));
             drawStepIndex += 1;
 
-            domUtils.on(canvas, ["mousedown","mousemove", "mouseup", "mouseout"], function(e){
+            domUtils.on(canvas, ["mousedown", "mousemove", "mouseup", "mouseout"], function (e) {
                 button = browser.webkit ? e.which : buttonPress;
                 switch (e.type) {
                     case 'mousedown':
@@ -91,23 +90,23 @@ var scrawl = function (options) {
                         flag = 1;
                         isMouseDown = true;
                         isMouseUp = false;
-                        isMouseMove=false;
+                        isMouseMove = false;
                         me.isScrawl = true;
                         startX = e.clientX - margin;//10为外边距总和
                         startY = e.clientY - margin;
                         context.beginPath();
                         break;
                     case 'mousemove' :
-                        if(!flag && button == 0){
+                        if (!flag && button == 0) {
                             return;
                         }
-                        if(!flag && button){
+                        if (!flag && button) {
                             startX = e.clientX - margin;//10为外边距总和
                             startY = e.clientY - margin;
                             context.beginPath();
                             flag = 1;
                         }
-                        if(isMouseUp || !isMouseDown){
+                        if (isMouseUp || !isMouseDown) {
                             return;
                         }
                         var endX = e.clientX - margin,
@@ -122,7 +121,7 @@ var scrawl = function (options) {
                         break;
                     case 'mouseup':
                         buttonPress = 0;
-                        if(!isMouseDown)return;
+                        if (!isMouseDown)return;
                         if (!isMouseMove) {
                             context.arc(startX, startY, context.lineWidth, 0, Math.PI * 2, false);
                             context.fillStyle = context.strokeStyle;
@@ -139,7 +138,7 @@ var scrawl = function (options) {
                     case 'mouseout':
                         flag = '';
                         buttonPress = 0;
-                        if( button == 1) return;
+                        if (button == 1) return;
                         context.closePath();
                         break;
                 }
@@ -169,7 +168,7 @@ var scrawl = function (options) {
                 context.clearRect(0, 0, context.canvas.width, context.canvas.height);
                 drawStep = [];
                 me._saveOPerate(saveNum);
-                drawStepIndex = 0;
+                drawStepIndex = 1;
                 me.isScrawl = false;
                 me.btn2disable("J_previousStep");
                 me.btn2disable("J_nextStep");
@@ -221,12 +220,23 @@ var scrawl = function (options) {
             });
         },
         _addAddImgListener:function () {
-            var doc = document,
-                file = $G("J_imgTxt");
-            domUtils.on(file, "change", function () {
+            var file = $G("J_imgTxt");
+            if (!window.FileReader) {
+                $G("J_addImg").style.display = 'none';
+                $G("J_removeImg").style.display = 'none';
+                $G("J_sacleBoard").style.display = 'none';
+            }
+            domUtils.on(file, "change", function (e) {
                 var frm = file.parentNode;
                 addMaskLayer(lang.backgroundUploading);
-                frm.submit();
+
+                var target = e.target || e.srcElement,
+                    reader = new FileReader();
+                reader.onload = function(evt){
+                    var target = evt.target || evt.srcElement;
+                    ue_callback(target.result, 'SUCCESS');
+                };
+                reader.readAsDataURL(target.files[0]);
                 frm.reset();
             });
         },
@@ -239,8 +249,6 @@ var scrawl = function (options) {
             });
         },
         _addScalePicListenter:function () {
-            //trace 2457
-            if(browser.opera) return;
             domUtils.on($G("J_sacleBoard"), "click", function () {
                 var picBoard = $G("J_picBoard"),
                     scaleCon = $G("J_scaleCon"),
@@ -248,8 +256,8 @@ var scrawl = function (options) {
 
                 if (img) {
                     if (!scaleCon) {
+                        picBoard.style.cssText = "position:relative;z-index:999;"+picBoard.style.cssText;
                         img.style.cssText = "position: absolute;top:" + (canvas.height - img.height) / 2 + "px;left:" + (canvas.width - img.width) / 2 + "px;";
-                        picBoard.style.cssText += "position:relative;z-index:999";
                         var scale = new ScaleBoy();
                         picBoard.appendChild(scale.init());
                         scale.startScale(img);
@@ -266,10 +274,10 @@ var scrawl = function (options) {
                 }
             });
         },
-        _addClearSelectionListenter:function(){
-            var doc=document;
-            domUtils.on(doc,'mousemove',function(e){
-                if(browser.ie)
+        _addClearSelectionListenter:function () {
+            var doc = document;
+            domUtils.on(doc, 'mousemove', function (e) {
+                if (browser.ie && browser.version < 11)
                     doc.selection.clear();
                 else
                     window.getSelection().removeAllRanges();
@@ -278,13 +286,17 @@ var scrawl = function (options) {
         _clearSelection:function () {
             var list = ["J_operateBar", "J_colorBar", "J_brushBar", "J_eraserBar", "J_picBoard"];
             for (var i = 0, group; group = list[i++];) {
-                domUtils.unselectable($G(group));
+                domUtils.unSelectable($G(group));
             }
         },
 
         _saveOPerate:function (saveNum) {
             var me = this;
             if (drawStep.length <= saveNum) {
+                if(drawStepIndex<drawStep.length){
+                    me.btn2disable("J_nextStep");
+                    drawStep.splice(drawStepIndex);
+                }
                 drawStep.push(context.getImageData(0, 0, context.canvas.width, context.canvas.height));
                 drawStepIndex = drawStep.length;
             } else {
@@ -379,9 +391,9 @@ var scrawl = function (options) {
                 context.fillStyle = "#fff";//重置画布背景白色
                 context.fillRect(0, 0, canvas.width, canvas.height);
             }
-            try{
+            try {
                 return canvas.toDataURL("image/png").substring(22);
-            }catch(e){
+            } catch (e) {
                 return "";
             }
         },
@@ -408,7 +420,7 @@ var ScaleBoy = function () {
         var doc = document,
             head = doc.getElementsByTagName('head')[0],
             style = doc.createElement('style'),
-            cssText = '.scale{visibility:hidden;cursor:move;position:absolute;left:0;top:0;width:100px;height:50px;background-color:#fff;font-size:0;line-height:0;overflow:hidden;opacity:.4;filter:Alpha(opacity=40);}'
+            cssText = '.scale{visibility:hidden;cursor:move;position:absolute;left:0;top:0;width:100px;height:50px;background-color:#fff;font-size:0;line-height:0;opacity:.4;filter:Alpha(opacity=40);}'
                 + '.scale span{position:absolute;left:0;top:0;width:6px;height:6px;background-color:#006DAE;}'
                 + '.scale .hand0, .scale .hand7{cursor:nw-resize;}'
                 + '.scale .hand1, .scale .hand6{left:50%;margin-left:-3px;cursor:n-resize;}'
@@ -592,11 +604,9 @@ function ue_callback(url, state) {
             var obj = new scrawl();
             obj.btn2Highlight("J_removeImg");
             //trace 2457
-            if(!browser.opera){
-                obj.btn2Highlight("J_sacleBoard");
-            }
+            obj.btn2Highlight("J_sacleBoard");
         };
-        img.src = editor.options.scrawlPath + url;
+        img.src = url;
     } else {
         alert(state);
     }
@@ -619,20 +629,21 @@ function addMaskLayer(html) {
 function exec(scrawlObj) {
     if (scrawlObj.isScrawl) {
         addMaskLayer(lang.scrawlUpLoading);
-        var base64=scrawlObj.getCanvasData();
-        if(!!base64){
-            ajax.request(editor.options.scrawlUrl, {
+        var base64 = scrawlObj.getCanvasData();
+        if (!!base64) {
+            var options = {
                 timeout:100000,
-                content:base64,
                 onsuccess:function (xhr) {
                     if (!scrawlObj.isCancelScrawl) {
                         var responseObj;
                         responseObj = eval("(" + xhr.responseText + ")");
                         if (responseObj.state == "SUCCESS") {
                             var imgObj = {},
-                                url = editor.options.scrawlPath + responseObj.url;
+                                url = editor.options.scrawlUrlPrefix + responseObj.url;
                             imgObj.src = url;
-                            imgObj.data_ue_src = url;
+                            imgObj._src = url;
+                            imgObj.alt = responseObj.original || '';
+                            imgObj.title = responseObj.title || '';
                             editor.execCommand("insertImage", imgObj);
                             dialog.close();
                         } else {
@@ -645,7 +656,13 @@ function exec(scrawlObj) {
                     alert(lang.imageError);
                     dialog.close();
                 }
-            });
+            };
+            options[editor.getOpt('scrawlFieldName')] = base64;
+
+            var actionUrl = editor.getActionUrl(editor.getOpt('scrawlActionName')),
+                params = utils.serializeParam(editor.queryCommandValue('serverparam')) || '',
+                url = utils.formatUrl(actionUrl + (actionUrl.indexOf('?') == -1 ? '?':'&') + params);
+            ajax.request(url, options);
         }
     } else {
         addMaskLayer(lang.noScarwl + "&nbsp;&nbsp;&nbsp;<input type='button' value='" + lang.continueBtn + "'  onclick='removeMaskLayer()'/>");

@@ -164,4 +164,3 @@ class Captcha_np {
 # 使用方法，首先要开启session_start()
 # 之后实例化一个图片验证对象，设置相关属性，将$_SESSION设置为$img->getStr()
 # 最后执行$img->display()方法
-?>

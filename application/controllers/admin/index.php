@@ -8,7 +8,6 @@ class Index extends CI_Controller
 	public function __construct() 
 	{
 		parent::__construct();
-		session_start();
 		$this->load->database();
 		$this->load->model('admin_user_m');
 		$this->load->library('captcha_np');
@@ -37,7 +36,9 @@ class Index extends CI_Controller
 		$this->captcha_np->setStyle(1);
 		$this->captcha_np->setBgColor(array(0, 23, 33));
 		$this->captcha_np->setFontColor(array(255, 255, 235));
-		$_SESSION['check'] = $this->captcha_np->getStr();
+		
+		$this->session->set_userdata('admin_img_check', $this->captcha_np->getStr());
+		$this->session->set_userdata('admin_img_checka', $this->captcha_np->getStr());
 		$this->captcha_np->display();
 	}
 	
@@ -50,9 +51,11 @@ class Index extends CI_Controller
 		$password = $this->input->post('password');
 		$usercheck = $this->input->post('usercheck');
 		
-		$check = $_SESSION['check'];
-		unset($_SESSION['check']);
-		if($check != $usercheck) {
+		$img_check = $this->session->userdata('admin_img_check');
+		//exit($img_check);
+		$this->session->unset_userdata('admin_img_check');
+		
+		if($img_check != $usercheck) {
 			$data['error'] = '验证码错误';
 			$this->load->view('admin/login.php', $data);
 		} else if($this->admin_user_m->login($username, $password) > 0) {
