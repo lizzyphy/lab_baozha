@@ -249,6 +249,7 @@ class Article_m extends CI_Model
 		$data2 = array(
 			      'ord'   =>   $aid
 		);
+		$this->db->where('aid',$aid);
 		$this->db->update('article', $data2);
 		return $aid;
 		
