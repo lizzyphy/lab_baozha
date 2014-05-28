@@ -24,22 +24,10 @@
 						</table>
 						<div class="button"><button type="submit">提交</button></div>
 					</form>
-					<script type=text/javascript src="static/ueditor/editor_config.js"></script>
-					<script type=text/javascript src="static/ueditor/editor_all_min.js"></script>
+					<script type=text/javascript src="/static/ueditor/ueditor.config.js"></script>
+					<script type=text/javascript src="/static/ueditor/ueditor.all.min.js"></script>
 					<script type="text/javascript">
-			    		var ue = new UE.ui.Editor();
-					    $(function() {
-							ue.render('ue_content');
-							if(0){//navigator.userAgent.indexOf("Firefox") != -1) {
-						    	setTimeout(function() {
-										var ue_iframe = document.getElementById('baidu_editor_0').contentWindow.document;
-										ue_iframe.designMode="off";
-										ue_iframe.execCommand('enableObjectResizing', false, 'false');
-									}
-									,1500
-						    	);
-							}
-					    })
+						var ue = UE.getEditor('ue_content');
 					</script>
 				</div>
 			</div>
