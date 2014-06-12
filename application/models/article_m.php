@@ -155,8 +155,7 @@ class Article_m extends CI_Model
 	public function get_list_img($limit, $offset = 0)
 	{
 		$i = 0;
-		$return = array();	
-		$this->db->select('path');
+		$return = array();
 		$this->db->where('type',1);
 		$this->db->order_by('order');
 		$query = $this->db->get('index_img', $limit, $offset);

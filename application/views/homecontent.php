@@ -5,7 +5,7 @@
             <ul>
             <?php foreach ($picture_url as $row):?>
                 <li>
-                <a href=""><img width="1000" height="300" src="<?php echo base_url($row['path']); ?>" /></a>
+                <a href="<?php echo $row['url'];?>"><img width="1000" height="300" src="<?php echo base_url($row['path']); ?>" /></a>
                 </li>	
             <?php endforeach;?>
             </ul>
