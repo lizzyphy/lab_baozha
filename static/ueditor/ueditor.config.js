@@ -303,7 +303,7 @@
         //    pasteFilter: false,             //根据规则过滤没事粘贴进来的内容
             clearFontSize: true,           //去掉所有的内嵌字号，使用编辑器默认的字号
             clearFontFamily: true,         //去掉所有的内嵌字体，使用编辑器默认的字体
-            removeEmptyNode: true,         // 去掉空节点
+            removeEmptyNode: true          // 去掉空节点
         //    //可以去掉的标签
         //    removeTagNames: {标签名字:1},
         //    indent: false,                  // 行首缩进
