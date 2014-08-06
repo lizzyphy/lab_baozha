@@ -35,7 +35,7 @@
                         <td><a href="<?php echo base_url('article/type?type=80'); ?>">学术交流</a>&nbsp;&nbsp;&nbsp;|
                         	<div class="naviout" style="display:none;">
                             	<a href="<?php echo base_url('article/type?type=80'); ?>">专家讲坛</a>
-                                <a href="<?php echo base_url('article/type?type=79'); ?>">学术报告会议</a>
+                                <a href="<?php echo base_url('article/type?type=79'); ?>">学术会议信息</a>
                                 <a href="<?php echo base_url('article/type?type=81'); ?>">主办国际国内会议</a>
                             </div>
                         </td>
