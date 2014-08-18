@@ -79,6 +79,7 @@ class Index extends  CI_Controller {
 	public function english()
 	{
 		$this->load->view('en_home');
+		$this->load->view('en_home_right');
 	}
 }
 	
