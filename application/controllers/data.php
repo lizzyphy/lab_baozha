@@ -18,7 +18,24 @@ class Data extends CI_Controller
 	{
 		$my_lab = $this->load->database('my_lab',TRUE);
 		$lab_baozha = $this->load->database('default',TRUE);
-		$my_lab->where('mid', 24);
+		$lab_baozha->order_by('add_date ASC');
+		$query = $lab_baozha->get('article2');
+		if($query->num_rows() > 0)
+		{
+			$array = $query->result_array() ;
+			foreach($array as $a)
+			{
+				$data = array(
+						'type'=>$a['type'],
+						'ord'=>$a['ord'],
+						'title'=>$a['title'],
+						'content'=>$a['content'],
+						'add_date'=>$a['add_date'],
+						'add_time'=>$a['add_time'],
+						'add_user'=>$a['add_user']
+				);
+			
+		/*$my_lab->where('mid', 24);
 		$my_lab->order_by('date DESC');
 		$query = $my_lab->get('news');
 		
