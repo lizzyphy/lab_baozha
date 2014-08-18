@@ -23,6 +23,43 @@ body{
 	width:1000px;
 }
 
+a{
+	text-decoration: none;
+}
+
+.en_top{
+	margin-bottom:10px;
+}
+
+#top_l{
+	padding-top:10px;
+	width:102px;
+	height:95px;
+	float:left;
+}
+
+#top_r{
+	width:898px;
+	height:105px;
+	background-repeat:no-repeat;
+	background-image:url(../img/top_b2.gif);
+	float:left;
+}
+
+.top_rr{
+	padding:35px 50px 0 0;
+	float:right;
+	
+}
+
+.top_rr a{
+	color:#333;
+}
+
+.top_rr a:hover{
+	color: #F00;
+}
+
 .left_navi{
 	width:30%;
 	float:left;
@@ -31,4 +68,25 @@ body{
 .right_content{
 	width:70%;
 	float:left;
+}
+
+.en_navi{
+	height:30px;
+	line-height:30px;
+	text-align:left;
+	margin:3px 5% 3px 0;
+	
+}
+
+.en_navi a{
+	display: block;
+	color: #06F;
+	font-size:14px;
+	padding-left:20px;
+	background-color:#CCC;
+}
+
+.en_navi a:hover{
+	background-color:#999;
+	color:#09F;
 }
