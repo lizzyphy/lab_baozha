@@ -10,7 +10,7 @@ class Index extends  CI_Controller {
  		
  	}
 
-	function index()
+	public function index()
 	{
 		//新闻快讯
 		$data['xwkx'] = $this->article_m->get_list(5, 0, 74);
@@ -57,7 +57,7 @@ class Index extends  CI_Controller {
 	}
 
 	
-	function search() 
+	public function search() 
 	{
 		$per_page = 20;
 		$p = (int) $this->input->get('p');
@@ -74,6 +74,11 @@ class Index extends  CI_Controller {
 		$this->load->view('homeheader');
 		$this->load->view('search.php', $data);
 		$this->load->view('homefoot');
+	}
+	
+	public function english()
+	{
+		$this->load->view('en_home');
 	}
 }
 	

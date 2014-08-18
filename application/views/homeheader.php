@@ -54,7 +54,7 @@
                         		<?php endforeach;?>
                             </div>
                         </td>
-                        <td><a href="index.php">ENGLISH</a></td> 
+                        <td><a href="<?php echo base_url('index/english')?>">ENGLISH</a></td> 
                     </tr>
                  </table>
             </div>

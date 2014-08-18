@@ -1,0 +1,34 @@
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	width:100%;
+	background: none repeat scroll 0 0 #FFFFFF;
+    color: #555;
+    font: 12px/140% Arial,"宋体",Helvetica,sans-serif,Verdana;
+}
+.middle{
+	margin:0 auto;
+}
+
+.clear {
+	clear:both;
+	height:0px;
+	overflow:hidden;
+}
+
+.whole{
+	width:1000px;
+}
+
+.left_navi{
+	width:30%;
+	float:left;
+}
+
+.right_content{
+	width:70%;
+	float:left;
+}
