@@ -35,7 +35,7 @@
                         <td><a href="<?php echo base_url('article/type?type=80'); ?>">学术交流</a>&nbsp;&nbsp;&nbsp;|
                         	<div class="naviout" style="display:none;">
                             	<a href="<?php echo base_url('article/type?type=80'); ?>">专家讲坛</a>
-                                <a href="<?php echo base_url('article/type?type=79'); ?>">学术报告会议</a>
+                                <a href="<?php echo base_url('article/type?type=79'); ?>">学术会议信息</a>
                                 <a href="<?php echo base_url('article/type?type=81'); ?>">主办国际国内会议</a>
                             </div>
                         </td>
@@ -147,13 +147,14 @@
                     
                 </div>
             </li>
-            <li><a href="<?php echo base_url('article/type/?type=48')?>">相关下载</a>
+            <li><a href="<?php echo base_url('article/type/?type=106')?>">相关下载</a>
             	<div class="naviout" style="display:none;">
                 	<a href="<?php echo base_url('article/type/?type=48')?>">日常运行表格</a>
                     <a href="<?php echo base_url('article/type/?type=49')?>">年报相关表格</a>
                     <a href="<?php echo base_url('article/type/?type=50')?>">自主课题表格</a>
                     <a href="<?php echo base_url('article/type/?type=72')?>">开放课题表格</a>
                     <a href="<?php echo base_url('article/type/?type=51')?>">学科建设表格</a>
+                    <a href="<?php echo base_url('article/type?type=106'); ?>">相关下载</a>
                 </div>
             </li>
             <li><a href="<?php echo base_url('article/type/?type=102')?>">联系我们</a>
