@@ -78,10 +78,24 @@
 	text-decoration: none;
 }
 .en_a:hover{
-	background:f1eeee;
+	background:#f1eeee;
 }
 #news_content{
 	width:50%;
 	float:left;
 	font-size:14px;
+}
+#photos_title{
+	color: #064481;
+	line-height:50px;
+	text-align:center;
+	font-size:24px;
+	font-family:FZShuTi;
+	font-weight:bold;
+}
+#photos{
+	padding-left:30px;
+}
+#photos img{
+	padding:10px 10px 10px 10px;
 }

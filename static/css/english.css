@@ -28,7 +28,7 @@ a{
 }
 
 .en_top{
-	margin-bottom:10px;
+	margin-bottom:20px;
 }
 
 #top_l{
@@ -71,22 +71,37 @@ a{
 }
 
 .en_navi{
-	height:30px;
-	line-height:30px;
+	height:31px;
+	line-height:31px;
 	text-align:left;
-	margin:3px 5% 3px 0;
-	
+	margin:0 10% 6px 0;
+	border:1px solid #d3e4fe;
 }
 
 .en_navi a{
 	display: block;
-	color: #06F;
+	color: #064481;
 	font-size:14px;
-	padding-left:20px;
-	background-color:#CCC;
+	padding-left:12px;
+	background-image:url(../img/dh_en.jpg);
 }
 
 .en_navi a:hover{
-	background-color:#999;
+	background:#f1eeee;
 	color:#09F;
+}
+#en_video{
+	float:left;
+}
+#video_title{
+	color: #064481;
+	line-height:50px;
+	text-align:center;
+	font-size:24px;
+	font-family:FZShuTi;
+	font-weight:bold;
+	margin-top:6px;
+}
+#flash_en{
+	padding-left:5%;
 }
