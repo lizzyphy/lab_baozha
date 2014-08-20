@@ -13,19 +13,19 @@ class Article extends CI_Controller
 		$this->load->database();
 		$this->load->model('admin_user_m');
 		if($this->admin_user_m->check_login() === FALSE) {
-			redirect('d=admin&c=index');
+			redirect('d=admin_en&c=index');
 		}
-		$this->load->model('article_m');
+		$this->load->model('article_en_m');
 	}
 	
 	public function del() 
 	{
 		$aid = (int) $this->input->get('aid');
 		if($aid < 1) {
-			redirect('d=admin&c=home&m=article');
+			redirect('d=admin_en&c=home&m=article');
 		}
-		$this->article_m->del($aid);
-		redirect('d=admin&c=home&m=article');
+		$this->article_en_m->del($aid);
+		redirect('d=admin_en&c=home&m=article');
 	}
 	
 	public function edit() 
@@ -35,10 +35,10 @@ class Article extends CI_Controller
 		$data['type'] = (int) $this->input->post('type');
 		$data['content'] = $this->input->post('ue_content');
 		if($data['title'] === FALSE || $data['type'] === FALSE || $data['content'] === FALSE) {
-			redirect('d=admin&c=home&m=article');
+			redirect('d=admin_en&c=home&m=article');
 		}
-		$this->article_m->edit($aid, $data);
-		redirect('d=admin&c=home&m=article');
+		$this->article_en_m->edit($aid, $data);
+		redirect('d=admin_en&c=home&m=article');
 	}
 	
 	public function add()
@@ -46,7 +46,7 @@ class Article extends CI_Controller
 		$title = $this->input->post('title', TRUE);
 		$type = (int) $this->input->post('type');
 		$content = $this->input->post('ue_content');
-		$this->article_m->add($title, $type, $content, $this->admin_user_m->user->username);
-		redirect('d=admin&c=home&m=article');
+		$this->article_en_m->add($title, $type, $content, $this->admin_user_m->user->username);
+		redirect('d=admin_en&c=home&m=article');
 	}
 }

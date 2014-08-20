@@ -59,7 +59,7 @@ class Index extends CI_Controller
 			$data['error'] = '验证码错误';
 			$this->load->view('admin_en/login.php', $data);
 		} else if($this->admin_user_m->login($username, $password) > 0) {
-			redirect('d=admin&c=home');
+			redirect('d=admin_en&c=home');
 		} else {
 			$data['error'] = '用户名或密码错误';
 			$this->load->view('admin_en/login.php', $data);

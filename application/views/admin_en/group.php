@@ -4,7 +4,7 @@
 			<div class="title_2">团队管理</div>
 			<div class="content">
 				<div class="func">
-					<a href="index.php?d=admin&c=group&m=add_v">添加</a>
+					<a href="index.php?d=admin_en&c=group&m=add_v">添加</a>
 				</div>
 				<div>
 					<table width="100%" border="0" cellpadding="0" cellspacing="0">
@@ -22,8 +22,8 @@
 							</td>
 							<td><?php echo $group['title'];?></td>
 							<td>
-								<a href="index.php?d=admin&c=group&m=edit_v&gid=<?php echo $group['gid']; ?>">编辑</a>
-								<a onclick="return del_alert()" href="index.php?d=admin&c=group&m=del&gid=<?php echo $group['gid']; ?>&type=<?php echo $group['type'];?>">删除</a>
+								<a href="index.php?d=admin_en&c=group&m=edit_v&gid=<?php echo $group['gid']; ?>">编辑</a>
+								<a onclick="return del_alert()" href="index.php?d=admin_en&c=group&m=del&gid=<?php echo $group['gid']; ?>">删除</a>
 							</td>
 						</tr>
 						<?php endforeach;?>
