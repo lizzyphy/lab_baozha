@@ -46,10 +46,9 @@
 #tip_r ul li.current{
 	background:url(../img/focus_tip_current.png) no-repeat;
 }
-#intro_title{
+.intro_title{
 	color: #064481;
 	line-height:50px;
-	text-align:center;
 	font-size:24px;
 	font-family:FZShuTi;
 	font-weight:bold;

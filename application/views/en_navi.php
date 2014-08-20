@@ -38,4 +38,13 @@
             <div class="en_navi">
             	<a href="">Contact Numbers of Main Members</a>
             </div>
+             <div class="en_navi">
+            	<a href="">News & Trends</a>
+            </div>
+            <div class="en_navi">
+            	<a href="">Photos</a>
+            </div>
+            <div class="en_navi">
+            	<a href="">Video</a>
+            </div>
 </div>

@@ -78,9 +78,11 @@ class Index extends  CI_Controller {
 	
 	public function english()
 	{
+		$data['picture_url'] = $this->article_m->get_list_img(4, 0);
+		$data['flash_url'] = $this->article_m->get_list_flash(1, 0);
 		$this->load->view('en_home_top');
-		$this->load->view('en_home_left');
-		$this->load->view('en_home_right');
+		$this->load->view('en_home_left',$data);
+		$this->load->view('en_home_right',$data);
 		$this->load->view('en_footer');
 	}
 	public function english1()

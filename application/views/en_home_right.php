@@ -3,18 +3,11 @@
             <div class="focus_r">
         		<div id="pic_r">
             		<ul>
-                		<li>
-                			<a href=""><img src="<?php echo base_url('static/img/1.jpg')?>" /></a>
-                		</li>	
-                		<li>
-                			<a href=""><img src="<?php echo base_url('static/img/2.jpg')?>" /></a>
-                		</li>	
-                		<li>
-                			<a href=""><img src="<?php echo base_url('static/img/3.jpg')?>" /></a>
-                		</li>	
-                		<li>
-                			<a href=""><img src="<?php echo base_url('static/img/4.jpg')?>" /></a>
-                		</li>	
+                	<?php foreach ($picture_url as $row):?>
+                	<li>
+                		<a href="<?php echo $row['url'];?>"><img src="<?php echo base_url($row['path']); ?>" /></a>
+                	</li>	
+            		<?php endforeach;?>	
             		</ul>
         		</div>
     		</div>
@@ -31,7 +24,7 @@
     		</div>
      		<div class="clear"></div>
      	<!-- 介绍和新闻 -->
-     		<div id="intro_title">
+     		<div class="intro_title">
      			<div id="introduction">Introduction</div>
      			<div id="news">News & Trends</div>
      		</div>

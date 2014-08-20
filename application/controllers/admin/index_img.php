@@ -39,8 +39,8 @@ class Index_img extends CI_Controller
 		
 		$this->load->library('uploader_ue');
 		$config = array(
-				"savePath" => "upload/" ,
-				"maxSize" => 100000 , //单位KB
+				"pathFormat" => "upload/{yyyy}{mm}{dd}/{time}{ss}" ,
+				"maxSize" => 100000000 , //单位B
 				"allowFiles" => array( ".swf" ,".gif" , ".png" , ".jpg" , ".jpeg" , ".bmp"  )
 		);
 		$up = new Uploader_ue( "upfile" , $config );
@@ -62,12 +62,11 @@ class Index_img extends CI_Controller
 		
 		$this->load->library('uploader_ue');
 		$config = array(
-				"savePath" => "upload/" ,
-				"maxSize" => 100000 , //单位KB
+				"pathFormat" => "upload/{yyyy}{mm}{dd}/{time}{ss}" ,
+				"maxSize" => 100000000 , //单位B
 				"allowFiles" => array( ".gif" , ".png" , ".jpg" , ".jpeg" , ".bmp"  )
 		);
 		$up = new Uploader_ue( "upfile" , $config);
-		$info = $up->getFileInfo();
 		if($info['state'] == 'SUCCESS') {
 			$data['path'] = $make_url . $info['url'];
 		}
@@ -80,6 +79,7 @@ class Index_img extends CI_Controller
 
 		$this->index_img_m->edit($id, $data);
 		redirect('d=admin&c=index_img&type=' . $data['type']);
+		
 	}
 	
 	public function del()

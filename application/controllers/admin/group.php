@@ -46,8 +46,8 @@ class Group extends CI_Controller
 		
 		$this->load->library('uploader_ue');
 		$config = array(
-				"savePath" => "upload/" ,
-				"maxSize" => 100000 , //单位KB
+				"pathFormat" => "upload/{yyyy}{mm}{dd}/{time}{ss}" ,
+				"maxSize" => 100000000 , //单位B
 				"allowFiles" => array( ".gif" , ".png" , ".jpg" , ".jpeg" , ".bmp"  )
 		);
 		$up = new Uploader_ue( "upfile" , $config );
@@ -68,8 +68,8 @@ class Group extends CI_Controller
 		
 		$this->load->library('uploader_ue');
 		$config = array(
-				"savePath" => "upload/" ,
-				"maxSize" => 100000 , //单位KB
+				"pathFormat" => "upload/{yyyy}{mm}{dd}/{time}{ss}" ,
+				"maxSize" => 100000000 , //单位B
 				"allowFiles" => array( ".gif" , ".png" , ".jpg" , ".jpeg" , ".bmp"  )
 		);
 		$up = new Uploader_ue( "upfile" , $config);
@@ -123,6 +123,7 @@ class Group extends CI_Controller
 		$data['title'] = $group['title'];
 		$data['content'] = $group['content'];
 		$data['order'] = $group['order'];
+		$data['types'] = $this->group_m->get_types();
 		$data['form_url'] = 'd=admin&c=group&m=edit&gid=' . $gid . '&type=' . $group['type'];
 		
 		$this->load->view('admin/header.php', array('username' => $this->admin_user_m->user->username));

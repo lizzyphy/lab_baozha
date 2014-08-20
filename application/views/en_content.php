@@ -1,18 +1,7 @@
-    <div class="list_right">
-    	<div id="right_head">
-        	<p><a href="">首页</a>&nbsp;>&nbsp;&nbsp;>&nbsp;</p>
-        </div>
-        <div id="right_title">
-        	<p></p>
-        </div>
-        <div id="right_content">
-            <ul>
-            
-                <li><span><a href=""></a></span>
-                </li>
-            
-            </ul>
-        </div>
+    <div class="right_content">
+    	<div class="intro_title"><?php echo $article['type_name'];?></div>
+    	<img width="100%" height="5" src="<?php echo base_url('static/img/title.jpg')?>">
     </div>
+    <div class="en_right_content"><?php echo $article['content'];?></div>
     <div class="clear"></div>
 </div>
