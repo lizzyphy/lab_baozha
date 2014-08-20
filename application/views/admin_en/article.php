@@ -4,9 +4,9 @@
 			<div class="title_2">新闻管理</div>
 			<div class="content">
 				<div class="func">
-					<a href="index.php?d=admin&c=home&m=article_add">添加新闻</a>
+					<a href="index.php?d=admin_en&c=home&m=article_add">添加新闻</a>
 					<div style="float:right;">
-						<?php  echo form_open('d=admin&c=home&m=article_search');?>
+						<?php  echo form_open('d=admin_en&c=home&m=article_search');?>
 							<?php if(empty($keywords)):?>
 			            	<span><input class="input_ser" type="text" name="keywords" value="请输入关键字" onmouseover=this.focus();
 			                 onclick="value='';this.style.color='#000'"   
@@ -26,7 +26,6 @@
 							<td width="40%">标题</td>
 							<td width="18%">分类</td>
 							<td width="10%">添加人</td>
-							<td width="10%">调序</td>
 							<td>操作</td>
 						</tr>
 						<?php foreach ($articles as $article): ?>
@@ -40,13 +39,9 @@
 							<td><?php echo $article['type_name']; ?></td>
 							<td><?php echo $article['add_user']; ?></td>
 							<td>
-								<a  href="index.php?d=admin&c=home&m=article_up&type=<?php echo $article['type']; ?>&order=<?php echo $article['ord']; ?>">上移</a>
-								<a  href="index.php?d=admin&c=home&m=article_down&type=<?php echo $article['type']; ?>&order=<?php echo $article['ord']; ?>">下移</a>
-							</td>
-							<td>
 								<a href="<?php echo base_url('article/?aid=' . $article['aid']); ?>" target="_blank">查看</a>
-								<a href="index.php?d=admin&c=home&m=article_edit&aid=<?php echo $article['aid']; ?>">编辑</a>
-								<a onclick="return del_alert()" href="index.php?d=admin&c=article&m=del&aid=<?php echo $article['aid']; ?>">删除</a>
+								<a href="index.php?d=admin_en&c=home&m=article_edit&aid=<?php echo $article['aid']; ?>">编辑</a>
+								<a onclick="return del_alert()" href="index.php?d=admin_en&c=article&m=del&aid=<?php echo $article['aid']; ?>">删除</a>
 							</td>
 						</tr>
 						<?php endforeach;?>

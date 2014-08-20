@@ -12,7 +12,7 @@ class Link extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin_user_m');
 		if($this->admin_user_m->check_login() === FALSE) {
-			redirect('d=admin&c=index');
+			redirect('d=admin_en&c=index');
 		}
 		$this->load->model('link_m');
 		$this->load->helper('form');
@@ -22,10 +22,10 @@ class Link extends CI_Controller
 	{
 		$data['links'] = $this->link_m->get_list(); 
 		
-		$this->load->view('admin/header.php', array('username' => $this->admin_user_m->user->username));
-		$this->load->view('admin/left_navi.php');
-		$this->load->view('admin/link.php', $data);
-		$this->load->view('admin/footer.php');
+		$this->load->view('admin_en/header.php', array('username' => $this->admin_user_m->user->username));
+		$this->load->view('admin_en/left_navi.php');
+		$this->load->view('admin_en/link.php', $data);
+		$this->load->view('admin_en/footer.php');
 	}
 	
 	public function add()
@@ -35,7 +35,7 @@ class Link extends CI_Controller
 		$title = $this->input->post('title', TRUE);
 		
 		$this->link_m->add($name, $url, $title);
-		redirect('d=admin&c=link');
+		redirect('d=admin_en&c=link');
 	}
 	
 	public function edit() 
@@ -45,20 +45,20 @@ class Link extends CI_Controller
 		$data['url'] = $this->input->post('url', TRUE);
 		$data['title'] = $this->input->post('title', TRUE);
 		if($data['title'] === FALSE || $data['type'] === FALSE || $data['content'] === FALSE) {
-			redirect('d=admin&c=link');
+			redirect('d=admin_en&c=link');
 		}
 		$this->link_m->edit($lid, $data);
-		redirect('d=admin&c=link');
+		redirect('d=admin_en&c=link');
 	}
 	
 	public function del() 
 	{
 		$lid = (int) $this->input->get('lid');
 		if($lid < 1) {
-			redirect('d=admin&c=link');
+			redirect('d=admin_en&c=link');
 		}
 		$this->link_m->del($lid);
-		redirect('d=admin&c=link');
+		redirect('d=admin_en&c=link');
 	}
 	
 	public function add_v() 
@@ -66,12 +66,12 @@ class Link extends CI_Controller
 		$data['name'] = '';
 		$data['url'] = '';
 		$data['title'] = '';
-		$data['form_url'] = 'd=admin&c=link&m=add';
+		$data['form_url'] = 'd=admin_en&c=link&m=add';
 		
-		$this->load->view('admin/header.php', array('username' => $this->admin_user_m->user->username));
-		$this->load->view('admin/left_navi.php');
-		$this->load->view('admin/link_add.php', $data);
-		$this->load->view('admin/footer.php');
+		$this->load->view('admin_en/header.php', array('username' => $this->admin_user_m->user->username));
+		$this->load->view('admin_en/left_navi.php');
+		$this->load->view('admin_en/link_add.php', $data);
+		$this->load->view('admin_en/footer.php');
 	}
 	
 	public function edit_v() 
@@ -79,16 +79,16 @@ class Link extends CI_Controller
 		$lid = (int) $this->input->get('lid');
 		$link = $this->link_m->get($lid);
 		if($link === FALSE) {
-			redirect('d=admin&c=link');
+			redirect('d=admin_en&c=link');
 		}
 		$data['name'] = $link['name'];
 		$data['url'] = $link['url'];
 		$data['title'] = $link['title'];
-		$data['form_url'] = 'd=admin&c=link&m=edit&lid=' . $lid;
+		$data['form_url'] = 'd=admin_en&c=link&m=edit&lid=' . $lid;
 		
-		$this->load->view('admin/header.php', array('username' => $this->admin_user_m->user->username));
-		$this->load->view('admin/left_navi.php');
-		$this->load->view('admin/link_add.php', $data);
-		$this->load->view('admin/footer.php');
+		$this->load->view('admin_en/header.php', array('username' => $this->admin_user_m->user->username));
+		$this->load->view('admin_en/left_navi.php');
+		$this->load->view('admin_en/link_add.php', $data);
+		$this->load->view('admin_en/footer.php');
 	}
 }
