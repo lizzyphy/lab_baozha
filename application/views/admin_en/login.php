@@ -10,7 +10,7 @@
 	<div id="login">
 		<h1>管理员登录</h1>
 		<div class="login_error"><?php echo $error;?></div>
-    <?php echo form_open('d=admin&c=index&m=login');?>
+    <?php echo form_open('d=admin_en&c=index&m=login');?>
     <!-- <form action="index.php?c=index" method="post" name="login">-->
 		<table width="290" border="0" align="center" cellpadding="6"
 			cellspacing="0">
@@ -30,7 +30,7 @@
 				<td>验证码：</td>
 				<td><input name="usercheck" type="text" id="usercheck"
 					class="input_1 input_2" size="7" /><img class="captcha"
-					src="index.php?d=admin&c=index&m=captcha" /></td>
+					src="index.php?d=admin_en&c=index&m=captcha" /></td>
 			</tr>
 			<tr>
 				<td>&nbsp;</td>
