@@ -98,3 +98,17 @@
 #photos img{
 	padding:10px 10px 10px 10px;
 }
+.group_list{
+	width:550px;
+	display:block;
+	overflow:hidden;
+	float:left; 	
+}
+li{
+	list-style:none;
+}
+.group_list a{
+	color:#000;
+	font-size:16px;
+	line-height:50px;
+}
