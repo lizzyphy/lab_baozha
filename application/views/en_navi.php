@@ -1,45 +1,45 @@
  <div class="left_navi">
             <div class="en_navi">
-            	<a href="">Home</a>
+            	<a href="<?php base_url('/english') ?>">Home</a>
             </div>
             <div class="en_navi">
-            	<a href="">Introduction</a>
+            	<a href="<?php echo base_url('en_article/?type=106')?>">Introduction</a>
             </div>
             <div class="en_navi">
-            	<a href="">History</a>
+            	<a href="<?php echo base_url('en_article/?type=107')?>">History</a>
             </div>
             <div class="en_navi">
-            	<a href="">Main Research Direction and Contents</a>
+            	<a href="<?php echo base_url('en_article/?type=108')?>">Main Research Direction and Contents</a>
             </div>
             <div class="en_navi">
-            	<a href="">Organization Structure</a>
+            	<a href="<?php echo base_url('en_article/?type=109')?>">Organization Structure</a>
             </div>
             <div class="en_navi">
-            	<a href="">Academic Committee</a>
+            	<a href="<?php echo base_url('en_article/?type=110')?>">Academic Committee</a>
             </div>
             <div class="en_navi">
-            	<a href="">Main Research Achievements</a>
+            	<a href="<?php echo base_url('en_article/?type=111')?>">Main Research Achievements</a>
             </div>
             <div class="en_navi">
-            	<a href="">Instruments</a>
+            	<a href="<?php echo base_url('en_article/?type=112')?>">Instruments</a>
             </div>
             <div class="en_navi">
-            	<a href="">Education</a>
+            	<a href="<?php echo base_url('en_article/?type=113')?>">Education</a>
             </div>
             <div class="en_navi">
-            	<a href="">Main Members of Staff</a>
+            	<a href="<?php echo base_url('en_article/list_group/?type=114')?>">Main Members of Staff</a>
             </div>
             <div class="en_navi">
-            	<a href="">Opening Fund</a>
+            	<a href="<?php echo base_url('en_article/?type=115')?>">Opening Fund</a>
             </div>
             <div class="en_navi">
-            	<a href="">Opening and Communication</a>
+            	<a href="<?php echo base_url('en_article/?type=116')?>">Opening and Communication</a>
             </div>
             <div class="en_navi">
-            	<a href="">Contact Numbers of Main Members</a>
+            	<a href="<?php echo base_url('en_article/?type=117')?>">Contact Numbers of Main Members</a>
             </div>
              <div class="en_navi">
-            	<a href="">News & Trends</a>
+            	<a href="<?php echo base_url('en_article/list_news/?type=118')?>">News&Trends</a>
             </div>
             <div class="en_navi">
             	<a href="">Photos</a>

@@ -20,11 +20,40 @@ class En_article extends CI_Controller
 		$this->load->view('en_content',$data);
 		$this->load->view('en_footer');
 	}
-	
-	public function list_content()
+	public function group()
+	{
+		$gid = $this->input->get('gid');
+		$data['article'] = $this->en_article_m->get_group($gid);
+		$this->load->view('en_home_top');
+		$this->load->view('en_navi');
+		$this->load->view('en_content',$data);
+		$this->load->view('en_footer');
+	}
+	public function list_group()
 	{
 		$type = $this->input->get('type');
-		$data['articles'] = $this->article_m->get_list($per_page, $per_page * ($p - 1), $type);
+		$per_page = 20;
+		$p = (int) $this->input->get('p');
+		if($p < 1) {
+			$p = 1;
+		}
+		$data['articles'] = $this->en_article_m->get_list($per_page, $per_page * ($p - 1), $type);
+		$data['title'] = 'Main Members of Staff';
+		$data['page_html'] =  $this->_page_init($per_page);
+		$this->load->view('en_home_top');
+		$this->load->view('en_navi');
+		$this->load->view('en_list_group',$data);
+		$this->load->view('en_footer');
+	}
+	public function list_news()
+	{
+		$type = $this->input->get('type');
+		$per_page = 20;
+		$p = (int) $this->input->get('p');
+		if($p < 1) {
+			$p = 1;
+		}
+		$data['articles'] = $this->en_article_m->get_list_news($per_page, $per_page * ($p - 1), $type);
 		$data['page_html'] =  $this->_page_init($per_page);
 		$this->load->view('en_home_top');
 		$this->load->view('en_navi');
