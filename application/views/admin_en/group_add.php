@@ -18,11 +18,6 @@
 								<td><input name="title" type="text" value="<?php echo $title;?>" size="20" /></td>
 							</tr>
 							<tr>
-							
-								<td>上传头像</td>
-								<td><input name="upfile" type="file" value="" size="80" /></td>
-							</tr>
-							<tr>
 								<td>介绍内容</td>
 								<td><script type="text/plain" id="ue_content" name="ue_content"><?php echo $content;?></script></td>
 							</tr>
