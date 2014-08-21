@@ -70,6 +70,10 @@ a{
 	float:left;
 }
 
+.right_content ul{
+	padding:20px 0 0 10px;
+}
+
 .en_navi{
 	height:31px;
 	line-height:31px;
@@ -106,7 +110,7 @@ a{
 	padding-left:5%;
 }
 .content_list{
-	width:550px;
+	width:620px;
 	display:block;
 	overflow:hidden;
 	text-overflow:ellipsis;

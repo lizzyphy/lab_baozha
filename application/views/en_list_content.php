@@ -4,6 +4,7 @@
         <ul>
         <?php foreach($articles as $r):?>
             <li><span class="content_list"><a href="<?php echo base_url('en_article/group/?gid=' . $r['aid']); ?>"><?php echo $r['title'];?></a></span>
+            	<span class="time"><?php echo $r['add_date'];?></span>
             </li>
         <?php endforeach;?>
         </ul>
