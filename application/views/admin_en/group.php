@@ -19,7 +19,7 @@
 							<td><?php echo $group['order'];?></td>
 							<td><?php echo $group['title'];?></td>
 							<td><?php if (strlen($group['content']) > 188):?>
-								<?php $group['content'] = substr($group['content'],0,188) . "...";endif;?>
+								<?php //$group['content'] = substr($group['content'],0,188) . "...";endif;?>
 								<?php echo $group['content'];?>
 							</td>
 							<td>
