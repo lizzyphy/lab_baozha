@@ -33,11 +33,12 @@ class En_article extends CI_Controller
 	
 	public function article()
 	{
-		$gid = $this->input->get('gid');
-		$data['article'] = $this->en_article_m->get_group($gid);
+		$aid = $this->input->get('aid');
+		$data['article'] = $this->en_article_m->get_article($aid);
+		$data['article']['type_name'] = 'News & Trends';
 		$this->load->view('en_home_top');
 		$this->load->view('en_navi');
-		$this->load->view('en_content',$data);
+		$this->load->view('en_news_content',$data);
 		$this->load->view('en_footer');
 	}
 	

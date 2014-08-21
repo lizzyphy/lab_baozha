@@ -3,8 +3,9 @@
     	<img width="100%" height="5" src="<?php echo base_url('static/img/title.jpg')?>">
         <ul>
         <?php foreach($articles as $r):?>
-            <li><span class="content_list"><a href="<?php echo base_url('en_article/group/?gid=' . $r['aid']); ?>"><?php echo $r['title'];?></a></span>
-            	<span class="time"><?php echo $r['add_date'];?></span>
+            <li><span class="content_list"><a href="<?php echo base_url('en_article/article/?aid=' . $r['aid']); ?>"><?php echo $r['title'];?></a></span>
+            	<span class="content_time"><?php echo $r['add_date'];?></span>
+            	<div class="clear"></div>
             </li>
         <?php endforeach;?>
         </ul>

@@ -29,6 +29,24 @@ class En_article_m extends CI_Model
 		return FALSE;
 	}
 	
+	public function get_article($aid)
+	{
+		$this->db->where('aid', $aid);
+		$query = $this->db->get('article_en');
+		if($query->num_rows() == 1) {
+			$row = $query->row_array();
+			$query->free_result();
+			return array(
+					'type'		=>	$row['type'],
+					'title'	=>	$row['title'],
+					'content'	=>	$row['content'],
+					'add_date'  =>  $row['add_date'],
+			);
+		}
+	
+		return FALSE;
+	}
+	
 	public function get_group($gid)
 	{
 		$this->db->where('gid', $gid);
