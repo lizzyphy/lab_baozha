@@ -69,6 +69,7 @@ class En_article_m extends CI_Model
 	
 	public function get_list_news($limit, $offset = 0, $type = 0, $order = 'type ASC,aid DESC,add_date DESC')
 	{
+		$this->load->model('article_type_en_m');
 		$i = 0;
 		$return = array();
 		if($type > 0) {
@@ -79,7 +80,7 @@ class En_article_m extends CI_Model
 		$query = $this->db->get('article_en', $limit, $offset);
 		foreach ($query->result_array() as $row) {
 			$return[$i] = $row;
-			$return[$i]['type_name'] = $this->article_type_m->get_name($row['type']);
+			$return[$i]['type_name'] = $this->article_type_en_m->get_name($row['type']);
 			++$i;
 		}
 		return $return;

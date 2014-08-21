@@ -1,9 +1,9 @@
   <div class="right_content">
-    	<div class="intro_title"><?php echo $title;?></div>
+    	<div class="intro_title"><?php echo $articles[0]['type_name'];?></div>
     	<img width="100%" height="5" src="<?php echo base_url('static/img/title.jpg')?>">
         <ul>
         <?php foreach($articles as $r):?>
-            <li><span class="content_list"><a href="<?php echo base_url('en_article/group/?gid=' . $r['gid']); ?>"><?php echo $r['title'];?></a></span>
+            <li><span class="content_list"><a href="<?php echo base_url('en_article/group/?gid=' . $r['aid']); ?>"><?php echo $r['title'];?></a></span>
             </li>
         <?php endforeach;?>
         </ul>
