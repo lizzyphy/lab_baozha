@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="<?php echo base_url('static/css/english.css'); ?>"/>
 <link rel="stylesheet" href="<?php echo base_url('static/css/english_right.css'); ?>"/>
 <link rel="stylesheet" href="<?php echo base_url('static/css/home.css'); ?>"/>
+<link rel="stylesheet" href="<?php echo base_url('static/css/content2.css'); ?>"/>
 <script type="text/javascript" src="<?php echo base_url('static/js/pic_right.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('static/js/jquery-1.8.0.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('static/js/navi.js'); ?>"></script>

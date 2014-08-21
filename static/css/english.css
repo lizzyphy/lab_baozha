@@ -105,3 +105,10 @@ a{
 #flash_en{
 	padding-left:5%;
 }
+.content_list{
+	width:550px;
+	display:block;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	float:left; 
+}
