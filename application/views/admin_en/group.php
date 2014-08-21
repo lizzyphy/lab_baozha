@@ -10,15 +10,15 @@
 					<table width="100%" border="0" cellpadding="0" cellspacing="0">
 						<tr class="title_3">
 							<td width="5%">排序</td>
-							<td width="30%">姓名</td>
-							<td width="30%">简介</td>
+							<td width="8%">姓名</td>
+							<td width="52%">简介</td>
 							<td width="10%">操作</td>
 						</tr>
 						<?php foreach ($groups as $group): ?>
 						<tr>
 							<td><?php echo $group['order'];?></td>
 							<td><?php echo $group['title'];?></td>
-							<td><?php if (strlen($group['content']) > 188):?>
+							<td><?php //if (strlen($group['content']) > 188):?>
 								<?php //$group['content'] = substr($group['content'],0,188) . "...";endif;?>
 								<?php echo $group['content'];?>
 							</td>
