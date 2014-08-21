@@ -20,6 +20,7 @@ class En_article extends CI_Controller
 		$this->load->view('en_content',$data);
 		$this->load->view('en_footer');
 	}
+	
 	public function group()
 	{
 		$gid = $this->input->get('gid');
@@ -29,6 +30,17 @@ class En_article extends CI_Controller
 		$this->load->view('en_content',$data);
 		$this->load->view('en_footer');
 	}
+	
+	public function article()
+	{
+		$gid = $this->input->get('gid');
+		$data['article'] = $this->en_article_m->get_group($gid);
+		$this->load->view('en_home_top');
+		$this->load->view('en_navi');
+		$this->load->view('en_content',$data);
+		$this->load->view('en_footer');
+	}
+	
 	public function list_group()
 	{
 		$type = $this->input->get('type');
@@ -45,6 +57,7 @@ class En_article extends CI_Controller
 		$this->load->view('en_list_group',$data);
 		$this->load->view('en_footer');
 	}
+	
 	public function list_news()
 	{
 		$type = $this->input->get('type');
