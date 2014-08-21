@@ -3,9 +3,6 @@
             	<a href="<?php base_url('/english') ?>">Home</a>
             </div>
             <div class="en_navi">
-            	<a href="<?php echo base_url('en_article/?type=106')?>">Introduction</a>
-            </div>
-            <div class="en_navi">
             	<a href="<?php echo base_url('en_article/?type=107')?>">History</a>
             </div>
             <div class="en_navi">
@@ -16,6 +13,9 @@
             </div>
             <div class="en_navi">
             	<a href="<?php echo base_url('en_article/?type=110')?>">Academic Committee</a>
+            </div>
+            <div class="en_navi">
+            	<a href="<?php echo base_url('en_article/?type=120')?>">Consulting Committee</a>
             </div>
             <div class="en_navi">
             	<a href="<?php echo base_url('en_article/?type=111')?>">Main Research Achievements</a>
@@ -40,7 +40,7 @@
             </div>
         	<div id="video_title">Video</div>
              <img width="90%" height="5" src="<?php echo base_url('static/img/title.jpg')?>">
-             <div id="flash_en">              
+             <div class="flash_en">              
                 <?php foreach ($flash_url as $row):?>
                 <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
                 codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" 
