@@ -39,7 +39,7 @@ class Group extends CI_Controller
 		
 		$this->load->library('uploader_ue');
 		$config = array(
-				"savePath" => "upload/" ,
+				"pathFormat" => "upload/{yyyy}{mm}{dd}/{time}{ss}" ,
 				"maxSize" => 100000 , //单位KB
 				"allowFiles" => array( ".gif" , ".png" , ".jpg" , ".jpeg" , ".bmp"  )
 		);
@@ -60,7 +60,7 @@ class Group extends CI_Controller
 		
 		$this->load->library('uploader_ue');
 		$config = array(
-				"savePath" => "upload/" ,
+				"pathFormat" => "upload/{yyyy}{mm}{dd}/{time}{ss}" ,
 				"maxSize" => 100000 , //单位KB
 				"allowFiles" => array( ".gif" , ".png" , ".jpg" , ".jpeg" , ".bmp"  )
 		);

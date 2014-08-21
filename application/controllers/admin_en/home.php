@@ -121,7 +121,7 @@ class Home extends CI_Controller
 		}
 		
 		$this->load->model('article_en_m');
-		$article_type = $this->article_en_m->article_type_m;
+		$article_type = $this->article_en_m->article_type_en_m;
 		$data['types'] = $article_type->get_option();
 		$data['title'] = $article['title'];
 		$data['content'] = $article['content'];

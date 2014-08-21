@@ -22,7 +22,11 @@
 								<td>
 									<select name="type">
 										<?php foreach ($types as $type): ?>
-										<option name="type" value="<?php echo $type['type'];?>"><?php echo $type['name']; ?></option>
+										<?php if ($type_name == $type['name']){?>
+											<option name="type" value="<?php echo $type['type'];?>" selected="selected"><?php echo $type['name']; ?></option>
+										<?php }else{?>
+											<option name="type" value="<?php echo $type['type'];?>"><?php echo $type['name']; ?></option>
+										<?php }?>
 										<?php endforeach;?>
 									</select>
 								</td>

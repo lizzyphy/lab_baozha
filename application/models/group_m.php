@@ -92,6 +92,17 @@ class Group_m extends CI_Model
 		return FALSE;
 	}
 	
+	public function get_type_name($type)
+	{
+		$this->db->select('name');
+		$this->db->where('type', $type);
+		$query = $this->db->get('group_type');
+		if($query->num_rows() > 0) {
+			return $query->result_array();
+		}
+		return FALSE;	
+	}
+	
 	public function add($order, $type, $title, $avatar, $content)
 	{
 		$data = array(
