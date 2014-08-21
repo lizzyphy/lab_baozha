@@ -104,6 +104,7 @@ class Group extends CI_Controller
 		$data['order'] = '';
 		$data['title'] = '';
 		$data['content'] = '';
+		$data['type_name'] = '';
 		$data['form_url'] = 'd=admin&c=group&m=add';
 		$data['types'] = $this->group_m->get_types();
 		$this->load->view('admin/header.php', array('username' => $this->admin_user_m->user->username));
@@ -120,6 +121,10 @@ class Group extends CI_Controller
 			redirect('d=admin&c=group');
 		}
 		$data['type'] = $group['type'];
+		$array = $this->group_m->get_type_name($group['type']);
+		$data['type_name'] = $array[0]['name'];
+		var_dump($data['type_name']);
+
 		$data['title'] = $group['title'];
 		$data['content'] = $group['content'];
 		$data['order'] = $group['order'];
