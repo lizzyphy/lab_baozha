@@ -11,6 +11,7 @@ class En_article_m extends CI_Model
 		parent::__construct();
 		$this->load->database();
 	}
+	
 	public function get($type)
 	{
 		$this->db->where('type', $type);
@@ -27,6 +28,7 @@ class En_article_m extends CI_Model
 		
 		return FALSE;
 	}
+	
 	public function get_name($tid)
 	{
 		$this->db->where('tid', $tid);
@@ -34,5 +36,37 @@ class En_article_m extends CI_Model
 		$query = $this->db->get('article_type_en');
 		$type_name = $query->row_array();
 		return $type_name['name'];
+	}
+	
+	public function get_list($limit, $offset = 0, $type = 0, $order = 'type ASC,aid DESC,add_date DESC')
+	{
+		$i = 0;
+		$return = array();
+		if($type > 0) {
+			$this->db->where('type', (int) $type);
+		}
+		$this->db->select('aid,type, title, add_time, add_date, add_user');
+		$this->db->order_by($order);
+		$query = $this->db->get('article_en', $limit, $offset);
+		foreach ($query->result_array() as $row) {
+			$return[$i] = $row;
+			$return[$i]['type_name'] = $this->get_name($row['type']);
+			++$i;
+		}
+		return $return;
+	}
+	
+	public function get_num($type = 0, $name_keyword = '', $content_keyword = '')
+	{
+		if($type != 0) {
+			$this->db->where('type', $type);
+		}
+		if($name_keyword != '') {
+			$this->db->like('title', $name_keyword);
+		}
+		if($content_keyword != '') {
+				
+		}
+		return $this->db->count_all_results('article_en');
 	}
 }

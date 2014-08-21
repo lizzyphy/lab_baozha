@@ -20,4 +20,38 @@ class En_article extends CI_Controller
 		$this->load->view('en_content',$data);
 		$this->load->view('en_footer');
 	}
+	
+	public function list_content()
+	{
+		$type = $this->input->get('type');
+		$data['articles'] = $this->article_m->get_list($per_page, $per_page * ($p - 1), $type);
+		$data['page_html'] =  $this->_page_init($per_page);
+		$this->load->view('en_home_top');
+		$this->load->view('en_navi');
+		$this->load->view('en_list_content',$data);
+		$this->load->view('en_footer');
+	}
+	
+	private function _page_init($per_page)
+	{
+		$this->load->library('pagination');
+		$type = (int) $this->input->get('type');
+		if($type < 1) {
+			$type = 2;
+		}
+	
+		$config['total_rows'] = $this->en_article_m->get_num($type);
+		$config['per_page'] = $per_page;
+		$config['base_url'] = base_url('en_article/list_content/?type=' . $type);
+		$config['num_links'] = 20;
+		$config['query_string_segment'] = 'p';
+		$config['first_link'] = 'First';
+		$config['last_link'] = 'Last';
+		$config['prev_link'] = 'Previous';
+		$config['next_link'] = 'Next';
+		$config['use_page_numbers'] = TRUE;
+	
+		$this->pagination->initialize($config);
+		return $this->pagination->create_links();
+	}
 }
