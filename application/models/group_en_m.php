@@ -63,12 +63,11 @@ class Group_en_m extends CI_Model
 		return $this->db->count_all_results('group_en');
 	}
 	
-	public function add($order, $title, $avatar, $content)
+	public function add($order, $title, $content)
 	{
 		$data = array(
 				'order'		=>	$order,
 				'title'		=>	$title,
-				'avatar'	=>	$avatar,
 				'content'	=>	$content,
 		);
 		if($this->db->insert('group_en', $data) === FALSE) {

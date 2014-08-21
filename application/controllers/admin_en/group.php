@@ -45,12 +45,10 @@ class Group extends CI_Controller
 		);
 		$up = new Uploader_ue( "upfile" , $config );
 		$info = $up->getFileInfo();
-		
-		$avatar = $make_url . $info['url'];
 		$order = $this->input->post('order');
 		$title = $this->input->post('title', TRUE);
 		$content = $this->input->post('ue_content');
-		$this->group_en_m->add($order, $title, $avatar, $content);
+		$this->group_en_m->add($order, $title, $content);
 		redirect('d=admin_en&c=group');
 	}
 	
