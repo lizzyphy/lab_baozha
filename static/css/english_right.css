@@ -1,3 +1,7 @@
+*{
+	margin:0;
+	padding:0;
+}
 .focus_r{
 	width:700px;
 	height:250px;
@@ -97,4 +101,28 @@
 }
 #photos img{
 	padding:10px 10px 10px 10px;
+}
+.group_list{
+	width:550px;
+	display:block;
+	overflow:hidden;
+	float:left; 	
+}
+li{
+	list-style:none;
+}
+.group_list a{
+	color:#555;
+	font-size:16px;
+	line-height:50px;
+}
+.right_content ul li {
+width:600px;
+display: block;
+padding-left: 15px;
+background-image: url(../img/2ji_list.jpg)!important;
+background-position: left;
+background-repeat: no-repeat;
+margin: 2px 10px 0px 10px;
+text-align: left;
 }
