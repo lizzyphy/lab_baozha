@@ -91,7 +91,7 @@ class En_article extends CI_Controller
 	private function _page_init_group($per_page)
 	{
 		$this->load->library('pagination');
-		$config['total_rows'] = $this->en_article_m->get_num();
+		$config['total_rows'] = $this->en_article_m->get_num_group();
 		$config['per_page'] = $per_page;
 		$config['base_url'] = base_url('en_article/list_group?type=114');
 		$config['num_links'] = 20;
@@ -106,4 +106,26 @@ class En_article extends CI_Controller
 		return $this->pagination->create_links();
 	}
 	
+	private function _page_init($per_page)
+	{
+		$this->load->library('pagination');
+		$type = (int) $this->input->get('type');
+		if($type < 1) {
+			$type = 2;
+		}
+	
+		$config['total_rows'] = $this->article_m->get_num($type);
+		$config['per_page'] = $per_page;
+		$config['base_url'] = base_url('en_article/list_news/?type=' . $type);
+		$config['num_links'] = 20;
+		$config['query_string_segment'] = 'p';
+		$config['first_link'] = 'First';
+		$config['last_link'] = 'Last';
+		$config['prev_link'] = 'Previous';
+		$config['next_link'] = 'Next';
+		$config['use_page_numbers'] = TRUE;
+	
+		$this->pagination->initialize($config);
+		return $this->pagination->create_links();
+	}
 }

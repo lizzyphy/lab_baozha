@@ -104,7 +104,7 @@ class En_article_m extends CI_Model
 		return $return;
 	}
 	
-	public function get_num($name_keyword = '', $content_keyword = '')
+	public function get_num_group($name_keyword = '', $content_keyword = '')
 	{
 		if($name_keyword != '') {
 			$this->db->like('title', $name_keyword);
@@ -113,5 +113,19 @@ class En_article_m extends CI_Model
 				
 		}
 		return $this->db->count_all_results('group_en');
+	}
+	
+	public function get_num($type = 0, $name_keyword = '', $content_keyword = '')
+	{
+		if($type != 0) {
+			$this->db->where('type', $type);
+		}
+		if($name_keyword != '') {
+			$this->db->like('title', $name_keyword);
+		}
+		if($content_keyword != '') {
+				
+		}
+		return $this->db->count_all_results('article_en');
 	}
 }
