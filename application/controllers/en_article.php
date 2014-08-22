@@ -53,7 +53,7 @@ class En_article extends CI_Controller
 		}
 		$data['articles'] = $this->en_article_m->get_list($per_page, $per_page * ($p - 1), $type);
 		$data['title'] = 'Main Members of Staff';
-		$data['page_html'] =  $this->_page_init_group($per_page);
+		$data['page_html'] =  $this->_page_init($per_page);
 		$this->load->view('en_home_top');
 		$this->load->view('en_navi');
 		$this->load->view('en_list_group',$data);
@@ -88,7 +88,7 @@ class En_article extends CI_Controller
 		
 	}
 	
-	private function _page_init_group($per_page)
+	private function _page_init($per_page)
 	{
 		$this->load->library('pagination');
 		$config['total_rows'] = $this->en_article_m->get_num();

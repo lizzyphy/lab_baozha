@@ -70,6 +70,30 @@ a{
 	float:left;
 }
 
+.right_content ul{
+	padding:20px 0 0 10px;
+	font-size:14px;
+}
+
+.right_content ul li a{
+	color: #555;
+}
+
+.right_content ul li a:hover{
+	color: red;
+}
+
+.right_content ul li {
+width:650px;
+display: block;
+padding-left: 15px;
+background-image: url(../img/2ji_list.jpg)!important;
+background-position: left;
+background-repeat: no-repeat;
+margin: 2px 10px 0px 10px;
+text-align: left;
+}
+
 .en_navi{
 	height:31px;
 	line-height:31px;
@@ -104,4 +128,45 @@ a{
 }
 .flash_en{
 	padding-left:5%;
+}
+
+.content_list{
+	width:520px;
+	display:block;
+	overflow:hidden;
+	line-height:30px;
+	text-overflow:ellipsis;
+	float:left; 
+}
+
+.content_time{
+	width: 75px;
+	float: right;
+	line-height:30px;
+	display: block;
+	height: 30px;
+	color: #666;
+}
+
+.en_right_title{
+	width: 600px;
+	font-size: 20px;
+	color: #064481;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 20px;
+	margin: 0 auto;
+}
+
+.en_content3_time{
+	color: #666;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 10px;
+	font-weight: normal;
+}
+
+.en_right_content{
+	padding: 20px 40px 30px 40px;
+	font-size: 14px;
 }
