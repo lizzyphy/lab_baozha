@@ -85,6 +85,20 @@ class En_article_m extends CI_Model
 		return $return;
 	}
 	
+	public function get_list_photo($limit, $offset = 0, $type = 0,$order = 'aid DESC')
+	{
+		$i = 0;
+		$this->db->where('type',$type);
+		$this->db->select('aid,content,title');
+		$this->db->order_by($order);
+		$query = $this->db->get('article_en', $limit, $offset);
+		foreach ($query->result_array() as $row) {
+			$return[$i] = $row;
+			++$i;
+		}
+		return $return;
+	}
+	
 	public function get_list_news($limit, $offset = 0, $type = 0, $order = 'type ASC,aid DESC,add_date DESC')
 	{
 		$this->load->model('article_type_en_m');

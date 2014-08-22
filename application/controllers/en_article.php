@@ -22,13 +22,20 @@ class En_article extends CI_Controller
 		$this->load->view('en_footer');
 	}
 	
-	public function group()
+	public function photo()
 	{
-		$gid = $this->input->get('gid');
-		$data['article'] = $this->en_article_m->get_group($gid);
+		$type = $this->input->get('type');
+		$per_page = 2;
+		$p = (int) $this->input->get('p');
+		if($p < 1) {
+			$p = 1;
+		}
+		$data['title'] = 'Photos';
+		$data['photos'] = $this->en_article_m->get_list_photo($per_page, $per_page * ($p - 1), $type);
+		$data['page_html'] =  $this->_page_init_photo($per_page);
 		$this->load->view('en_home_top');
 		$this->load->view('en_navi');
-		$this->load->view('en_content',$data);
+		$this->load->view('en_list_photo',$data);
 		$this->load->view('en_footer');
 	}
 	
@@ -106,6 +113,28 @@ class En_article extends CI_Controller
 		return $this->pagination->create_links();
 	}
 	
+	private function _page_init_photo($per_page)
+	{
+		$this->load->library('pagination');
+		$type = (int) $this->input->get('type');
+		if($type < 1) {
+			$type = 2;
+		}
+		$config['total_rows'] = $this->en_article_m->get_num($type);
+		$config['per_page'] = $per_page;
+		$config['base_url'] = base_url('en_article/photo?type=119');
+		$config['num_links'] = 20;
+		$config['query_string_segment'] = 'p';
+		$config['first_link'] = 'First';
+		$config['last_link'] = 'Last';
+		$config['prev_link'] = 'Previous';
+		$config['next_link'] = 'Next';
+		$config['use_page_numbers'] = TRUE;
+	
+		$this->pagination->initialize($config);
+		return $this->pagination->create_links();
+	}
+	
 	private function _page_init($per_page)
 	{
 		$this->load->library('pagination');
@@ -114,7 +143,7 @@ class En_article extends CI_Controller
 			$type = 2;
 		}
 	
-		$config['total_rows'] = $this->article_m->get_num($type);
+		$config['total_rows'] = $this->en_article_m->get_num($type);
 		$config['per_page'] = $per_page;
 		$config['base_url'] = base_url('en_article/list_news/?type=' . $type);
 		$config['num_links'] = 20;
