@@ -75,7 +75,7 @@ class En_article_m extends CI_Model
 	public function get_list($limit, $offset = 0, $type = 0, $order = 'gid ASC')
 	{
 		$i = 0;
-		$this->db->select('gid,order,title');
+		$this->db->select('gid,order,content,title');
 		$this->db->order_by($order);
 		$query = $this->db->get('group_en', $limit, $offset);
 		foreach ($query->result_array() as $row) {
@@ -104,17 +104,14 @@ class En_article_m extends CI_Model
 		return $return;
 	}
 	
-	public function get_num($type = 0, $name_keyword = '', $content_keyword = '')
+	public function get_num($name_keyword = '', $content_keyword = '')
 	{
-		if($type != 0) {
-			$this->db->where('type', $type);
-		}
 		if($name_keyword != '') {
 			$this->db->like('title', $name_keyword);
 		}
 		if($content_keyword != '') {
 				
 		}
-		return $this->db->count_all_results('article_en');
+		return $this->db->count_all_results('group_en');
 	}
 }

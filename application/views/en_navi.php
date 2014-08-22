@@ -15,6 +15,9 @@
             	<a href="<?php echo base_url('en_article/?type=109')?>">Organization Structure</a>
             </div>
             <div class="en_navi">
+            	<a href="<?php echo base_url('en_article/?type=120')?>">Consulting Committee</a>
+            </div>
+            <div class="en_navi">
             	<a href="<?php echo base_url('en_article/?type=110')?>">Academic Committee</a>
             </div>
             <div class="en_navi">
@@ -45,6 +48,6 @@
             	<a href="<?php echo base_url('en_article/?type=119')?>">Photos</a>
             </div>
             <div class="en_navi">
-            	<a href="">Video</a>
+            	<a href="<?php echo base_url('en_article/flash_show')?>">Video</a>
             </div>
 </div>

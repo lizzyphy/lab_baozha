@@ -29,7 +29,7 @@
      			<div id="news">News & Trends</div>
      		</div>
      		<img width="100%" height="5" src="<?php echo base_url('static/img/title.jpg')?>">
-     		<div id="intro_content"><a class="en_a" href="">&nbsp;&nbsp;&nbsp;&nbsp;State Key Laboratory of Explosion Science and Technology (SKLEST) was founded in 1991 and open to public in 1996. It was approved by Ministry of Education in 1998 and by Ministry of Science and Technology in 2003. SKLEST is the unique state key laboratory in the field of explosion science and technology.
+     		<div id="intro_content"><a class="en_a" href="<?php echo base_url('en_article/?type=106')?>">&nbsp;&nbsp;&nbsp;&nbsp;State Key Laboratory of Explosion Science and Technology (SKLEST) was founded in 1991 and open to public in 1996. It was approved by Ministry of Education in 1998 and by Ministry of Science and Technology in 2003. SKLEST is the unique state key laboratory in the field of explosion science and technology.
      		</a></div> 
      		<div id="news_content"><a class="en_a" href="">news & trends</a></div>
             <div class="clear"></div>
