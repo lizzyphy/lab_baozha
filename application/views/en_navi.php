@@ -42,7 +42,7 @@
             	<a href="<?php echo base_url('en_article/list_news/?type=118')?>">News&Trends</a>
             </div>
             <div class="en_navi">
-            	<a href="">Photos</a>
+            	<a href="<?php echo base_url('en_article/?type=119')?>">Photos</a>
             </div>
             <div class="en_navi">
             	<a href="">Video</a>
