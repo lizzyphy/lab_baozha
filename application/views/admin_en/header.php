@@ -13,7 +13,7 @@
 <div id="top" class="box">
 	<p class="f_l">欢迎登录爆炸实验室后台管理系统,  当前用户：<?php echo $username;?></p>
 	<p class="f_r">
-		<a href="<?php echo base_url('/'); ?>" target="_blank">网站首页</a> | <a href="#">修改密码</a> | 
+		<a href="<?php echo base_url('en_index'); ?>" target="_blank">英文网站首页</a> | <a href="#">修改密码</a> | 
 		<a href="index.php?d=admin&c=index&m=logout">退出</a>
 	</p>
 </div>

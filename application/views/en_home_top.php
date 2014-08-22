@@ -14,10 +14,10 @@
     <div class="whole middle">
     	<div class="en_top">
         	<div id="top_l">
-                <a href="index/english"><img src="<?php echo base_url('static/img/top_a01.jpg'); ?>" /></a>
+                <a href="<?php echo base_url('en_index')?>"><img src="<?php echo base_url('static/img/top_a01.jpg'); ?>" /></a>
             </div>
             <div id="top_r">
-                <span class="top_rr"><a href="<?php echo base_url('index.php?d=admin_en&c=index');?>"> OA System</a> &nbsp;&nbsp;|&nbsp;&nbsp;<a href="<?php echo base_url('/'); ?>">中文版</a></span>
+                <span class="top_rr"><a href="<?php echo base_url('index.php?d=admin_en&c=index');?>" target="_blank"> OA System</a> &nbsp;&nbsp;|&nbsp;&nbsp;<a href="<?php echo base_url('/'); ?>">中文版</a></span>
             </div>
             <div class="clear"></div>
         </div>

@@ -14,15 +14,56 @@ class En_article extends CI_Controller
 	
 	public function index()
 	{
-		$type = $this->input->get('type');
-		$data['article'] = $this->en_article_m->get($type);
+		$type = (int)$this->input->get('type');
 		$this->load->view('en_home_top');
 		$this->load->view('en_navi');
-		$this->load->view('en_content',$data);
+		if (in_array($type, array(106,107,108,109,110,111,112,113,115,116,117,120)))
+		{
+			$data['article'] = $this->en_article_m->get($type);
+			$this->load->view('en_content',$data);
+		}
+		elseif ($type == 114)
+		{
+			$per_page = 2;
+			$p = (int) $this->input->get('p');
+			if($p < 1) {
+				$p = 1;
+			}
+			$url = 'en_article?type=114';
+			$data['articles'] = $this->en_article_m->get_list($per_page, $per_page * ($p - 1), $type);
+			$data['title'] = 'Main Members of Staff';
+			$data['page_html'] =  $this->_page_init_group($per_page,$url);
+			$this->load->view('en_list_group',$data);
+		} 
+		elseif ($type == 118)
+		{
+			$per_page = 20;
+			$p = (int) $this->input->get('p');
+			if($p < 1) {
+				$p = 1;
+			}
+			$url = 'en_article?type=118';
+			$data['articles'] = $this->en_article_m->get_list_news($per_page, $per_page * ($p - 1), $type);
+			$data['page_html'] =  $this->_page_init($per_page,$url);
+			$this->load->view('en_list_content',$data);
+		}
+		elseif ($type == 119)
+		{
+			$per_page = 2;
+			$p = (int) $this->input->get('p');
+			if($p < 1) {
+				$p = 1;
+			}
+			$url = 'en_article?type=119';
+			$data['title'] = 'Photos';
+			$data['photos'] = $this->en_article_m->get_list_photo($per_page, $per_page * ($p - 1), $type);
+			$data['page_html'] =  $this->_page_init($per_page,$url);
+			$this->load->view('en_list_photo',$data);
+		}
 		$this->load->view('en_footer');
 	}
 	
-	public function photo()
+	/*public function photo()
 	{
 		$type = $this->input->get('type');
 		$per_page = 2;
@@ -37,7 +78,7 @@ class En_article extends CI_Controller
 		$this->load->view('en_navi');
 		$this->load->view('en_list_photo',$data);
 		$this->load->view('en_footer');
-	}
+	}*/
 	
 	public function article()
 	{
@@ -50,7 +91,7 @@ class En_article extends CI_Controller
 		$this->load->view('en_footer');
 	}
 	
-	public function list_group()
+	/*public function list_group()
 	{
 		$type = $this->input->get('type');
 		$per_page = 2;
@@ -81,7 +122,7 @@ class En_article extends CI_Controller
 		$this->load->view('en_navi');
 		$this->load->view('en_list_content',$data);
 		$this->load->view('en_footer');
-	}
+	}*/
 	
 	
 	public function flash_show()
@@ -95,12 +136,12 @@ class En_article extends CI_Controller
 		
 	}
 	
-	private function _page_init_group($per_page)
+	private function _page_init_group($per_page,$url)
 	{
 		$this->load->library('pagination');
 		$config['total_rows'] = $this->en_article_m->get_num_group();
 		$config['per_page'] = $per_page;
-		$config['base_url'] = base_url('en_article/list_group?type=114');
+		$config['base_url'] = base_url($url);
 		$config['num_links'] = 20;
 		$config['query_string_segment'] = 'p';
 		$config['first_link'] = 'First';
@@ -113,29 +154,7 @@ class En_article extends CI_Controller
 		return $this->pagination->create_links();
 	}
 	
-	private function _page_init_photo($per_page)
-	{
-		$this->load->library('pagination');
-		$type = (int) $this->input->get('type');
-		if($type < 1) {
-			$type = 2;
-		}
-		$config['total_rows'] = $this->en_article_m->get_num($type);
-		$config['per_page'] = $per_page;
-		$config['base_url'] = base_url('en_article/photo?type=119');
-		$config['num_links'] = 20;
-		$config['query_string_segment'] = 'p';
-		$config['first_link'] = 'First';
-		$config['last_link'] = 'Last';
-		$config['prev_link'] = 'Previous';
-		$config['next_link'] = 'Next';
-		$config['use_page_numbers'] = TRUE;
-	
-		$this->pagination->initialize($config);
-		return $this->pagination->create_links();
-	}
-	
-	private function _page_init($per_page)
+	private function _page_init($per_page ,$url)
 	{
 		$this->load->library('pagination');
 		$type = (int) $this->input->get('type');
@@ -145,7 +164,7 @@ class En_article extends CI_Controller
 	
 		$config['total_rows'] = $this->en_article_m->get_num($type);
 		$config['per_page'] = $per_page;
-		$config['base_url'] = base_url('en_article/list_news/?type=' . $type);
+		$config['base_url'] = base_url($url);
 		$config['num_links'] = 20;
 		$config['query_string_segment'] = 'p';
 		$config['first_link'] = 'First';

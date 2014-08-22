@@ -22,7 +22,7 @@
             <div id="head_r">
                 <table class="head_tab">
                     <tr>
-                    	<td><a href="<?php echo base_url('index.php?d=admin&c=index');?>" target="_blank"">OA系统</a>&nbsp;&nbsp;&nbsp;|</td>
+                    	<td><a href="<?php echo base_url('index.php?d=admin&c=index');?>" target="_blank">OA系统</a>&nbsp;&nbsp;&nbsp;|</td>
                         <td><a href="<?php echo base_url('article/type?type=92'); ?>">开放基金</a>&nbsp;&nbsp;&nbsp;|
                         	<div class="naviout" style="display:none;">
                             	<a href="<?php echo base_url('article/type?type=92'); ?>">开放基金管理条例</a>
@@ -54,7 +54,7 @@
                         		<?php endforeach;?>
                             </div>
                         </td>
-                        <td><a href="<?php echo base_url('index/english')?>">ENGLISH</a></td> 
+                        <td><a href="<?php echo base_url('en_index')?>">ENGLISH</a></td> 
                     </tr>
                  </table>
             </div>

@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.1.14
 -- http://www.phpmyadmin.net
 --
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `np_group_en` (
   `gid` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(50) NOT NULL,
-  `avatar` varchar(100) NOT NULL,
+  
   `content` text NOT NULL,
   `order` int(11) NOT NULL,
   PRIMARY KEY (`gid`)
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `np_group_en` (
 -- 转存表中的数据 `np_group_en`
 --
 
-INSERT INTO `np_group_en` (`gid`, `title`, `avatar`, `content`, `order`) VALUES
+INSERT INTO `np_group_en` (`gid`, `title`, `content`, `order`) VALUES
 (24, 'Wang-FuChi', '', '<p><span style="font-size: 18px;"><span style="text-indent: 25px; background-color: rgb(255, 255, 255); line-height: 30px; font-family: &#39;Times New Roman&#39;;">Doctor, Prof, PhD supervisors. He is an expert and general secretary of advanced material special group General Armament Department, a member of Advanced Material Expert Argue-Group of National Security Important Basic Science Research Project. He won 3 awards of ministerial level and 1 first prize of&nbsp;</span><span style="text-indent: 25px; background-color: rgb(255, 255, 255); line-height: 30px; font-family: &#39;Times New Roman&#39;;">Defense Technical Invention Award</span><span style="text-indent: 25px; background-color: rgb(255, 255, 255); line-height: 30px; font-family: &#39;Times New Roman&#39;;">, and 6 authorized patents.</span></span></p>', 12),
 (25, 'Zhang-QingMing', '', '<p><span style="font-size: 18px;"><span style="text-indent: 25px; background-color: rgb(255, 255, 255); line-height: 30px; font-family: &#39;Times New Roman&#39;;">Doctor, Prof</span><span style="font-family: 宋体; text-indent: 25px; background-color: rgb(255, 255, 255); line-height: 30px;">，</span><span style="text-indent: 25px; background-color: rgb(255, 255, 255); line-height: 30px; font-family: &#39;Times New Roman&#39;;">PhD supervisors</span><span style="font-family: 宋体; text-indent: 25px; background-color: rgb(255, 255, 255); line-height: 30px;">，</span><span style="text-indent: 25px; background-color: rgb(255, 255, 255); line-height: 30px; font-family: &#39;Times New Roman&#39;;">Director of&nbsp;<a name="OLE_LINK21"></a>SKLEST. He assumes vice chief editor of Journal of Explosion and Shock Waves, standing editor of Journal of Acta Ordnance, member of explosion Mechanics professional committee of China Mechanics Association, syndic of China Aerodynamics Association. He has been engaged in research on impact dynamics. His research direction is hypervelocity impact mechanism. He has published 2 monographs, 2 translations of works, 10 SCI and 26 EI papers and won&nbsp;1 a&nbsp;first prize, a second prize and a third prize award of ministerial-level, 1 authorized patent and 5 declared patents.</span></span></p>', 13),
 (23, 'Ning-JianGuo', '', '<p><span style="color: rgb(51, 51, 51); font-family: &#39;times new roman&#39;; font-size: 18px; line-height: 24px; background-color: rgb(255, 255, 255);">Doctor, Prof, PhD supervisors. He is a vice-director of Applied Mechanics Professional Committee of China Ordnance Society, member of Calculating Mechanics Professional Committee, Logos-Mechanics and Mathematics Method in Mechanics Professional committee of China Mechanics Society, a leader of Calculating Explosion Mechanics Professional Team of Explosion Mechanics Special Committee, China Mechanics Academy, vice leader of Plastic Mechanics Professional Team of Solid Mechanics Professional Committee, China Mechanics Society. He is an editor of Journal of Computational Mechanics, Explosion and Shock Waves. He published more than 100 papers in which 70 indexed by SCI and EI. He has obtained a first-class and a second-class award of ministerial-level for Progress in Science and Technology, several authorized national defense patents and software copyrights.</span></p>', 11),
