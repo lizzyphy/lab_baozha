@@ -42,10 +42,10 @@
             <div id="photos_title">Photos</div>
             <img width="100%" height="5" src="<?php echo base_url('static/img/title.jpg')?>">
             <div id="photos">
-            	 <a href="<?php echo base_url('en_article/photo/?type=119')?>"><img width="20%" height="100" src="<?php echo base_url('static/img/p1.jpg')?>"></a>
-                 <a href="<?php echo base_url('en_article/photo/?type=119')?>"><img width="20%" height="100" src="<?php echo base_url('static/img/p2.jpg')?>"></a>
-                 <a href="<?php echo base_url('en_article/photo/?type=119')?>"><img width="20%" height="100" src="<?php echo base_url('static/img/p3.jpg')?>"></a>
-                 <a href="<?php echo base_url('en_article/photo/?type=119')?>"><img width="20%" height="100" src="<?php echo base_url('static/img/p4.jpg')?>"></a>
+            	 <a href="<?php echo base_url('en_article/?type=119')?>"><img width="20%" height="100" src="<?php echo base_url('static/img/p1.jpg')?>"></a>
+                 <a href="<?php echo base_url('en_article/?type=119')?>"><img width="20%" height="100" src="<?php echo base_url('static/img/p2.jpg')?>"></a>
+                 <a href="<?php echo base_url('en_article/?type=119')?>"><img width="20%" height="100" src="<?php echo base_url('static/img/p3.jpg')?>"></a>
+                 <a href="<?php echo base_url('en_article/?type=119')?>"><img width="20%" height="100" src="<?php echo base_url('static/img/p4.jpg')?>"></a>
             </div>
             <div class="clear"></div>
       </div>
