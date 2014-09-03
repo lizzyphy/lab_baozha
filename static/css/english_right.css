@@ -146,5 +146,10 @@
 }
 #news_content li{
 	list-style:none;
+	height:30px;
+}
 
+.intr_news{
+	padding-bottom:30px;
+	_padding:0px !important;
 }
