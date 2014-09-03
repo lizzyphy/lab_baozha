@@ -109,13 +109,19 @@ class En_article_m extends CI_Model
 		}
 		$this->db->select('aid, type, title, add_time, add_date, add_user');
 		$this->db->order_by($order);
-		$query = $this->db->get('article_en', $limit, $offset);
-		foreach ($query->result_array() as $row) {
-			$return[$i] = $row;
-			$return[$i]['type_name'] = $this->article_type_en_m->get_name($row['type']);
-			++$i;
+		if($query = $this->db->get('article_en', $limit, $offset))
+		{
+			foreach ($query->result_array() as $row) {
+				$return[$i] = $row;
+				$return[$i]['type_name'] = $this->article_type_en_m->get_name($row['type']);
+				++$i;
+			}
+			return $return;
 		}
-		return $return;
+		else
+		{
+			return $return;
+		}
 	}
 	
 	public function get_num_group($name_keyword = '', $content_keyword = '')

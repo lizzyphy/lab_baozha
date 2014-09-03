@@ -44,6 +44,7 @@ class En_article extends CI_Controller
 			}
 			$url = 'en_article?type=118';
 			$data['articles'] = $this->en_article_m->get_list_news($per_page, $per_page * ($p - 1), $type);
+			$data['title'] = 'News&Trends';
 			$data['page_html'] =  $this->_page_init($per_page,$url);
 			$this->load->view('en_list_content',$data);
 		}
