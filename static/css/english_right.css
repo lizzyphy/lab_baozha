@@ -100,6 +100,8 @@
 	text-align:left;
 }
 #photos_title{
+	padding-top:50px;
+	_padding-top:0px !important;
 	color: #064481;
 	line-height:50px;
 	text-align:center;

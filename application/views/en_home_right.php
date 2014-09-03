@@ -44,8 +44,8 @@
             <div id="photos">
             	 <a href="<?php echo base_url('en_article/?type=119')?>"><img width="20%" height="100" src="<?php echo base_url('static/img/p1.jpg')?>"></a>
                  <a href="<?php echo base_url('en_article/?type=119')?>"><img width="20%" height="100" src="<?php echo base_url('static/img/p2.jpg')?>"></a>
-                 <a href="<?php echo base_url('en_article/?type=119')?>"><img width="20%" height="100" src="<?php echo base_url('static/img/p3.jpg')?>"></a>
-                 <a href="<?php echo base_url('en_article/?type=119')?>"><img width="20%" height="100" src="<?php echo base_url('static/img/p4.jpg')?>"></a>
+                 <a href="<?php echo base_url('en_article/?type=119')?>"><img  width="20%" height="100" src="<?php echo base_url('static/img/p3.jpg')?>"></a>
+                 <a href="<?php echo base_url('en_article/?type=119')?>"><img  width="20%" height="100" src="<?php echo base_url('static/img/p4.jpg')?>"></a>
             </div>
             <div class="clear"></div>
       </div>
