@@ -1,6 +1,6 @@
         <div class="left_navi">
             <div class="en_navi">
-            	<a href="<?php base_url('/english') ?>">Home</a>
+            	<a href="<?php echo base_url('en_index')?>">Home</a>
             </div>
             <div class="en_navi">
             	<a href="<?php echo base_url('en_article/?type=107')?>">History</a>
