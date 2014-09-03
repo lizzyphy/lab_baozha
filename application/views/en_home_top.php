@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="whole middle">
+    <div id="whole">
     	<div class="en_top">
         	<div id="top_l">
                 <a href="<?php echo base_url('en_index')?>"><img src="<?php echo base_url('static/img/top_a01.jpg'); ?>" /></a>

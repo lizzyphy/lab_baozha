@@ -9,8 +9,8 @@ body{
     color: #555;
     font: 12px/140% Arial,"宋体",Helvetica,sans-serif,Verdana;
 }
-.middle{
-	margin:0 auto;
+img{
+	border:none;
 }
 
 .clear {
@@ -19,8 +19,9 @@ body{
 	overflow:hidden;
 }
 
-.whole{
+#whole{
 	width:1000px;
+	margin:0 auto;
 }
 
 a{
