@@ -8,6 +8,8 @@ body{
 	background: none repeat scroll 0 0 #FFFFFF;
     color: #555;
     font: 12px/140% Arial,"宋体",Helvetica,sans-serif,Verdana;
+	margin:0 auto;
+	text-align:center;
 }
 img{
 	border:none;
@@ -29,7 +31,8 @@ a{
 }
 
 .en_top{
-	margin-bottom:20px;
+	margin-bottom:20px!important;
+	margin:0 auto;
 }
 
 #top_l{
@@ -126,14 +129,13 @@ text-align: left;
 #video_title{
 	color: #064481;
 	line-height:50px;
-	text-align:center;
 	font-size:24px;
 	font-family:FZShuTi;
 	font-weight:bold;
 	margin-top:6px;
 }
 .flash_en{
-	padding-left:5%;
+	margin-right:30px;
 }
 
 .content_list{
