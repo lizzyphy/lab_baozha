@@ -110,7 +110,7 @@
 	font-weight:bold;
 }
 #photos{
-	padding-left:30px;
+	
 }
 #photos img{
 	padding:10px 10px 10px 10px;
@@ -150,6 +150,6 @@
 }
 
 .intr_news{
-	padding-bottom:30px;
+	padding-bottom:50px;
 	_padding:0px !important;
 }
