@@ -74,18 +74,30 @@
 	
 }
 .en_a{
+	width:100%;
+	height:30px;
 	display:block;
 	padding:10px 10px 10px 10px;
 	color:#000;
 	text-decoration: none;
 }
+
+.over_a{
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+}
+
 .en_a:hover{
 	background:#f1eeee;
 }
 #news_content{
-	width:50%;
+	width:40%;
+	padding-left:10px;
 	float:left;
 	font-size:14px;
+	text-align:left;
 }
 #photos_title{
 	color: #064481;
@@ -132,4 +144,5 @@
 }
 #news_content li{
 	list-style:none;
+
 }

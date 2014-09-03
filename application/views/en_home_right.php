@@ -34,7 +34,7 @@
      		<div id="news_content">
      			<?php foreach ($articles as $row):?>
                 <li>
-                	<a class="en_a" href="<?php echo base_url('en_article/article/?aid=' . $row['aid']); ?>" title="<?php echo $row['title']; ?>"><?php echo $row['title']; ?></a>
+                	<a class="en_a over_a" href="<?php echo base_url('en_article/article/?aid=' . $row['aid']); ?>" title="<?php echo $row['title']; ?>"><?php echo $row['title']; ?></a>
                 </li>
                <?php endforeach; ?>
      		</div>
