@@ -1,7 +1,6 @@
 /**
  * 
  */
-var isround = "";
 var scrollmove = "";
 var masktime = 10;
 var focus_cur = 1;	
@@ -9,7 +8,6 @@ var focus_cur = 1;
 /*var h = document.getElementById("tip").getElementsByTagName("li");*/
 function change(id){
 	
-	clearTimeout(isround);
 	clearInterval(scrollmove);
 	for (var i = 1; i <= 4; i++) {
 		if(i == id){
@@ -22,7 +20,6 @@ function change(id){
 		next = 1;
 	}	
 	
-	isround = setTimeout("change("+next+")",8000);
 	scrollmove = setInterval("scrollMove("+id+")",masktime);
 	focus_cur = id;
 
@@ -40,18 +37,3 @@ function scrollMove(m){
 		clearInterval(scrollmove);
 	}
 }
-function focus_prev(){
-	var prev = (focus_cur+3)%4;
-	if(prev == "0"){
-		prev = 4;
-	}
-	change(prev);
-}
-function focus_next(){
-	var next = (focus_cur+1)%4;
-	if(next == "0"){
-		next = 4;
-	}
-	change(next);
-}
-isround = setTimeout("change(2)",8000);

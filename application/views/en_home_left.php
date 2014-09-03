@@ -39,7 +39,7 @@
             	<a href="<?php echo base_url('en_article/?type=117')?>">Contact Numbers of Main Members</a>
             </div>
         	<div id="video_title">Video</div>
-             <img width="90%" height="5" src="<?php echo base_url('static/img/title.jpg')?>">
+             <img width="90%" height="5" style="margin-right:30px;" src="<?php echo base_url('static/img/title.jpg')?>">
              <div class="flash_en">              
                 <?php foreach ($flash_url as $row):?>
                 <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
