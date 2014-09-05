@@ -6,7 +6,7 @@
 	           <?php echo $r['content'];?>
 	        <?php endforeach;?>
 	    </div>
-        <div class="page">
+        <div class="page" style="margin-left:300px;">
             <?php echo $page_html; ?>
         </div>
     </div>

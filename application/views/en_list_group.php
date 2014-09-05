@@ -10,8 +10,9 @@
          </div>
         <?php endforeach;?>
         <div class="page" style="text-align:center; font-size:16px;";>
-            <?php echo $page_html; ?>
+            <?php echo $page_html; ?> 
         </div>
+        
     </div>
     </div>
     <div class="clear"></div>

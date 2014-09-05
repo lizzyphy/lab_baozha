@@ -27,7 +27,7 @@
             	<a href="<?php echo base_url('en_article/?type=113')?>">Education</a>
             </div>
             <div class="en_navi">
-            	<a href="<?php echo base_url('en_article/list_group/?type=114')?>">Main Members of Staff</a>
+            	<a href="<?php echo base_url('en_article/?type=114')?>">Main Members of Staff</a>
             </div>
             <div class="en_navi">
             	<a href="<?php echo base_url('en_article/?type=115')?>">Opening Fund</a>
