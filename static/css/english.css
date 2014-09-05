@@ -188,3 +188,10 @@ a{
 	font-size: 14px;
 	line-height:25px;
 }
+
+.en_right_content table tr td{
+	border:1px solid #CCD !important;
+	border-collapse:0 !important;
+	cellpadding:0 !important;
+	border-spacing:0 !important;
+}
