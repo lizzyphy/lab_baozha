@@ -147,10 +147,11 @@ class En_article extends CI_Controller
 		$config['query_string_segment'] = 'p';
 		$config['first_link'] = 'First';
 		$config['last_link'] = 'Last';
-		$config['prev_link'] = 'Previous';
-		$config['next_link'] = 'Next';
+		$config['prev_link'] = '<';
+		$config['next_link'] = '>';
 		$config['use_page_numbers'] = TRUE;
-	
+		$config['cur_tag_open'] = ' <a class="pcurrent">'; // 当前页开始样式
+		$config['cur_tag_close'] = '</a>';
 		$this->pagination->initialize($config);
 		return $this->pagination->create_links();
 	}
@@ -170,9 +171,13 @@ class En_article extends CI_Controller
 		$config['query_string_segment'] = 'p';
 		$config['first_link'] = 'First';
 		$config['last_link'] = 'Last';
-		$config['prev_link'] = 'Previous';
-		$config['next_link'] = 'Next';
+		$config['prev_link'] = '<';
+		$config['next_link'] = '>';
 		$config['use_page_numbers'] = TRUE;
+		$config['cur_tag_open'] = '<a class="pcurrent">'; // 当前页开始样式
+		$config['cur_tag_close'] = '</a>'; 
+
+
 	
 		$this->pagination->initialize($config);
 		return $this->pagination->create_links();
